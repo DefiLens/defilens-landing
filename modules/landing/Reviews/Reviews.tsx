@@ -1,15 +1,15 @@
 const reviewsItems = [
   {
     description: '“Defi activities increases day by day and we can show them to everyone in a unique way. So Defilens can be a game changer and it will be a new way to see Defi.”',
-    reviewer: 'Samantha Lee'
+    reviewer: 'Review 1'
   },
   {
     description: '“By creating discussion platform for defi we can create new possibilities and new innovations for future”',
-    reviewer: 'Emily Garcia'
+    reviewer: 'Review 2'
   },
   {
     description: '“It will be easy to trade copy and user can follow their defi whales activities.”',
-    reviewer: 'Manek Patel'
+    reviewer: 'Review 3'
   },
 ]
 

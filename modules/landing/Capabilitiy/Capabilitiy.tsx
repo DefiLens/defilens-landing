@@ -35,7 +35,10 @@ const SocialGraph = () => (
       {
         capabilityItems.map((items, index) => (
           <div key={index} className='flex flex-col justify-center items-center h-[300px] flex-1 mx-[5px] p-10'>
-            <Image src={AppLogo} alt="icon" />
+            {/* <Image src={AppLogo} alt="icon" /> */}
+            <div className="text-[30px] font-bold" style={{color: "green"}}>
+              Feature {index+1}
+            </div>
             <div className='mt-[24px] text-[30px]'>{items.title}</div>
             <div className='mt-[24px] text-center text-[18px]'>{items.Description}</div>
           </div>

@@ -37,7 +37,7 @@ const Footer = () => (
         </button>
       </a>
       <div className="absolute left-[calc(50%-35px)] flex flex-col justify-center items-center bottom-[-20px]">
-        <div className="mb-[5px] text-[15px]">Proud Partner</div>
+        <div className="mb-[5px] text-[15px]">Powered By</div>
         <Image src={PartnerLogo} alt="logo" />
       </div>
     </div>
@@ -53,9 +53,9 @@ const Footer = () => (
       </div>
     </div>
     <div className="py-[50px] flex justify-center items-center text-[20px]">
-      <div className="px-[20px]">Contact</div>
-      <div className="px-[20px] border-x">Share Website</div>
-      <div className="flex justify-between ml-[20px] items-center">
+      <div className="px-[20px]">Contact : radadiyasunny970@gmail.com</div>
+      {/* <div className="px-[20px] border-x">Share Website</div> */}
+      {/* <div className="flex justify-between ml-[20px] items-center">
       {socialHandles.map((handles, index) => (
         <div key={index} className="pl-[10px]">
           <a href={handles.url}>
@@ -63,7 +63,7 @@ const Footer = () => (
           </a>
         </div>
       ))}
-      </div>
+      </div> */}
     </div>
     <div className="text-[20px]">© Copyright DefiLens, Inc.</div>
   </div>

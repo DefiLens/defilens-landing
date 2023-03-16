@@ -1,11 +1,11 @@
 const roadmapItems = [
   {
     title: 'Phase 1',
-    description: 'Live MVP with necessary changes. Will live Phase-1 By March 10'
+    description: 'Live MVP with necessary changes. Will live Phase-1 By March 16'
   },
   {
     title: 'Phase 2',
-    description: 'Most famous Defi Protocols will be available And UI Improvements in Phase-2 by March 20.'
+    description: 'Most famous Defi Protocols will be available And UI Improvements in Phase-2 by March 25.'
   },
   {
     title: 'Phase 3',
