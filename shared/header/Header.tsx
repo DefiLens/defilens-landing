@@ -8,7 +8,9 @@ const Header = () => (
       <Image src={AppLogo} alt="app-logo" />
     </div>
     <div>
-      <button className='bg-black text-white text-bold w-[130px] h-[50px] rounded-[8px]'>APP</button>
+      <a href='https://app.defilens.tech/' target="_blank">
+        <button className='bg-black text-white text-bold w-[130px] h-[50px] rounded-[8px]'>APP</button>
+      </a>
     </div>
   </div>
 );

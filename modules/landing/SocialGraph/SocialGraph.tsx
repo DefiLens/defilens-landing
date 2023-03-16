@@ -10,9 +10,11 @@ const SocialGraph = () => (
       <div className="pt-[60px] text-[22px]">
         DefiLens is a Social graph for Defi. Which enable users defi activity on lens and give features to discuss on top of it in a interactive way.
       </div>
-      <button className='bg-black text-white text-bold h-[50px] rounded-[8px] w-[225px] mt-[60px]'>
-        JOIN WAITLIST
-      </button>
+      <a href="https://forms.gle/N4Gy1x97ZTVvx32F8" target="_blank">
+        <button className='bg-black text-white text-bold h-[50px] rounded-[8px] w-[225px] mt-[60px]'>
+          JOIN WAITLIST
+        </button>
+      </a>
     </div>
     <div className="flex justify-center text-[96px] grow items-center opacity-30">
       Defi x Social Graph
