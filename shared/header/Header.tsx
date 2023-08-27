@@ -7,7 +7,7 @@ const Header = () => (
     <div className='h-[50px] w-[50px]'>
       {/* <Image src={AppLogo} alt="app-logo" /> */}
       <div className="text-[30px] font-bold">
-        Defilens
+        DefiLens
       </div>
     </div>
     <div>
