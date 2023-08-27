@@ -33,13 +33,13 @@ const Footer = () => (
       <div className="mt-[30px]">During Phase 1 and 2, DefiLens will only be available to whitelists. If you want to join in a whitelist please feel the form below.</div>
       <a href="https://forms.gle/N4Gy1x97ZTVvx32F8" target="_blank">
         <button className='bg-black text-white text-bold h-[50px] rounded-[8px] w-[225px] my-[40px]'>
-          JOIN WAITLIST
+          Join WaitList Or FeebBack
         </button>
       </a>
-      <div className="absolute left-[calc(50%-35px)] flex flex-col justify-center items-center bottom-[-20px]">
+      {/* <div className="absolute left-[calc(50%-35px)] flex flex-col justify-center items-center bottom-[-20px]">
         <div className="mb-[5px] text-[15px]">Powered By</div>
         <Image src={PartnerLogo} alt="logo" />
-      </div>
+      </div> */}
     </div>
     <div className="flex flex-col justify-center items-center mt-[100px]">
       <div className="text-[25px] font-semibold">Want to be the first to get DefiLens updates?</div>

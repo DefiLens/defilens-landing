@@ -9,7 +9,7 @@ const Landing = () => (
     <>
       <SocialGraph />
       <CapabilitiyContainer />
-      <ReviewsContainer />
+      {/* <ReviewsContainer /> */}
       <RoadmapContainer />
     </>
   </Layout>

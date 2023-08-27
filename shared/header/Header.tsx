@@ -11,7 +11,7 @@ const Header = () => (
       </div>
     </div>
     <div>
-      <a href='https://app.defilens.tech/' target="_blank">
+      <a href='https://chainping.defilens.tech/' target="_blank">
         <button className='bg-black text-white text-bold w-[130px] h-[50px] rounded-[8px]'>APP</button>
       </a>
     </div>

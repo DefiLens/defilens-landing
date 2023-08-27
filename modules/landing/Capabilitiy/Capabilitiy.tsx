@@ -4,18 +4,18 @@ import AppLogo from '../../../assets/icons/app-logo.svg';
 const capabilityItems = [
   {
     icon: AppLogo,
-    title: 'Discussions',
-    Description: 'User can create defi social graph by discussion on post.'
+    title: 'Refinance Defi Positions',
+    Description: ' Users can consolidate multiple actions into a single transaction, whether within a single chain or across chains.'
   },
   {
     icon: AppLogo,
-    title: 'Learn Defi',
-    Description: 'Other user or beginners can learn about various kind of transactions.'
+    title: 'Cross-chain lending',
+    Description: 'Users can effortlessly lend their assets across different chains.'
   },
   {
     icon: AppLogo,
-    title: 'Copy Trade',
-    Description: 'One can create similar transaction for them instantly.'
+    title: 'Optimized returns',
+    Description: 'It curates a list of top opportunities, based on APY and returns. Whether suggesting smart batching or identifying high-return lending protocols.'
   },
 ]
 
@@ -26,9 +26,7 @@ const SocialGraph = () => (
       Features and Capability
       </div>
       <div className="mt-[40px] text-center w-[80%]">
-      In a daily basis, the lot of defi activity happens on chain like Lending-borrowing, Exchange, Perpetuals, Yield Strategies, NFT-Trading. So all this users defi activity will suggests on platform and encourage to post on lens. Then it will be available for everyone as a public news feed. 
-
-      Once a defi activity available on news feed. They can perform Discussions.
+      DefiLens is crafting a revolutionary platform that redefines how users engage with the Defi ecosystem. At its core, the platform introduces a streamlined trading experience through two key pillars: Cross-chain Lending and Smart Batching
       </div>
     </div>
     <div className='flex justify-between items-center mt-[60px] w-[calc(100%-20px)]'>

@@ -1,15 +1,15 @@
 const roadmapItems = [
   {
     title: 'Phase 1',
-    description: 'Live MVP with necessary changes. Will live Phase-1 By March 16'
+    description: 'Live MVP with necessary changes. Will live Phase-1 By August 25'
   },
   {
     title: 'Phase 2',
-    description: 'Most famous Defi Protocols will be available And UI Improvements in Phase-2 by March 25.'
+    description: 'Most famous Defi Protocols and Increase batching strategies in Phase-2 by Sepetember 15.'
   },
   {
     title: 'Phase 3',
-    description: 'Any new Defi protocol can integrate by anyone and make open-source in Phase-3 by April-30'
+    description: 'Any new Defi protocol can integrate and Propse smart batching strategy by anyone and make open-source in Phase-3 by October-25'
   },
 ];
 
@@ -18,7 +18,7 @@ const Roadmap = () => (
     <div className="text-[30px] text-center font-bold">Product Development Roadmap 2023</div>
     <div className="m-auto mt-[50px] w-[70%] flex justify-center">
       <div className="">
-        <div className="text-[36px] font-bold w-[400px]">Next 3 months Roadmap</div>
+        <div className="text-[36px] font-bold w-[400px]">Next 2 months Roadmap</div>
       </div>
       <div className="h-[450px] border border-dashed border-[#9c9c9c] relative">
         <div className="absolute bg-[lightgrey] text-[20px] font-medium h-[40px] w-[40px] rounded-[40px] flex justify-center items-center left-[-20px]">1.0</div>
