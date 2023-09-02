@@ -53,7 +53,8 @@ const Footer = () => (
       </div>
     </div>
     <div className="py-[50px] flex justify-center items-center text-[20px]">
-      <div className="px-[20px]">Contact : radadiyasunny970@gmail.com</div>
+      <div className="px-[20px]">Company Email : defilens.tech@gmail.com</div>
+      <div className="px-[20px]">Personal Email : radadiyasunny970@gmail.com</div>
       {/* <div className="px-[20px] border-x">Share Website</div> */}
       {/* <div className="flex justify-between ml-[20px] items-center">
       {socialHandles.map((handles, index) => (
