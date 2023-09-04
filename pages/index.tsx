@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import LandingContainer from '@/modules/landing/LandingContainer'
+import Head from "next/head";
+import LandingContainer from "@/modules/landing/LandingContainer";
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
       </Head>
       <LandingContainer />
     </>
-  )
+  );
 }

@@ -1,72 +1,105 @@
+import { SocialHandles } from "@/utils/constants";
 import Image from "next/image";
-
-import { styles } from '../../utils';
-import PartnerLogo from '../../assets/icons/app-logo.svg';
-import DiscordLogo from '../../assets/icons/discord.svg';
-import GithubLogo from '../../assets/icons/github.svg';
-import MediumLogo from '../../assets/icons/medium.svg';
-import TwitterLogo from '../../assets/icons/twitter.svg';
-
-const socialHandles = [
-  {
-    icon: DiscordLogo,
-    url: 'https://discord.com'
-  },
-  {
-    icon: GithubLogo,
-    url: 'https://github.com'
-  },
-  {
-    icon: TwitterLogo,
-    url: 'https://twitter.com'
-  },
-  {
-    icon: MediumLogo,
-    url: 'https://medium.com'
-  },
-];
+import Link from "next/link";
 
 const Footer = () => (
-  <div className="footer text-white p-[80px] pb-[50px] flex flex-col justify-center items-center" style={styles.container}>
-    <div className="w-[700px] py-[50px] px-[60px] relative text-black bg-[#e5dede] flex flex-col justify-center items-center rounded-[20px]">
-        <div className="text-[30px] text-bold">Join Waitlist</div>
-      <div className="mt-[30px]">During Phase 1 and 2, DefiLens will only be available to whitelists. If you want to join in a whitelist please feel the form below.</div>
-      <a href="https://forms.gle/N4Gy1x97ZTVvx32F8" target="_blank">
-        <button className='bg-black text-white text-bold h-[50px] rounded-[8px] w-[225px] my-[40px]'>
-          Join WaitList Or FeebBack
-        </button>
-      </a>
-      {/* <div className="absolute left-[calc(50%-35px)] flex flex-col justify-center items-center bottom-[-20px]">
-        <div className="mb-[5px] text-[15px]">Powered By</div>
-        <Image src={PartnerLogo} alt="logo" />
-      </div> */}
-    </div>
-    <div className="flex flex-col justify-center items-center mt-[100px]">
-      <div className="text-[25px] font-semibold">Want to be the first to get DefiLens updates?</div>
-      <div className="flex justify-center items-center my-[40px] text-black">
-        {/* <input className="bg-[#DCDCDC] rounded-[12px] h-[50px] w-[400px] px-[20px]" placeholder="Enter your email" /> */}
-        <a href="https://forms.gle/hEGTMypEkGRYGJdc9" target="_blank">
-          <button className='bg-black text-white text-bold h-[50px] rounded-[8px] w-[225px] ml-[-15px]'>
-          SUBSCRIBE
-          </button>
-        </a>
-      </div>
-    </div>
-    <div className="py-[50px] flex justify-center items-center text-[20px]">
-      <div className="px-[20px]">Company Email : defilens.tech@gmail.com</div>
-      <div className="px-[20px]">Personal Email : radadiyasunny970@gmail.com</div>
-      {/* <div className="px-[20px] border-x">Share Website</div> */}
-      {/* <div className="flex justify-between ml-[20px] items-center">
-      {socialHandles.map((handles, index) => (
-        <div key={index} className="pl-[10px]">
-          <a href={handles.url}>
-            <Image src={handles.icon} alt="logo" className="h-[30px] w-[30px]" />
+  <div className="flex flex-col gap-3 bg-gradient-to-b from-[#1D0D40] to-[#0D0E30] text-white p-3 pt-5">
+    <div className="w-full flex flex-col md:flex-row justify-start items-start gap-3 py-12 px-5">
+      <div className="w-full md:w-[36%] flex flex-col justify-start items-start gap-4">
+        <Link
+          href="/"
+          className="flex flex-row justify-start items-center gap-2 text-xl font-bold"
+        >
+          <svg
+            width="35px"
+            height="35px"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall mui-style-8tazii"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.71542 1.06718C7.89457 0.977606 8.10543 0.977606 8.28458 1.06718L14.6481 4.249C14.8637 4.3568 14.9999 4.57714 14.9999 4.81818C14.9999 5.05922 14.8637 5.27957 14.6481 5.38736L8.28458 8.56918C8.10543 8.65876 7.89457 8.65876 7.71542 8.56918L1.35191 5.38736C1.13632 5.27957 1.00014 5.05922 1.00014 4.81818C1.00014 4.57714 1.13632 4.3568 1.35191 4.249L7.71542 1.06718ZM3.05941 4.81818L8 7.28852L12.9406 4.81818L8 2.34784L3.05941 4.81818ZM1.06732 7.71541C1.22449 7.40106 1.60673 7.27364 1.92108 7.43082L8 10.4703L14.0789 7.43082C14.3933 7.27364 14.7755 7.40106 14.9327 7.71541C15.0899 8.02976 14.9624 8.41201 14.6481 8.56918L8.28458 11.751C8.10543 11.8406 7.89457 11.8406 7.71542 11.751L1.35191 8.56918C1.03756 8.41201 0.910149 8.02976 1.06732 7.71541ZM1.06732 10.8972C1.22449 10.5829 1.60673 10.4555 1.92108 10.6126L8 13.6522L14.0789 10.6126C14.3933 10.4555 14.7755 10.5829 14.9327 10.8972C15.0899 11.2116 14.9624 11.5938 14.6481 11.751L8.28458 14.9328C8.10543 15.0224 7.89457 15.0224 7.71542 14.9328L1.35191 11.751C1.03756 11.5938 0.910149 11.2116 1.06732 10.8972Z"
+              fill="white"
+              stroke="white"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span className="text-white">DefiLens</span>
+        </Link>
+        <div className="flex flex-col justify-start items-start gap-1 text-sm font-medium text-gray-400 px-2">
+          <a
+            href="mailto:defilens.tech@gmail.com"
+            target="_blank"
+            className="pr-4"
+          >
+            <i className="fa-regular fa-envelope fa-lg hover:text-[#DB4437]">
+              defilens.tech@gmail.com
+            </i>
+          </a>
+          <a
+            href="mailto:radadiyasunny970@gmail.com"
+            target="_blank"
+            className="pr-4"
+          >
+            <i className="fa-regular fa-envelope fa-lg hover:text-[#DB4437]">
+              radadiyasunny970@gmail.com
+            </i>
           </a>
         </div>
-      ))}
-      </div> */}
+        <div className="flex justify-start items-start gap-4 px-2">
+          {SocialHandles.map((handles, index) => (
+            <div key={index} className="">
+              <a href={handles.url}>
+                <Image src={handles.icon} alt="" className="h-6 w-6" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
+        <h3 className="text-base md:text-lg font-semibold uppercase">
+          Resources
+        </h3>
+        <div className="flex flex-col justify-start items-start gap-3 text-sm font-medium text-gray-400">
+          <div>Protocols</div>
+          <div>Documentation</div>
+          <div>Medium</div>
+          <div>FAQs</div>
+        </div>
+      </div>
+      <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
+        <h3 className="text-base md:text-lg font-semibold uppercase">
+          Developer
+        </h3>
+        <div className="flex flex-col justify-start items-start gap-3 text-sm font-medium text-gray-400">
+          <div>GitHub</div>
+          <div>Audit Reports</div>
+          <div>Bug Bounty</div>
+        </div>
+      </div>
+      <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
+        <h3 className="text-base md:text-lg font-semibold uppercase">
+          Governance
+        </h3>
+        <div className="flex flex-col justify-start items-start gap-3 text-sm font-medium text-gray-400">
+          <div>Staking</div>
+          <div>Delegation</div>
+          <div>Snapshot</div>
+          <div>Forum</div>
+        </div>
+      </div>
     </div>
-    <div className="text-[20px]">© Copyright DefiLens, Inc.</div>
+    <div className="flex self-center text-gray-300 text-xs md:text-sm font-semibold">
+      © Copyright DefiLens, Inc.
+    </div>
   </div>
 );
 
