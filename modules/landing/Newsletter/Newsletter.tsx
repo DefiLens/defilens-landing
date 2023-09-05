@@ -1,7 +1,7 @@
 const Newsletter = () => (
   <div
     id="newsletter"
-    className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] flex flex-col justify-center items-center gap-5 text-white px-5 md:px-10 lg:px-20 pt-28 pb-14"
+    className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] flex flex-col justify-center items-center gap-5 text-white px-5 md:px-10 lg:px-20 py-8 pt-28"
   >
     <div className="max-w-md md:max-w-xl lg:max-w-3xl flex flex-col justify-center items-center gap-3 py-14 px-8 md:px-16 text-black bg-gray-200  rounded-3xl">
       <div className="text-2xl md:text-3xl text-center font-bold">

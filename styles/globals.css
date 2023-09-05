@@ -4,6 +4,8 @@
 
 @font-face {
   font-family: "Square721 BT Roman";
+  -webkit-font-family: "Square721 BT Roman";
+  -ms-font-family: "Square721 BT Roman";
   src: url("../assets/fonts/square721_bt_roman.ttf");
 }
 
@@ -113,6 +115,30 @@ a {
   }
 }
 
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
 .hero-container {
   display: flex;
   overflow: hidden;
@@ -122,6 +148,18 @@ a {
   -webkit-box-align: center;
   align-items: center;
   background-image: url("../assets/icons/bgOcean.svg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.security-container {
+  display: flex;
+  overflow: hidden;
+  /* position: relative; */
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-image: url("../assets/icons/bgMap.png");
   background-position: center top;
   background-size: cover;
 }

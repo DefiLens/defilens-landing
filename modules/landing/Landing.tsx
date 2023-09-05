@@ -2,17 +2,23 @@ import Layout from "@/shared/layout/LayoutContainer";
 import CapabilitiyContainer from "./Capabilitiy/CapabilitiyContainer";
 import ReviewsContainer from "./Reviews/ReviewsContainer";
 import RoadmapContainer from "./Roadmap/RoadmapContainer";
-import SocialGraph from "./SocialGraph/SocialGraphContainer";
+import SocialGraphContainer from "./SocialGraph/SocialGraphContainer";
+import SecurityContainer from "./Security/SecurityContainer";
+import FaqsContainer from "./Faqs/FaqsContainer";
+import TeamContainer from "./Team/TeamContainer";
 import NewsletterContainer from "./Newsletter/NewsletterContainer";
 
 const Landing = () => (
   <Layout>
     <>
-      <SocialGraph />
+      <SocialGraphContainer />
       {/* <CapabilitiyContainer /> */}
       {/* <ReviewsContainer /> */}
-      {/* <RoadmapContainer /> */}
+      <RoadmapContainer />
+      <SecurityContainer />
+      <TeamContainer />
       <NewsletterContainer />
+      <FaqsContainer />
     </>
   </Layout>
 );

@@ -1,15 +1,18 @@
 const roadmapItems = [
   {
+    number: '0.1',
     title: "Phase 1",
     description:
       "Live MVP with necessary changes. Will live Phase-1 By August 25",
   },
   {
+    number: '0.2',
     title: "Phase 2",
     description:
       "Most famous Defi Protocols and Increase batching strategies in Phase-2 by Sepetember 15.",
   },
   {
+    number: '0.3',
     title: "Phase 3",
     description:
       "Any new Defi protocol can integrate and Propse smart batching strategy by anyone and make open-source in Phase-3 by October-25",
@@ -17,39 +20,36 @@ const roadmapItems = [
 ];
 
 const Roadmap = () => (
-  <div className="roadmap-container p-[50px] text-white bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A]">
-    <div className="text-[30px] text-center font-bold">
-      Product Development Roadmap 2023
+  <div id="roadmap" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 px-5 sm:px-10 md:px-14 lg:px-20 py-20 pt-28">
+  <h1 className="text-xl md:text-2xl lg:text-3xl text-center font-extrabold !leading-snug my-0 sm:my-10">
+    Product Development Roadmap 2023
+  </h1>
+  <div className="flex flex-wrap sm:flex-nowrap justify-between items-start gap-8 mt-5">
+    <div className="w-full sm:w-[40%] flex flex-col justify-center items-center gap-2 md:gap-4">
+      <h3 className="w-[60%] text-gray-200 text-base md:text-lg lg:text-xl xl:text-2xl text-center sm:text-start font-extrabold !leading-snug">
+       Next 2 months Roadmap
+      </h3>
     </div>
-    <div className="m-auto mt-[50px] w-[70%] flex justify-center">
-      <div className="">
-        <div className="text-[36px] text-gray-300 font-bold w-[400px]">
-          Next 2 months Roadmap
-        </div>
-      </div>
-      <div className="h-[450px] border border-dashed border-[#9c9c9c] relative">
-        <div className="absolute text-black bg-[lightgrey] text-[20px] font-medium h-[40px] w-[40px] rounded-[40px] flex justify-center items-center left-[-20px]">
-          1.0
-        </div>
-        <div className="absolute text-black bg-[lightgrey] text-[20px] font-medium h-[40px] w-[40px] rounded-[40px] flex justify-center items-center left-[-20px] top-[140px]">
-          2.0
-        </div>
-        <div className="absolute text-black bg-[lightgrey] text-[20px] font-medium h-[40px] w-[40px] rounded-[40px] flex justify-center items-center left-[-20px] top-[270px]">
-          3.0
-        </div>
-      </div>
-      <div>
-        {roadmapItems.map((items, index) => (
-          <div key={index} className="pl-[50px] mt-[50px]">
-            <div className="text-[25px] text-gray-300 font-semibold">
-              {items.title}
-            </div>
-            <div className="mt-[15px] text-gray-400">{items.description}</div>
-          </div>
-        ))}
-      </div>
+    <div className="w-full sm:w-[50%] mx-8">
+      <ol className="relative text-gray-300 border-l-2 border-dotted border-secondary-300">
+        {roadmapItems?.length > 0 &&
+          roadmapItems.map((item :any) => (
+            <li key={item?.title} className="pb-20 pl-10">
+              <div className="absolute flex items-center justify-center w-10 h-10 bg-gray-300 text-[#141533] font-semibold rounded-full -left-5">
+                {item?.number}
+              </div>
+              <h3 className="font-semibold text-base text-gray-300 pt-2">
+                {item?.title}
+              </h3>
+              <p className="w-[65%] lg:w-[50%] font-normal text-sm text-gray-400 !leading-relaxed pt-3">
+                {item?.description}
+              </p>
+            </li>
+          ))}
+      </ol>
     </div>
   </div>
+</div>
 );
 
 export default Roadmap;

@@ -56,7 +56,7 @@ const Footer = () => (
         <div className="flex justify-start items-start gap-4 px-2">
           {SocialHandles.map((handles, index) => (
             <div key={index} className="">
-              <a href={handles.url}>
+              <a href={handles.url} target="_blank">
                 <Image src={handles.icon} alt="" className="h-6 w-6" />
               </a>
             </div>
