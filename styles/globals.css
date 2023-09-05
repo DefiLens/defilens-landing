@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Square721 BT Roman";
-  -webkit-font-family: "Square721 BT Roman";
-  -ms-font-family: "Square721 BT Roman";
+  font-family: "Square721 BT Roman"; /* Standard syntax */
+  -webkit-font-family: "Square721 BT Roman"; /* Safari */
+  -ms-font-family: "Square721 BT Roman"; /* IE 10 and IE 11 */
   src: url("../assets/fonts/square721_bt_roman.ttf");
 }
 

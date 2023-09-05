@@ -5,10 +5,10 @@ import { NavigationList } from "@/utils/constants";
 import Link from "next/link";
 
 const Header = ({ handleMenubar, menu, setMenu }: any) => (
-  <div className="header w-full bg-[#0D0E30] fixed top-0 right-0 left-0 z-50 shadow-2xl shadow-2xl-[#0D0E30] h-16 px-5 py-2 flex justify-between">
+  <div className="header w-full bg-[#0D0E30] fixed top-0 right-0 left-0 z-50 shadow-2xl shadow-2xl-[#0D0E30] h-16 px-5 py-3 pt-6 flex justify-between">
     <Link
       href="/"
-      className="w-full md:w-[33%] flex flex-row justify-start items-center gap-2 text-xl md:text-2xl font-bold"
+      className="w-full md:w-[33%] flex flex-row justify-start items-center gap-2 text-xl md:text-2xl font-bold pl-8"
     >
       <svg
         width="45px"
@@ -49,11 +49,11 @@ const Header = ({ handleMenubar, menu, setMenu }: any) => (
           NavigationList?.map((item) => (
             <li
               key={item.key}
-              className="flex justify-center items-center gap-3"
+              className="flex justify-center items-center gap-3 px-3"
             >
               <a
                 href={`/#${item?.key}`}
-                className="text-md md:text-base lg:text-lg text-white hover:text-gray-400 font-semibold px-2 transition duration-500 delay-100"
+                className="text-md md:text-base text-white hover:text-gray-400 font-semibold px-2 transition duration-500 delay-100"
               >
                 {item?.name}
               </a>
