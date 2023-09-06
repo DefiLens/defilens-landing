@@ -248,7 +248,7 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 960px) {
   .header nav .links {
     position: fixed;
     z-index: 9;

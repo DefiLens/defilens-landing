@@ -1,17 +1,4 @@
-const reviewsItems = [
-  {
-    description: '“Defi activities increases day by day and we can show them to everyone in a unique way. So Defilens can be a game changer and it will be a new way to see Defi.”',
-    reviewer: 'Review 1'
-  },
-  {
-    description: '“By creating discussion platform for defi we can create new possibilities and new innovations for future”',
-    reviewer: 'Review 2'
-  },
-  {
-    description: '“It will be easy to trade copy and user can follow their defi whales activities.”',
-    reviewer: 'Review 3'
-  },
-]
+import { reviewsItems } from "@/utils/constants";
 
 const Reviews = () => (
   <div 
@@ -20,7 +7,7 @@ const Reviews = () => (
   >
     <div className="text-bold  text-[30px] text-center" >Our Testimonials</div>
     <div className="flex mt-[50px]">
-      {
+      {reviewsItems.length > 0 &&
         reviewsItems.map((items, index) => (
           <div key={index} className="p-[30px] mx-[20px] rounded-[16px] bg-white text-black flex flex-col flex-1">
             <div>{items.description}</div>

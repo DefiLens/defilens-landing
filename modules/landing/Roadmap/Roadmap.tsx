@@ -1,23 +1,4 @@
-const roadmapItems = [
-  {
-    number: '0.1',
-    title: "Phase 1",
-    description:
-      "Live MVP with necessary changes. Will live Phase-1 By August 25",
-  },
-  {
-    number: '0.2',
-    title: "Phase 2",
-    description:
-      "Most famous Defi Protocols and Increase batching strategies in Phase-2 by Sepetember 15.",
-  },
-  {
-    number: '0.3',
-    title: "Phase 3",
-    description:
-      "Any new Defi protocol can integrate and Propse smart batching strategy by anyone and make open-source in Phase-3 by October-25",
-  },
-];
+import { roadmapItems } from "@/utils/constants";
 
 const Roadmap = () => (
   <div id="roadmap" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 px-5 sm:px-10 md:px-14 lg:px-20 py-20 pt-28">

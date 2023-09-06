@@ -34,7 +34,7 @@ const Header = ({ handleMenubar, menu, setMenu }: any) => (
       <span className="text-white">DefiLens</span>
     </Link>
 
-    <nav className="w-[33%] flex justify-end md:justify-center items-center">
+    <nav className="w-[33%] flex justify-end lg:justify-center items-center">
       <input
         type="checkbox"
         id="nav-toggle"
@@ -67,7 +67,7 @@ const Header = ({ handleMenubar, menu, setMenu }: any) => (
         <div className="line" />
       </label>
     </nav>
-    <div className="hidden md:block md:w-[33%]" />
+    <div className="hidden lg:block md:w-[33%]" />
   </div>
 );
 
