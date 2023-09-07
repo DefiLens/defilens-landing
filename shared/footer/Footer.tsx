@@ -39,18 +39,14 @@ const Footer = () => (
             target="_blank"
             className="pr-4"
           >
-            <i className="fa-regular fa-envelope fa-lg hover:text-[#DB4437]">
-              defilens.tech@gmail.com
-            </i>
+            defilens.tech@gmail.com
           </a>
           <a
             href="mailto:radadiyasunny970@gmail.com"
             target="_blank"
             className="pr-4"
           >
-            <i className="fa-regular fa-envelope fa-lg hover:text-[#DB4437]">
-              radadiyasunny970@gmail.com
-            </i>
+            radadiyasunny970@gmail.com
           </a>
         </div>
         <div className="flex justify-start items-start gap-4 px-2">

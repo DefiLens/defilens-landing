@@ -13,14 +13,14 @@ const Security = () => (
         <a
             href="#"
             target="_blank"
-            className="flex justify-center items-center gap-1 border-b-4 border-purple-900 hover:border-blue-900 transition duration-300 font-medium md:font-semibold text-base md:text-lg lg:text-xl bg-gradient-to-l hover:bg-gradient-to-r from-purple-600 via-blue-500 to-violet-600 rounded-full shadow-md py-2 md:py-3 px-5 md:px-10"
+            className="flex justify-center items-center gap-1 border-b-4 border-purple-900 hover:border-blue-900 transition duration-300 font-medium md:font-semibold text-base md:text-lg lg:text-xl bg-gradient-to-l hover:bg-gradient-to-r from-purple-600 via-blue-500 to-purple-900 rounded-full shadow-md py-3 md:py-4 px-8 md:px-12"
         >
             Audit Reports
         </a>
         <a
             href="#"
             target="_blank"
-            className="flex justify-center items-center gap-1 border-b-4 border-purple-900 hover:border-blue-900 transition duration-300 font-medium md:font-semibold text-base md:text-lg lg:text-xl bg-gradient-to-r hover:bg-gradient-to-l from-purple-600 via-blue-500 to-violet-600 rounded-full shadow-md py-2 md:py-3 px-5 md:px-10"
+            className="flex justify-center items-center gap-1 border-b-4 border-purple-900 hover:border-blue-900 transition duration-300 font-medium md:font-semibold text-base md:text-lg lg:text-xl bg-gradient-to-r hover:bg-gradient-to-l from-purple-600 via-blue-500 to-purple-900 rounded-full shadow-md py-3 md:py-4 px-8 md:px-12"
         >
         Bug Bounty
         </a>

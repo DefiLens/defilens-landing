@@ -169,10 +169,10 @@ export const OurTeam = [
     position: "Founder",
   },
   {
-    key : "sunny-radadiya",
+    key : "paril-beladiya",
     icon: team2,
-    name: "Sunny Radadiya",
-    position: "Founder",
+    name: "Paril Beladiya",
+    position: "Full Stack Dev",
   },
 ];
 
