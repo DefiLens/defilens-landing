@@ -69,10 +69,10 @@ const Footer = () => (
           Resources
         </h3>
         <div className="flex flex-col justify-start items-start gap-3 text-sm font-medium text-gray-400">
-          <div>Protocols</div>
-          <div>Documentation</div>
-          <div>Medium</div>
-          <div>FAQs</div>
+          <div><a href="https://app.defilens.tech" target="_blank">App</a></div>
+          <div><a href="https://furry-crafter-322.notion.site/DefiLens-Details-4f47c7aa7cc74d26855e3572ab1a6efb?pvs=4" target="_blank">Documentation</a></div>
+          {/* <div>Medium</div> */}
+          {/* <div>FAQs</div> */}
         </div>
       </div>
       <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
@@ -80,12 +80,13 @@ const Footer = () => (
           Developer
         </h3>
         <div className="flex flex-col justify-start items-start gap-3 text-sm font-medium text-gray-400">
-          <div>GitHub</div>
-          <div>Audit Reports</div>
-          <div>Bug Bounty</div>
+
+          <div><a href="https://github.com/DefiLens" target="_blank">GitHub</a></div>
+          {/* <div>Audit Reports</div>
+          <div>Bug Bounty</div> */}
         </div>
       </div>
-      <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
+      {/* <div className="w-full md:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-8">
         <h3 className="text-base md:text-lg font-semibold uppercase">
           Governance
         </h3>
@@ -95,7 +96,7 @@ const Footer = () => (
           <div>Snapshot</div>
           <div>Forum</div>
         </div>
-      </div>
+      </div> */}
     </div>
     <div className="flex self-center text-gray-300 text-xs md:text-sm font-semibold">
       © Copyright DefiLens, Inc.

@@ -12,7 +12,7 @@ const Features = () => (
             FeaturesList.map((item:any, index) => (
               index === index % 2 && (
               <div key={item.key} className="h-full flex flex-col justify-start items-start gap-5 bg-gradient-to-br from-[#0B0B21] via-[#0E0F25] to-[#11122d] shadow shadow-[#282935] rounded-xl p-5 md:p-8">
-                <Image src={item.icon} className=""  alt="icon" />
+                {/* <Image src={item.icon} className=""  alt="icon" /> */}
                 <div className="flex flex-col justify-start items-start gap-4 my-5">
                   <div className="text-gray-200 text-xl md:text-2xl lg:text-3xl font-black">{item.title}</div>
                   <div className="text-gray-400 text-xs md:text-sm lg:text-base font-semibold !leading-6">{item.description}</div>
@@ -27,7 +27,7 @@ const Features = () => (
             FeaturesList.map((item:any, index) => (
               index !== index % 2 && (
                 <div key={item.key} className="h-full flex flex-col justify-start items-start gap-5 bg-gradient-to-br from-[#0B0B21] via-[#0E0F25] to-[#11122d] shadow shadow-[#282935] rounded-xl p-5 md:p-8">
-                  <Image src={item.icon} className=""  alt="icon" />
+                  {/* <Image src={item.icon} className=""  alt="icon" /> */}
                   <div className="flex flex-col justify-start items-start gap-4 my-5">
                     <div className="text-gray-200 text-xl md:text-2xl lg:text-3xl font-black">{item.title}</div>
                     <div className="text-gray-400 text-xs md:text-sm lg:text-base font-semibold !leading-6">{item.description}</div>
