@@ -34,7 +34,7 @@ import invetor3 from "../assets/icons/invetor3.svg"
 
 export const NavigationList = [
     {
-        name: "How To Use",
+        name: "Use",
         key: "HowToUse",
     },
     {
