@@ -2,7 +2,7 @@ import { roadmapItems } from "@/utils/constants";
 
 const Roadmap = () => (
   <div id="roadmap" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 px-5 sm:px-10 md:px-14 lg:px-20 py-20 pt-28">
-  <h1 className="text-xl md:text-2xl lg:text-3xl text-center font-extrabold !leading-snug my-0 sm:my-10">
+  <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-extrabold !leading-snug my-0 sm:my-10">
     Product Development Roadmap 2023
   </h1>
   <div className="flex flex-wrap sm:flex-nowrap justify-between items-start gap-8 mt-5">
