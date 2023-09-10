@@ -6,7 +6,7 @@ const SocialGraph = () => (
   <div className="hero-container text-white min-h-[calc(100vh-62px)] bg-[#111827] flex flex-col justify-center items-center text-center">
     <div className="w-full flex flex-col justify-center items-center gap-5 p-5 sm:p-10 md:p-14 lg:p-20 pt-14 md:pt-24 lg:pt-28">
       <h1 className="text-center text-xl md:text-2xl lg:text-6xl font-extrabold lg:font-black">
-        Simplifying Defi Trading Experiencey
+        Simplifying Defi Trading Experience
       </h1>
       <div className="animate-heading text-center text-4xl md:text-6xl lg:text-6xl font-extrabold lg:font-black py-6">
         Smart Batching via one-click
