@@ -46,6 +46,9 @@ const SocialGraph = () => (
   <div className="hero-container text-white h-full bg-[#111827] flex flex-col justify-center items-center text-center">
     <div className="w-full flex flex-col justify-center items-center gap-5 p-8 pt-32 sm:p-20 sm:pt-36 md:p-24 md:pt-32 lg:p-40 lg:pt-36 xl:p-56 xl:py-40">
       <h1 className="text-center text-xl md:text-2xl lg:text-5xl font-bold !leading-snug">
+  <div className="hero-container text-white min-h-[calc(100vh-62px)] bg-[#111827] flex flex-col justify-center items-center text-center">
+    <div className="w-full flex flex-col justify-center items-center gap-5 p-5 sm:p-10 md:p-14 lg:p-20 pt-14 md:pt-24 lg:pt-28">
+      <h1 className="text-center text-xl md:text-2xl lg:text-6xl font-extrabold lg:font-black">
         Simplifying Defi Trading Experience
       </h1>
       <div className="animate-heading text-center text-2xl md:text-3xl lg:text-5xl font-semibold py-3 md:py-5 !leading-snug">
