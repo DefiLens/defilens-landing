@@ -2,12 +2,12 @@ import { InvestorsList } from "@/utils/constants";
 import Image from "next/image";
 
 const Investors = () => (
-    <div id="investors" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 px-5 sm:px-10 md:px-14 lg:px-20 py-20 pt-28">
+    <div id="investors" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 px-5 sm:px-10 md:px-14 lg:px-20 py-28">
        <div className="flex flex-col justify-center items-center gap-10 text-center">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
         Investors
       </h1>
-      <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+      <h2 className="font-[LendingFont-Light] font-bold text-sm sm:text-base md:text-lg lg:text-xl">
          Backed by the most prestigious Investors in the crypto industry
       </h2>
      </div>

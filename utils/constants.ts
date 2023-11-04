@@ -13,7 +13,7 @@ import kava from "../assets/icons/kava.svg"
 import optimism from "../assets/icons/optimism.svg"
 import polygon from "../assets/icons/polygon.svg"
 import team1 from "../assets/icons/team1.jpg"
-import team2 from "../assets/icons/team2.jpeg"
+import team2 from "../assets/icons/team2.jpg"
 import feature1 from "../assets/icons/feature1.svg"
 import feature2 from "../assets/icons/feature2.svg"
 import feature3 from "../assets/icons/feature3.svg"
@@ -131,19 +131,19 @@ export const BlockchainList = [
 
 export const roadmapItems = [
     {
-        number: "0.1",
+        number: "1.0",
         title: "Phase 1",
         description:
             "Live MVP with necessary changes. Will live Phase-1 By August 25",
     },
     {
-        number: "0.2",
+        number: "2.0",
         title: "Phase 2",
         description:
             "Most famous Defi Protocols and Increase batching strategies in Phase-2 by Sepetember 15.",
     },
     {
-        number: "0.3",
+        number: "3.0",
         title: "Phase 3",
         description:
             "Any new Defi protocol can integrate and Propse smart batching strategy by anyone and make open-source in Phase-3 by October-25",

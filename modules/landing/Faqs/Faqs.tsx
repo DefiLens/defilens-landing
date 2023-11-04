@@ -13,7 +13,7 @@ const Faqs = ({
 }:any) => (
     <div
     id="faqs"
-    className="w-full bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] flex flex-col justify-center items-center gap-5 text-white px-5 md:px-10 lg:px-20 py-20 pt-20"
+    className="w-full bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] flex flex-col justify-center items-center gap-5 text-white p-8 pt-32 sm:p-20 sm:pt-36 md:p-24 md:pt-32 lg:p-40 lg:pt-36 xl:p-56 xl:py-20"
     >
       <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold">
           FAQs
@@ -29,13 +29,13 @@ const Faqs = ({
                   animate={customAnimation}
               >
                   <AccordionHeader
-                  onClick={() => handleOpen(item?.id)}
-                  className="text-sm md:text-base text-gray-300 hover:text-gray-400 font-bold border-b-2 border-gray-400 shadow-sm rounded-lg px-5 py-2 my-2"
+                    onClick={() => handleOpen(item?.id)}
+                    className="font-[LendingFont-Light] font-bold text-base md:text-lg text-gray-300 hover:text-gray-400 border-b-2 border-gray-400 shadow-sm rounded-lg px-5 py-2 mt-5"
                   >
-                  {item.title}
+                    {item.title}
                   </AccordionHeader>
-                  <AccordionBody className="text-xs md:text-sm text-gray-300 font-medium px-8 py-2">
-                  {item.content}
+                  <AccordionBody className="font-[LendingFont-Light] font-bold text-sm md:text-base text-gray-50 font-medium px-8 py-3">
+                   {item.content}
                   </AccordionBody>
               </Accordion>
               ))}
