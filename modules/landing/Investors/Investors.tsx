@@ -7,7 +7,7 @@ const Investors = () => (
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
         Investors
       </h1>
-      <h2 className="font-[LendingFont-Light] font-bold text-sm sm:text-base md:text-lg lg:text-xl">
+      <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
          Backed by the most prestigious Investors in the crypto industry
       </h2>
      </div>

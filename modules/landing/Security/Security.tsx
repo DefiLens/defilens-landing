@@ -6,7 +6,7 @@ const Security = () => (
       <h1 className="text-center text-gray-200 text-3xl md:text-4xl lg:text-5xl font-extrabold ">
         Security
       </h1>
-      <h2 className="font-[LendingFont-Light] font-bold  text-center text-gray-400 text-base md:text-lg lg:text-xl mt-3">
+      <h2 className="text-center text-gray-400 font-semibold text-base md:text-lg lg:text-xl mt-3">
          Adhering to the best practice to build security-focused protocols with checks and balances that minimize potential risks.
       </h2>
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-6 sm:mt-10">

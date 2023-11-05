@@ -7,7 +7,7 @@ const Partners = () => (
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
         Partners
       </h1>
-      <h2 className="font-[LendingFont-Light] font-bold text-base md:text-lg lg:text-xl font-semibold">
+      <h2 className="text-base md:text-lg lg:text-xl font-semibold">
          Backed by the most prestigious partners in the crypto industry
       </h2>
      </div>

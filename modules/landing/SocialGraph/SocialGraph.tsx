@@ -44,14 +44,14 @@ const SocialGraph = () => (
       </div>
     </div>
     <div className="hero-container text-white min-h-[calc(100vh-62px)] bg-[#111827] flex flex-col justify-center items-center text-center">
-      <div className="w-full flex flex-col justify-center items-center gap-5 p-5 sm:p-10 md:p-14 lg:p-20 pt-14 md:pt-24 lg:pt-28">
+      <div className="w-full flex flex-col justify-center items-center gap-5  p-8 pt-32 sm:p-20 sm:pt-36 md:p-24 md:pt-32 lg:p-40 lg:pt-36 xl:p-56 xl:py-40">
         <h1 className="text-center text-xl md:text-2xl lg:text-6xl font-extrabold lg:font-black">
           Simplifying Defi Trading Experience
         </h1>
         <div className="animate-heading text-center text-2xl md:text-3xl lg:text-5xl font-semibold py-3 md:py-5 !leading-snug">
           Smart Batching via one-click
         </div>
-        <h3 className="font-[LendingFont-Light] text-center text-sm md:text-base lg:text-lg px-3 md:px-12 !leading-relaxed">
+        <h3 className="text-center text-sm md:text-base lg:text-lg font-medium px-3 md:px-12 !leading-relaxed">
           DefiLens is pioneering a platform that streamlines trading activities.
           To offering the ease of trading experience and swift portfolio
           management to users, Defilens provide a solutions like cross-chain

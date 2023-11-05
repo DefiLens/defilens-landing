@@ -18,7 +18,7 @@ const Team = () => (
               <Image src={item.icon} className="bg-cover w-40 h-40 md:w-60 md:h-60 rounded-sm rounded-tr-[45px] rounded-bl-[45px]" alt="profile" />
               <div className="flex flex-col justify-start items-start gap-1 p-4 pt-1">
               <div className="text-base md:text-lg text-gray-100 font-bold">{item.name}</div>
-              <div className="font-[LendingFont-Light] font-bold text-xs md:text-sm text-gray-400">{item.position}</div>
+              <div className="text-xs md:text-sm text-gray-400 font-semibold">{item.position}</div>
               </div>
             </div>
           ))}

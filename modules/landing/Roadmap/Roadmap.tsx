@@ -19,10 +19,10 @@ const Roadmap = () => (
               <div className="absolute flex items-center justify-center w-10 h-10 bg-gray-300 text-[#141533] font-semibold rounded-full -left-5">
                 {item?.number}
               </div>
-              <h3 className="font-[LendingFont-Light] font-black text-base md:text-xl text-gray-300 pt-2">
+              <h3 className="text-base md:text-xl text-gray-300 font-extrabold pt-2">
                 {item?.title}
               </h3>
-              <p className="w-[65%] lg:w-[55%] font-[LendingFont-Light] font-bold text-smw md:text-base text-gray-400 !leading-relaxed pt-3">
+              <p className="w-[65%] lg:w-[55%] font-semibold text-smw md:text-base text-gray-400 !leading-relaxed pt-3">
                 {item?.description}
               </p>
             </li>

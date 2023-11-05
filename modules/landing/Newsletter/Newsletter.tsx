@@ -7,12 +7,12 @@ const Newsletter = () => (
     <div className="w-full md:w-[60%] flex justify-start items-center bg-white rounded-full p-1">
       <input
         placeholder="Enter yor Email Address"
-        className="w-full outline-none placeholder-slate-900 text-black text-xs sm:text-sm md:text-base lg:text-lg px-5 md:px-8"
+        className="w-full outline-none placeholder-gray-500 text-black font-medium text-xs sm:text-sm md:text-base lg:text-lg px-5 md:px-8"
       />
       <a
         href="https://forms.gle/hEGTMypEkGRYGJdc9"
         target="_blank"
-        className="font-[LendingFont-Light] font-bold w-40 bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] hover:bg-gray-300  transition duration-300 text-white text-sm md:text-base rounded-full py-3 px-5 md:px-8"
+        className="w-40 bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] hover:bg-gray-300 transition duration-300 text-white text-sm md:text-base font-semibold rounded-full py-3 px-5 md:px-8"
       >
         SUBSCRIBE
       </a>

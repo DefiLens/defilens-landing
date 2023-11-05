@@ -30,11 +30,11 @@ const Faqs = ({
               >
                   <AccordionHeader
                     onClick={() => handleOpen(item?.id)}
-                    className="font-[LendingFont-Light] font-bold text-base md:text-lg text-gray-300 hover:text-gray-400 border-b-2 border-gray-400 shadow-sm rounded-lg px-5 py-2 mt-5"
+                    className="text-base md:text-lg text-gray-300 font-semibold hover:text-gray-400 border-b-2 border-gray-400 shadow-sm rounded-lg px-5 py-2 mt-5"
                   >
                     {item.title}
                   </AccordionHeader>
-                  <AccordionBody className="font-[LendingFont-Light] font-bold text-sm md:text-base text-gray-50 font-medium px-8 py-3">
+                  <AccordionBody className="text-sm md:text-base text-gray-50 font-medium px-8 py-3">
                    {item.content}
                   </AccordionBody>
               </Accordion>
