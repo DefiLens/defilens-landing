@@ -79,7 +79,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: Inter, sans-serif;
+  font-family: Inter, sans-serif !important;
 }
 
 html,

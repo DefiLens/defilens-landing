@@ -16,7 +16,7 @@ const Team = () => (
           OurTeam.map((item:any)=> (
             <div key={item.key} className="bg-[#22223b] shadow shadow-gray-500 flex flex-col justify-center items-start gap-2 rounded-sm rounded-tr-[45px] rounded-bl-[45px] p-2">
               <Image src={item.icon} className="bg-cover w-40 h-40 md:w-60 md:h-60 rounded-sm rounded-tr-[45px] rounded-bl-[45px]" alt="profile" />
-              <div className="flex flex-col justify-start items-start gap-1 p-4 pt-1">
+              <div className="flex flex-col justify-start items-start gap-1 px-6 py-3">
               <div className="text-base md:text-lg text-gray-100 font-bold">{item.name}</div>
               <div className="text-xs md:text-sm text-gray-400 font-semibold">{item.position}</div>
               </div>

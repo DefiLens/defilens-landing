@@ -37,7 +37,7 @@ const SocialGraph = () => (
         <a
             href="https://app.defilens.tech/"
             target="_blank"
-            className="flex justify-center items-center gap-1 text-sm text-center md:text-base bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-lg shadow-md py-2 sm:py-3 px-4 sm:px-7"
+            className="flex justify-center items-center gap-1 text-sm text-center md:text-base font-semibold  bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-lg shadow-md py-2 sm:py-3 px-4 sm:px-7"
           >
             Launch App
           </a>
@@ -61,7 +61,7 @@ const SocialGraph = () => (
         <a
           href="https://app.defilens.tech/"
           target="_blank"
-          className="flex justify-center items-center gap-1 border-b-4 border-purple-900 transition duration-300 text-base md:text-lg bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-full shadow-md py-2 sm:py-3 px-5 sm:px-8 mt-6 md:mt-8"
+          className="flex justify-center items-center gap-1 border-b-4 border-purple-900 transition duration-300 text-base md:text-lg font-semibold bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-full shadow-md py-2 sm:py-3 px-5 sm:px-8 mt-6 md:mt-8"
         >
           Launch APP <HiArrowNarrowRight size="20px" />
         </a>

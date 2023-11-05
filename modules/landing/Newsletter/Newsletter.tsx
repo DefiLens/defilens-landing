@@ -6,7 +6,7 @@ const Newsletter = () => (
 
     <div className="w-full md:w-[60%] flex justify-start items-center bg-white rounded-full p-1">
       <input
-        placeholder="Enter yor Email Address"
+        placeholder="Enter your email address"
         className="w-full outline-none placeholder-gray-500 text-black font-medium text-xs sm:text-sm md:text-base lg:text-lg px-5 md:px-8"
       />
       <a
