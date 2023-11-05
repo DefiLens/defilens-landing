@@ -18,15 +18,15 @@ const Landing = () => (
       <SocialGraphContainer />
       <HowToUseContainer />
       <FeaturesContainer />
-      {/* <InvestorsContainer /> */}
-      {/* <SecurityContainer /> */}
-      {/* <PartnersContainer /> */}
+      <InvestorsContainer />
+      <SecurityContainer />
+      <PartnersContainer />
       {/* <CapabilitiyContainer /> */}
       {/* <ReviewsContainer /> */}
-      {/* <RoadmapContainer /> */}
+      <RoadmapContainer />
       <TeamContainer />
       <NewsletterContainer />
-      {/* <FaqsContainer /> */}
+      <FaqsContainer />
     </>
   </Layout>
 );

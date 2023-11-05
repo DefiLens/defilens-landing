@@ -5,14 +5,14 @@ import { NavigationList } from "@/utils/constants";
 import Link from "next/link";
 
 const Header = ({ handleMenubar, menu, setMenu }: any) => (
-  <div className="header w-full bg-[#0D0E30] fixed top-0 right-0 left-0 z-50 shadow-2xl shadow-2xl-[#0D0E30] h-16 px-5 py-3 pt-6 flex justify-between">
+  <div className="header w-full bg-transparent absolute z-50 shadow-2xl shadow-2xl-[#0D0E30] h-16 px-20 py-3 mt-5 flex justify-between items-center">
     <Link
       href="/"
-      className="w-full md:w-[33%] flex flex-row justify-start items-center gap-2 text-xl md:text-2xl font-bold pl-8"
+      className="w-auto flex flex-row justify-start items-center gap-2 text-xl md:text-2xl font-bold"
     >
       <svg
-        width="45px"
-        height="45px"
+        width="40px"
+        height="40px"
         viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Header = ({ handleMenubar, menu, setMenu }: any) => (
       <span className="text-white">DefiLens</span>
     </Link>
 
-    <nav className="w-[33%] flex justify-end lg:justify-center items-center">
+    {/* <nav className="w-[33%] flex justify-end lg:justify-center items-center">
       <input
         type="checkbox"
         id="nav-toggle"
@@ -66,8 +66,17 @@ const Header = ({ handleMenubar, menu, setMenu }: any) => (
         <div className="line" />
         <div className="line" />
       </label>
-    </nav>
-    <div className="hidden lg:block md:w-[33%]" />
+    </nav> */}
+    {/* <div className="hidden lg:block md:w-[33%]" /> */}
+    <div className="text-white">
+      <a
+          href="https://app.defilens.tech/"
+          target="_blank"
+          className="flex justify-center items-center gap-1 text-sm md:text-base bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-lg shadow-md py-1 px-5"
+        >
+          Launch App
+        </a>
+    </div>
   </div>
 );
 
