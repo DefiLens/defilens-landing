@@ -26,7 +26,7 @@ const Landing = () => (
       {/* <RoadmapContainer /> */}
       <TeamContainer />
       <NewsletterContainer />
-      <FaqsContainer />
+      {/* <FaqsContainer /> */}
     </>
   </Layout>
 );

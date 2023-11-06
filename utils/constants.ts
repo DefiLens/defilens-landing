@@ -14,15 +14,23 @@ import optimism from "../assets/icons/optimism.svg"
 import polygon from "../assets/icons/polygon.svg"
 import team1 from "../assets/icons/team1.jpg"
 import team2 from "../assets/icons/team2.jpg"
-import feature1 from "../assets/icons/feature1.svg"
-import feature2 from "../assets/icons/feature2.svg"
-import feature3 from "../assets/icons/feature3.svg"
-import feature4 from "../assets/icons/feature4.svg"
-import feature5 from "../assets/icons/feature5.svg"
-import f1 from "../assets/icons/f1.svg"
-import f2 from "../assets/icons/f2.svg"
-import f3 from "../assets/icons/f3.svg"
-import f4 from "../assets/icons/f4.svg"
+// import feature1 from "../assets/icons/feature1.svg"
+// import feature2 from "../assets/icons/feature2.svg"
+// import feature3 from "../assets/icons/feature3.svg"
+// import feature4 from "../assets/icons/feature4.svg"
+// import feature5 from "../assets/icons/feature5.svg"
+import feature1 from "../assets/icons/howtouse/anynetwork.png"
+import feature2 from "../assets/icons/howtouse/prefer.png"
+import feature3 from "../assets/icons/howtouse/batch.png"
+import feature4 from "../assets/icons/howtouse/cbatch.png"
+import f1 from "../assets/icons/features/batch.png"
+import f2 from "../assets/icons/features/refinance.png"
+import f3 from "../assets/icons/features/lending.png"
+import f4 from "../assets/icons/features/stop.png"
+// import f1 from "../assets/icons/f1.svg"
+// import f2 from "../assets/icons/f2.svg"
+// import f3 from "../assets/icons/f3.svg"
+// import f4 from "../assets/icons/f4.svg"
 import partner1 from "../assets/icons/partner1.svg"
 import partner2 from "../assets/icons/partner2.svg"
 import partner3 from "../assets/icons/partner3.svg"
@@ -189,14 +197,14 @@ export const HowToUseList = [
         icon: feature1,
         title: "Any EVM Network",
         description:
-            "One can lend, swap, bridge, refinance position across many networks.",
+            "One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.",
     },
     {
-        key: "lending",
+        key: "Preferred Network",
         icon: feature2,
-        title: "Lending",
+        title: "Preferred Network",
         description:
-            "Enabling Cross-chain lending in one click. Users select source and destination network, Destination Defi protocol and amount to invest and just single click and Done.",
+            `Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.`,
     },
     {
         key: "batching transactions",
@@ -206,12 +214,19 @@ export const HowToUseList = [
             "One can selecte multiple transaction into one and execute in just single click and Done.",
     },
     {
-        key: "refinance defi positions",
+        key: "cross-chain batching",
         icon: feature4,
-        title: "Refinance Defi Positions",
+        title: "Cross-Chain Batching",
         description:
-            "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+            "Even one can create multiple cross-chain trading batch and excute in single shot.",
     },
+    // {
+    //     key: "refinance defi positions",
+    //     icon: feature4,
+    //     title: "Refinance Defi Positions",
+    //     description:
+    //         "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+    // },
     // {
     //   key : "pos-staking",
     //   icon: feature5,
