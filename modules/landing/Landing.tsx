@@ -24,7 +24,7 @@ const Landing = () => (
       {/* <CapabilitiyContainer /> */}
       {/* <ReviewsContainer /> */}
       {/* <RoadmapContainer /> */}
-      <TeamContainer />
+      {/* <TeamContainer /> */}
       <NewsletterContainer />
       {/* <FaqsContainer /> */}
     </>
