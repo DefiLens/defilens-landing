@@ -1,9 +1,13 @@
 import Layout from "@/shared/Layout/LayoutContainer";
 import HeroContainer from "./Hero/HeroContainer";
+import HeaderContainer from "../../shared/Header/HeaderContainer";
 
 const Landing = () => (
   <Layout>
-    <HeroContainer />
+    <>
+      <HeaderContainer />
+      <HeroContainer />
+    </>
   </Layout>
 );
 

@@ -1,10 +1,10 @@
-import { hero } from "@/assets/images"
 import Image from "next/image"
-import {HiArrowNarrowRight} from "react-icons/hi"
+import { hero } from "@/assets/images"
+import { HiArrowNarrowRight } from "react-icons/hi"
 
 const Hero = () => (
-    <div className="hero-container min-h-screen flex flex-col lg:flex-row justify-start items-start text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100 p-8 py-32 sm:p-20 sm:py-32 md:p-32 lg:p-38 lg:py-32 2xl:p-40 2xl:py-32">
-        <div className="flex flex-col justify-start items-start gap-5">
+    <div className="hero-container flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100 p-8 py-28 sm:p-20 sm:py-28 md:p-32 md:py-40 lg:p-38 lg:py-40 2xl:p-40 2xl:py-44">
+        <div className="flex flex-col justify-center items-start gap-5">
             <h1 className="text-start text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight">
                 Simplifying Defi Trading Experience Smart Batching via
                 <span className="px-3 text-primary-700">
