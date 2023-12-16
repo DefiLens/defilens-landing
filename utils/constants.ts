@@ -303,3 +303,30 @@ export const InvestorsList = [
         icon: invetor3,
     },
 ]
+
+export const UpcomingList = [
+    {
+        id: 1,
+        icon: f1,
+        title: "Batching Transaction",
+        description: "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
+    },
+    {
+        id: 2,
+        icon: f2,
+        title: "Cross-Chain Lending",
+        description: "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+    },
+    {
+        id: 3,
+        icon: f3,
+        title: "Refinance Defi Positions",
+        description: "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+    },
+    {
+        id: 4,
+        icon: f4,
+        title: "One Stop Defi Solution",
+        description: "DefiLens covering wide range of Defi Integrations with smooth execution",
+    },
+]

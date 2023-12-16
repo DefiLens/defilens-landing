@@ -11,12 +11,14 @@ import SecurityContainer from "./Security/SecurityContainer";
 import FaqsContainer from "./Faqs/FaqsContainer";
 import TeamContainer from "./Team/TeamContainer";
 import NewsletterContainer from "./Newsletter/NewsletterContainer";
+import UpcomingContainer from "./Upcoming/UpcomingContainer";
 
 const Landing = () => (
   <Layout>
     <>
       <SocialGraphContainer />
       <HowToUseContainer />
+      <UpcomingContainer />
       <FeaturesContainer />
       {/* <InvestorsContainer />
       <SecurityContainer />
