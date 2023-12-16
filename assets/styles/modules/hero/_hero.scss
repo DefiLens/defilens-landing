@@ -1,0 +1,10 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-align: center;
+    background-image: url("../../../images/bgHero.png");
+    background-position: center top;
+    background-size: cover;
+  }

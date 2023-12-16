@@ -3,6 +3,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = withMT({
+  darkMode: ['class'],
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -19,6 +20,16 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
+        'primary-100': '#FFFFFF',
+        'primary-200': '#C7C7C7',
+        'primary-300': '#697280',
+        'primary-400': '#4DD4F4',
+        'primary-500': '#56B0F6',
+        'primary-600': '#7339FD',
+        'primary-700': '#976BFE',
+        'primary-800': '#0E1525', 
+        'primary-900': '#0B101C',
+        'primary-1000': '#121214',
       }
     },
   },
