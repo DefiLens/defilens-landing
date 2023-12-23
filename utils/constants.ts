@@ -1,3 +1,4 @@
+import { baseGrant, devfolioGrant, ethIndiaGrant, link } from "@/assets/images"
 
 export const NavigationList = [
     {
@@ -288,4 +289,23 @@ export const UpcomingList = [
     //     title: "One Stop Defi Solution",
     //     description: "DefiLens covering wide range of Defi Integrations with smooth execution",
     // },
+]
+
+export const BackedByList = [
+    {
+        key: "Base",
+        url: "https://base.org/",
+        icon: baseGrant,
+        icon1: null,
+        icon2: null,
+        icon3: null,
+    },
+    {
+        key: "ethIndia",
+        url: "https://ethindia.co/",
+        icon: null,
+        icon1: devfolioGrant,
+        icon2: link,
+        icon3: ethIndiaGrant,
+    },
 ]

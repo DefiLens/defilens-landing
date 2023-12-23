@@ -3,6 +3,7 @@ import HeroContainer from "./Hero/HeroContainer";
 import TopContainer from "../../shared/Top/TopContainer";
 import HeaderContainer from "../../shared/Header/HeaderContainer";
 import HowToUseContainer from "./HowToUse/HowToUseContainer";
+import BackedByContainer from "./BackedBy/BackedByContainer";
 
 const Landing = () => (
   <Layout>
@@ -11,6 +12,7 @@ const Landing = () => (
       <HeaderContainer />
       <HeroContainer />
       <HowToUseContainer />
+      <BackedByContainer />
     </>
   </Layout>
 );

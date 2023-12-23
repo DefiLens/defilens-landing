@@ -12,6 +12,10 @@ import retweet from './retweet.png';
 import like from './like.png';
 import save from './save.png';
 import share from './share.png';
+import baseGrant from './baseGrant.png';
+import devfolioGrant from './devfolioGrant.png';
+import link from './link.png';
+import ethIndiaGrant from './ethIndiaGrant.png';
 
 export {
     logoLight,
@@ -28,4 +32,8 @@ export {
     like,
     save,
     share,
+    baseGrant,
+    devfolioGrant,
+    link,
+    ethIndiaGrant,
 };
