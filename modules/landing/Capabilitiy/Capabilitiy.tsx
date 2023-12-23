@@ -22,7 +22,7 @@ const capabilityItems = [
   },
 ];
 
-const SocialGraph = () => (
+const Capabilitiy = () => (
   <div className="social-graph px-[150px] py-[50px] bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A]  text-white pt-40">
     <div className="flex flex-col justify-center items-center text-[22px]">
       <div className="text-[30px] font-bold">Features and Capability</div>
@@ -53,4 +53,4 @@ const SocialGraph = () => (
   </div>
 );
 
-export default SocialGraph;
+export default Capabilitiy;

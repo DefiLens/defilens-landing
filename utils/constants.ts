@@ -39,6 +39,10 @@ import partner5 from "../assets/icons/partner5.svg"
 import invetor1 from "../assets/icons/invetor1.svg"
 import invetor2 from "../assets/icons/invetor2.svg"
 import invetor3 from "../assets/icons/invetor3.svg"
+import baseGrant from "../assets/icons/baseGrant.png"
+import devfolioGrant from "../assets/icons/devfolioGrant.png"
+import link from "../assets/icons/link.png"
+import ethIndiaGrant from "../assets/icons/ethIndiaGrant.png"
 
 export const NavigationList = [
     {
@@ -328,5 +332,24 @@ export const UpcomingList = [
         icon: f4,
         title: "One Stop Defi Solution",
         description: "DefiLens covering wide range of Defi Integrations with smooth execution",
+    },
+]
+
+export const BackedByList = [
+    {
+        key: "Base",
+        url: "https://base.org/",
+        icon: baseGrant,
+        icon1: null,
+        icon2: null,
+        icon3: null,
+    },
+    {
+        key: "ethIndia",
+        url: "https://ethindia.co/",
+        icon: null,
+        icon1: devfolioGrant,
+        icon2: link,
+        icon3: ethIndiaGrant,
     },
 ]

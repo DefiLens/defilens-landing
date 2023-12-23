@@ -12,6 +12,7 @@ import FaqsContainer from "./Faqs/FaqsContainer";
 import TeamContainer from "./Team/TeamContainer";
 import NewsletterContainer from "./Newsletter/NewsletterContainer";
 import UpcomingContainer from "./Upcoming/UpcomingContainer";
+import BackedByContainer from "./BackedBy/BackedByContainer";
 
 const Landing = () => (
   <Layout>
@@ -19,6 +20,7 @@ const Landing = () => (
       <SocialGraphContainer />
       <HowToUseContainer />
       <UpcomingContainer />
+      <BackedByContainer />
       <FeaturesContainer />
       {/* <InvestorsContainer />
       <SecurityContainer />
