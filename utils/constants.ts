@@ -338,7 +338,7 @@ export const UpcomingList = [
 export const BackedByList = [
     {
         key: "Base",
-        url: "https://base.org/",
+        url: "https://twitter.com/UniverseOnBase/status/1717574616431079668",
         icon: baseGrant,
         icon1: null,
         icon2: null,
@@ -346,7 +346,7 @@ export const BackedByList = [
     },
     {
         key: "ethIndia",
-        url: "https://ethindia.co/",
+        url: "https://devfolio.co/projects/defilens-c7b4",
         icon: null,
         icon1: devfolioGrant,
         icon2: link,
