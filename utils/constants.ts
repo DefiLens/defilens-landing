@@ -1,4 +1,4 @@
-import { baseGrant, devfolioGrant, discord, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, link, team1, team2, team3, telegram, twitter } from "@/assets/images"
+import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, discord, eth, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, howToUse01, link, optimism, polygon, team1, team2, team3, telegram, twitter } from "@/assets/images"
 
 export const NavigationList = [
     {
@@ -63,38 +63,46 @@ export const SocialHandles = [
 ]
 
 export const BlockchainList = [
-    // {
-    //     name: "eth",
-    //     icon: eth,
-    // },
-    // {.
-    //     name: "polygon",
-    //     icon: polygon,
-    // },
-    // {
-    //     name: "arbitrum",
-    //     icon: arbitrum,
-    // },
-    // {
-    //     name: "avalanche",
-    //     icon: avalanche,
-    // },
-    // {
-    //     name: "bsc",
-    //     icon: bsc,
-    // },
-    // {
-    //     name: "conflux",
-    //     icon: conflux,
-    // },
-    // {
-    //     name: "kava",
-    //     icon: kava,
-    // },
-    // {
-    //     name: "optimism",
-    //     icon: optimism,
-    // },.
+    {
+        key: "eth",
+        name: "Ethereum",
+        icon: eth,
+    },
+    {
+        key: "polygon",
+        name: "Polygon",
+        icon: polygon,
+    },
+    {
+        key: "arbitrum",
+        name: "Arbitrum",
+        icon: arbitrum,
+    },
+    {
+        key: "avalanche",
+        name: "Avalanche",
+        icon: avalanche,
+    },
+    {
+        key: "bsc",
+        name: "Binance",
+        icon: bsc,
+    },
+    {
+        key: "conflux",
+        name: "Conflux",
+        icon: conflux,
+    },
+    {
+        key: "optimism",
+        name: "Optimism",
+        icon: optimism,
+    },
+    {
+        key: "base",
+        name: "Base",
+        icon: base,
+    },
 ]
 
 export const roadmapItems = [
@@ -158,47 +166,48 @@ export const OurTeam = [
 ]
 
 export const HowToUseList = [
-    // {
-    //     key: "Any EVM Network",
-    //     icon: feature1,
-    //     title: "Any EVM Network",
-    //     description:
-    //         "One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.",
-    // },
-    // {
-    //     key: "Preferred Network",
-    //     icon: feature2,
-    //     title: "Preferred Network",
-    //     description:
-    //         `Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.`,
-    // },
-    // {
-    //     key: "batching transactions",
-    //     icon: feature3,
-    //     title: "Batching Transactions",
-    //     description:
-    //         "One can selecte multiple transaction into one and execute in just single click and Done.",
-    // },
-    // {
-    //     key: "cross-chain batching",
-    //     icon: feature4,
-    //     title: "Cross-Chain Batching",
-    //     description:
-    //         "Even one can create multiple cross-chain trading batch and excute in single shot.",
-    // },
-    // {
-    //     key: "refinance defi positions",
-    //     icon: feature4,
-    //     title: "Refinance Defi Positions",
-    //     description:
-    //         "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
-    // },
-    // {
-    //   key : "pos-staking",
-    //   icon: feature5,
-    //   title: "PoS Staking",
-    //   description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
-    // },
+    {
+        key: "Any EVM Network",
+        id: 1,
+        icon: howToUse01,
+        title: "Any EVM Network",
+        description: "One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.",
+    },
+    {
+        key: "Preferred Network",
+        id: 2,
+        icon: howToUse01,
+        title: "Preferred Network",
+        description: "Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.",
+    },
+    {
+        key: "batching transactions",
+        id: 3,
+        icon: howToUse01,
+        title: "Batching Transactions",
+        description: "One can selecte multiple transaction into one and execute in just single click and Done.",
+    },
+    {
+        key: "cross-chain batching",
+        id: 4,
+        icon: howToUse01,
+        title: "Cross-Chain Batching",
+        description: "Even one can create multiple cross-chain trading batch and excute in single shot.",
+    },
+    {
+        key: "refinance defi positions",
+        id: 5,
+        icon: howToUse01,
+        title: "Refinance Defi Positions",
+        description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+    },
+    {
+        key : "pos-staking",
+        id: 6, 
+        icon: howToUse01,
+        title: "PoS Staking",
+        description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+    },
 ]
 
 export const FeaturesList = [

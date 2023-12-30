@@ -28,6 +28,14 @@ import discord from './discord.png';
 import twitter from './twitter.png';
 import gmail from './gmail.png';
 import github from './github.png';
+import eth from './eth.png';
+import polygon from './polygon.png';
+import arbitrum from './arbitrum.png';
+import avalanche from './avalanche.png'; 
+import bsc from './bsc.png';
+import conflux from './conflux.png';
+import optimism from './optimism.png';
+import base from './base.png';
 
 export {
     logoLight,
@@ -60,4 +68,12 @@ export {
     twitter,
     gmail,
     github,
+    eth,
+    polygon,
+    arbitrum,
+    avalanche,
+    bsc,
+    conflux,
+    optimism,
+    base,
 };
