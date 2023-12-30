@@ -6,6 +6,7 @@ import HowToUseContainer from "./HowToUse/HowToUseContainer";
 import FeaturesContainer from "./Features/FeaturesContainer";
 import BackedByContainer from "./BackedBy/BackedByContainer";
 import OurUsersSayContainer from "./OurUsersSay/OurUsersSayContainer";
+import TeamsContainer from "./Teams/TeamsContainer";
 
 const Landing = () => (
   <Layout>
@@ -17,6 +18,7 @@ const Landing = () => (
       <FeaturesContainer />
       <BackedByContainer />
       <OurUsersSayContainer />
+      <TeamsContainer />
     </>
   </Layout>
 );

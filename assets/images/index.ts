@@ -20,6 +20,7 @@ import feature1 from './feature1.png';
 import feature2 from './feature2.png';
 import feature3 from './feature3.png';
 import feature4 from './feature4.png';
+import bgTeams from './bgTeams.png';
 
 export {
     logoLight,
@@ -44,4 +45,5 @@ export {
     feature2,
     feature3,
     feature4,
+    bgTeams,
 };

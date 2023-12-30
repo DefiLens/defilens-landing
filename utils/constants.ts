@@ -1,4 +1,4 @@
-import { baseGrant, devfolioGrant, ethIndiaGrant, feature1, feature2, feature3, feature4, link } from "@/assets/images"
+import { baseGrant, devfolioGrant, ethIndiaGrant, feature1, feature2, feature3, feature4, link, team1, team2, team3 } from "@/assets/images"
 
 export const NavigationList = [
     {
@@ -137,18 +137,24 @@ export const reviewsItems = [
 ]
 
 export const OurTeam = [
-    // {
-    //     key: "sunny-radadiya",
-    //     icon: team1,
-    //     name: "Sunny Radadiya",
-    //     position: "Founder & Web3 Dev",
-    // },
-    // {
-    //     key: "paril-beladiya",
-    //     icon: team2,
-    //     name: "Paril Beladiya",
-    //     position: "Full Stack Dev",
-    // },
+    {
+        key: "sunny-radadiya",
+        icon: team1,
+        name: "Sunny Radadiya",
+        position: "Founder & Web3 Dev",
+    },
+    {
+        key: "paril-beladiya",
+        icon: team2,
+        name: "Paril Beladiya",
+        position: "MERN Stack Dev",
+    },
+    {
+        key: "tirth-zalavadiya",
+        icon: team3,
+        name: "Tirth Zalavadiya",
+        position: "Ui/Ux Designer",
+    },
 ]
 
 export const HowToUseList = [
