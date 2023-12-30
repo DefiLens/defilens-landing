@@ -350,3 +350,31 @@ export const OurUsersSayList = [
         tweetId: "1651586021849546754",
     },
 ]
+
+export const FAQsList = [
+    {
+      id: 1,
+      question: 'What is DefiLens ?',
+      answer: 'Simplifying Defi Trading Experience Smart Batching via One-click',
+    },
+    {
+      id: 2,
+      question: 'Why should I Trust DefiLens ?',
+      answer: 'DefiLens is pioneering a platform that streamlines trading activities. To offering the ease of trading experience and swift portfolio management to users.',
+    },
+    {
+      id: 3, 
+      question: 'What is a EVM Network ?',
+      answer: 'One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.',
+    },
+    {
+      id: 4,
+      question: 'What is a Batching Transactions ?',
+      answer: 'SOne can selecte multiple transaction into one and execute in just single click and Done.',
+    },
+    {
+      id: 5,
+      question: 'What is a Cross-Chain Batching ?',
+      answer: 'Even one can create multiple cross-chain trading batch and excute in single shot.',
+    },
+  ] 

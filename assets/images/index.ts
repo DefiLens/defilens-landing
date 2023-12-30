@@ -21,6 +21,7 @@ import feature2 from './feature2.png';
 import feature3 from './feature3.png';
 import feature4 from './feature4.png';
 import bgTeams from './bgTeams.png';
+import upArrowBlack from './upArrowBlack.png';
 
 export {
     logoLight,
@@ -46,4 +47,5 @@ export {
     feature3,
     feature4,
     bgTeams,
+    upArrowBlack,
 };

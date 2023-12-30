@@ -7,6 +7,7 @@ import FeaturesContainer from "./Features/FeaturesContainer";
 import BackedByContainer from "./BackedBy/BackedByContainer";
 import OurUsersSayContainer from "./OurUsersSay/OurUsersSayContainer";
 import TeamsContainer from "./Teams/TeamsContainer";
+import FaqContainer from "./Faq/FaqContainer";
 
 const Landing = () => (
   <Layout>
@@ -19,6 +20,7 @@ const Landing = () => (
       <BackedByContainer />
       <OurUsersSayContainer />
       <TeamsContainer />
+      <FaqContainer />
     </>
   </Layout>
 );
