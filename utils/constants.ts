@@ -309,3 +309,38 @@ export const BackedByList = [
         icon3: ethIndiaGrant,
     },
 ]
+
+export const OurUsersSayList = [
+    {
+        key: "save_as_jay",
+        tweetId: "1726969885253837291",
+    },
+    {
+        key: "biconomy",
+        tweetId: "1687428141076426752",
+    },
+    {
+        key: "Rahatcodes",
+        tweetId: "1687435235464507392",
+    },
+    {
+        key: "schin_tomar",
+        tweetId: "1652224665614716928",
+    },
+    {
+        key: "0xKofi",
+        tweetId: "1704149603543585050",
+    },
+    {
+        key: "UniverseOnBase",
+        tweetId: "1717574616431079668",
+    },
+    // {
+    //     key: "ThisisVanshika",
+    //     tweetId: "1651778427576520704",
+    // },
+    // {
+    //     key: "biconomy",
+    //     tweetId: "1651586021849546754",
+    // },
+]
