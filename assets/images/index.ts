@@ -22,6 +22,12 @@ import feature3 from './feature3.png';
 import feature4 from './feature4.png';
 import bgTeams from './bgTeams.png';
 import upArrowBlack from './upArrowBlack.png';
+import bgFooter from './bgFooter.png';
+import telegram from './telegram.png';
+import discord from './discord.png';
+import twitter from './twitter.png';
+import gmail from './gmail.png';
+import github from './github.png';
 
 export {
     logoLight,
@@ -48,4 +54,10 @@ export {
     feature4,
     bgTeams,
     upArrowBlack,
+    bgFooter,
+    telegram,
+    discord,
+    twitter,
+    gmail,
+    github,
 };

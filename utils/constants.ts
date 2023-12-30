@@ -1,4 +1,4 @@
-import { baseGrant, devfolioGrant, ethIndiaGrant, feature1, feature2, feature3, feature4, link, team1, team2, team3 } from "@/assets/images"
+import { baseGrant, devfolioGrant, discord, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, link, team1, team2, team3, telegram, twitter } from "@/assets/images"
 
 export const NavigationList = [
     {
@@ -40,26 +40,26 @@ export const NavigationList = [
 ]
 
 export const SocialHandles = [
-    // {
-    //   icon: DiscordLogo,
-    //   url: "https://discord.com",
-    // },
-    // {
-    //     icon: GithubLogo,
-    //     url: "https://github.com/DefiLens",
-    // },
-    // {
-    //     icon: TwitterLogo,
-    //     url: "https://twitter.com/DefiLensTech",
-    // },
-    // {
-    //   icon: TelegramLogo,
-    //   url: "https://telegram.org",
-    // },
-    // {
-    //   icon: MediumLogo,
-    //   url: "https://medium.com",
-    // },
+    {
+      icon: telegram,
+      url: "https://telegram.org",
+    },
+    {
+      icon: discord,
+      url: "https://discord.com",
+    },
+    {
+        icon: twitter,
+        url: "https://twitter.com/DefiLensTech",
+    },
+    {
+        icon: gmail,
+        url: "mailto:defilens.tech@gmail.com",
+    },
+    {
+        icon: github,
+        url: "https://github.com/DefiLens",
+    },
 ]
 
 export const BlockchainList = [
@@ -67,7 +67,7 @@ export const BlockchainList = [
     //     name: "eth",
     //     icon: eth,
     // },
-    // {
+    // {.
     //     name: "polygon",
     //     icon: polygon,
     // },
@@ -377,4 +377,25 @@ export const FAQsList = [
       question: 'What is a Cross-Chain Batching ?',
       answer: 'Even one can create multiple cross-chain trading batch and excute in single shot.',
     },
-  ] 
+]
+
+export const FooterResources = [
+    {
+        key: 'app',
+        Title: 'App',
+        url: 'https://app.defilens.tech',
+    },
+    {
+        key: 'documentation',
+        Title: 'Documentation',
+        url: 'https://defilens.notion.site/DefiLens-Progress-And-Next-64c7b0ff85a9473b9685165608df2758',
+    },
+]
+
+export const FooterDeveloper = [
+    {
+        key: 'GgitHub',
+        Title: 'GitHub',
+        url: 'https://github.com/DefiLens',
+    },
+]

@@ -8,6 +8,7 @@ import BackedByContainer from "./BackedBy/BackedByContainer";
 import OurUsersSayContainer from "./OurUsersSay/OurUsersSayContainer";
 import TeamsContainer from "./Teams/TeamsContainer";
 import FaqContainer from "./Faq/FaqContainer";
+import FooterContainer from "@/shared/Footer/FooterContainer";
 
 const Landing = () => (
   <Layout>
@@ -21,6 +22,7 @@ const Landing = () => (
       <OurUsersSayContainer />
       <TeamsContainer />
       <FaqContainer />
+      <FooterContainer />
     </>
   </Layout>
 );
