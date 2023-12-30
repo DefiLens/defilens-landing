@@ -11,7 +11,7 @@ const HowToUse = () => (
                 </span>
             </h1>
             <h6 className="text-center text-primary-300 text-xs md:text-sm lg:text-base font-medium !leading-snug px-5 md:px-10 lg:px-20 xl:px-60">
-                The Vent Team can take your vision all the way to launch with token sale management, marketing support, and community backing.
+                DefiLens is pioneering a platform that streamlines trading activities. To offering the ease of trading experience and swift portfolio management to users
             </h6>
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-start items-center gap-5 border-2 shadow-lg rounded-xl p-10 mt-8">

@@ -16,6 +16,10 @@ import baseGrant from './baseGrant.png';
 import devfolioGrant from './devfolioGrant.png';
 import link from './link.png';
 import ethIndiaGrant from './ethIndiaGrant.png';
+import feature1 from './feature1.png';
+import feature2 from './feature2.png';
+import feature3 from './feature3.png';
+import feature4 from './feature4.png';
 
 export {
     logoLight,
@@ -36,4 +40,8 @@ export {
     devfolioGrant,
     link,
     ethIndiaGrant,
+    feature1,
+    feature2,
+    feature3,
+    feature4,
 };

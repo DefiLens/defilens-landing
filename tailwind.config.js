@@ -30,7 +30,8 @@ module.exports = withMT({
         'primary-600': '#7339FD',
         'primary-700': '#976BFE',
         'primary-750': '#CAB0FF',
-        'primary-800': '#0E1525', 
+        'primary-800': '#0E1525',
+        'primary-850': '#2A2F3B',
         'primary-900': '#0B101C',
         'primary-1000': '#121214',
       }

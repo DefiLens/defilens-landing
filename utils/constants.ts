@@ -1,4 +1,4 @@
-import { baseGrant, devfolioGrant, ethIndiaGrant, link } from "@/assets/images"
+import { baseGrant, devfolioGrant, ethIndiaGrant, feature1, feature2, feature3, feature4, link } from "@/assets/images"
 
 export const NavigationList = [
     {
@@ -196,34 +196,34 @@ export const HowToUseList = [
 ]
 
 export const FeaturesList = [
-    // {
-    //     key: "Batching Transaction",
-    //     icon: f1,
-    //     title: "Batching Transaction",
-    //     description:
-    //         "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
-    // },
-    // {
-    //     key: "Cross-Chain Lending",
-    //     icon: f2,
-    //     title: "Cross-Chain Lending",
-    //     description:
-    //         "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
-    // },
-    // {
-    //     key: "Refinance Defi Positions",
-    //     icon: f3,
-    //     title: "Refinance Defi Positions",
-    //     description:
-    //         "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
-    // },
-    // {
-    //     key: "One Stop Defi Solution",
-    //     icon: f4,
-    //     title: "One Stop Defi Solution",
-    //     description:
-    //         "DefiLens covering wide range of Defi Integrations with smooth execution",
-    // },
+    {
+        key: "Batching Transaction",
+        icon: feature1,
+        title: "Batching Transaction",
+        description:
+            "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
+    },
+    {
+        key: "Cross-Chain Lending",
+        icon: feature2,
+        title: "Cross-Chain Lending",
+        description:
+            "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+    },
+    {
+        key: "Refinance Defi Positions",
+        icon: feature3,
+        title: "Refinance Defi Positions",
+        description:
+            "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+    },
+    {
+        key: "One Stop Defi Solution",
+        icon: feature4,
+        title: "One Stop Defi Solution",
+        description:
+            "DefiLens covering wide range of Defi Integrations with smooth execution",
+    },
 ]
 
 export const PartnersWith = [
@@ -335,12 +335,12 @@ export const OurUsersSayList = [
         key: "UniverseOnBase",
         tweetId: "1717574616431079668",
     },
-    // {
-    //     key: "ThisisVanshika",
-    //     tweetId: "1651778427576520704",
-    // },
-    // {
-    //     key: "biconomy",
-    //     tweetId: "1651586021849546754",
-    // },
+    {   
+        key: "ThisisVanshika",
+        tweetId: "1651778427576520704",
+    },
+    {
+        key: "biconomy",
+        tweetId: "1651586021849546754",
+    },
 ]

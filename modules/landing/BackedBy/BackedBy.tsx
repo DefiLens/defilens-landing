@@ -19,7 +19,7 @@ const BackedBy = () => (
                     key={item.key}
                     className="w-full lg:w-96 h-full flex flex-col justify-center items-center gap-3 border border-primary-750 rounded-3xl shadow-xl shadow-purple-50 p-8 flex-grow"
                 >
-                    <div className="h-full flex flex-col lg:flex-row justify-center items-center gap-7 lg:gap-3 2xl:gap-5">
+                    <div className="h-full lg:h-20 flex flex-col lg:flex-row justify-center items-center gap-7 lg:gap-3 2xl:gap-5">
                         {item.icon && (
                             <Image
                                 src={item.icon}
