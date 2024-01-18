@@ -248,25 +248,24 @@ export const FeaturesList = [
             "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
     },
     {
-        key: "Cross-Chain Lending",
+        key: "Chain Abstraction",
         icon: f2,
-        title: "Cross-Chain Lending",
+        title: "Chain Abstraction",
         description:
-            "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains.",
     },
     {
-        key: "Refinance Defi Positions",
+        key: "Manage all Defi Positions",
         icon: f3,
-        title: "Refinance Defi Positions",
+        title: "Manage all Defi Positions",
         description:
-            "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+            "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
     },
     {
-        key: "One Stop Defi Solution",
+        key: "Single Click Execution",
         icon: f4,
-        title: "One Stop Defi Solution",
-        description:
-            "DefiLens covering wide range of Defi Integrations with smooth execution",
+        title: "Single Click Execution",
+        description:"DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks."
     },
 ]
 
