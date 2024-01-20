@@ -1,5 +1,22 @@
 import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, discord, eth, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, howToUse01, link, optimism, polygon, team1, team2, team3, telegram, twitter } from "@/assets/images"
 
+const getBaseURL = (NODE_ENV: string | undefined) => {
+    switch (NODE_ENV) {
+      case 'production':
+        return 'https://api.defilens.tech/';
+  
+      case 'staging':
+        return 'https://api.defilens.tech/';
+  
+      case 'dev':
+        return 'http://localhost:8080/';
+  
+      default: return 'http://localhost:8080/';
+    }
+  };
+  
+export const BASE_URL = getBaseURL(process.env.NEXT_PUBLIC_NODE_ENV);
+
 export const NavigationList = [
     {
         name: "Use",

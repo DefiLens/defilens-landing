@@ -1,9 +1,15 @@
-import { logoLight } from "@/assets/images";
-import { FooterDeveloper, FooterResources, SocialHandles } from "@/utils/constants";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { loader, logoLight } from "@/assets/images";
+import { FooterDeveloper, FooterResources, SocialHandles } from "@/utils/constants";
+import { tFooter } from "./types";
 
-const Footer = () => (
+const Footer = ({
+  email,
+  setEmail,
+  isNewsletterLoading,
+  handleCreateNewsletter,
+}: tFooter) => (
   <div className="footer-container py-5 md:py-14">
     <div className="flex flex-col gap-3 bg-primary-100 text-primary-1000 md:border md:shadow-lg md:shadow-primary-760 md:rounded-3xl m-0 md:mx-12 lg:mx-24 my-1 md:my-5 p-3">
       <div className="w-full flex flex-col md:flex-row justify-start items-start gap-3 py-10 px-5">
@@ -18,30 +24,39 @@ const Footer = () => (
               height={150}
               alt="DefiLens"
               className=""
-          />
+            />
           </Link>
           <div className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-semibold text-primary-900">
             Keep updated. Join our newsletter.
             <div className="w-full flex justify-start items-center gap-1 border shadow rounded-2xl p-1.5">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Type your email here"
                 className="outline-none py-1 pl-3 md:pl-1 lg:pl-3 w-full bg-transparent"
               />
-              <a
-                href="https://forms.gle/hEGTMypEkGRYGJdc9"
-                target="_blank"
+              <button
+                disabled={isNewsletterLoading}
+                onClick={() => handleCreateNewsletter({ email })}
                 className="transition duration-300 text-xs sm:text-sm font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-xl shadow-md p-0.5"
               >
                 <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-xl">
                     <button
                         type="button"
-                        className="flex justify-center items-center gap-1 rounded-xl hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100 py-1 px-6 md:px-3 lg:px-6"
+                        className={`w-28 flex justify-center items-center gap-1 rounded-xl py-1 px-6 md:px-3 lg:px-6 ${!isNewsletterLoading && 'hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100'}`}
                     >
                         Submit
+                        {isNewsletterLoading && (
+                          <Image
+                            src={loader}
+                            alt="Loader"
+                            className="animate-spin w-5 h-5"
+                          />
+                        )}
                     </button>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
           <div className="flex justify-start items-start gap-5 px-2">

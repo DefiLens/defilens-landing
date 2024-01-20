@@ -36,6 +36,7 @@ import bsc from './bsc.png';
 import conflux from './conflux.png';
 import optimism from './optimism.png';
 import base from './base.png';
+import loader from './loader.svg';
 
 export {
     logoLight,
@@ -76,4 +77,5 @@ export {
     conflux,
     optimism,
     base,
+    loader,
 };
