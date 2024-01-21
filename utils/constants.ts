@@ -322,25 +322,6 @@ export const UpcomingList = [
     // },
 ]
 
-export const BackedByList = [
-    {
-        key: "Base",
-        url: "https://base.org/",
-        icon: baseGrant,
-        icon1: null,
-        icon2: null,
-        icon3: null,
-    },
-    {
-        key: "ethIndia",
-        url: "https://ethindia.co/",
-        icon: null,
-        icon1: devfolioGrant,
-        icon2: link,
-        icon3: ethIndiaGrant,
-    },
-]
-
 export const OurUsersSayList = [
     {
         key: "save_as_jay",
