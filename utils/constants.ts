@@ -236,25 +236,24 @@ export const FeaturesList = [
             "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
     },
     {
-        key: "Cross-Chain Lending",
+        key: "Chain Abstraction",
         icon: feature2,
-        title: "Cross-Chain Lending",
+        title: "Chain Abstraction",
         description:
-            "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains.",
     },
     {
-        key: "Refinance Defi Positions",
+        key: "Manage all Defi Positions",
+        title: "Manage all Defi Positions",
         icon: feature3,
-        title: "Refinance Defi Positions",
         description:
-            "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+            "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
     },
     {
-        key: "One Stop Defi Solution",
+        key: "Single Click Execution",
         icon: feature4,
-        title: "One Stop Defi Solution",
-        description:
-            "DefiLens covering wide range of Defi Integrations with smooth execution",
+        title: "Single Click Execution",
+        description:"DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks."
     },
 ]
 
@@ -423,5 +422,24 @@ export const FooterDeveloper = [
         key: 'GgitHub',
         Title: 'GitHub',
         url: 'https://github.com/DefiLens',
+    },
+]
+
+export const BackedByList = [
+    {
+        key: "Base",
+        url: "https://twitter.com/UniverseOnBase/status/1717574616431079668",
+        icon: baseGrant,
+        icon1: null,
+        icon2: null,
+        icon3: null,
+    },
+    {
+        key: "ethIndia",
+        url: "https://devfolio.co/projects/defilens-c7b4",
+        icon: null,
+        icon1: devfolioGrant,
+        icon2: link,
+        icon3: ethIndiaGrant,
     },
 ]
