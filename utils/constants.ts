@@ -3,10 +3,10 @@ import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, disc
 const getBaseURL = (NODE_ENV: string | undefined) => {
     switch (NODE_ENV) {
       case 'production':
-        return 'https://api.defilens.tech/';
+        return 'https://defilens-data.onrender.com/';
   
       case 'staging':
-        return 'https://api.defilens.tech/';
+        return 'https://defilens-data.onrender.com/';
   
       case 'dev':
         return 'http://localhost:8080/';
