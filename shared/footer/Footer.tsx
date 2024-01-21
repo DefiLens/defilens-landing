@@ -42,8 +42,7 @@ const Footer = ({
                 className="transition duration-300 text-xs sm:text-sm font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-xl shadow-md p-0.5"
               >
                 <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-xl">
-                    <button
-                        type="button"
+                    <div
                         className={`w-28 flex justify-center items-center gap-1 rounded-xl py-1 px-6 md:px-3 lg:px-6 ${!isNewsletterLoading && 'hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100'}`}
                     >
                         Submit
@@ -54,7 +53,7 @@ const Footer = ({
                             className="animate-spin w-5 h-5"
                           />
                         )}
-                    </button>
+                    </div>
                 </div>
               </button>
             </div>
