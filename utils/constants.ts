@@ -1,4 +1,4 @@
-import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, discord, eth, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, howToUse01, link, optimism, polygon, team1, team2, team3, telegram, twitter } from "@/assets/images"
+import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, discord, eth, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, howToUse01, howToUse02, howToUse03, howToUse04, howToUse05, howToUse06, link, optimism, polygon, team1, team2, team3, telegram, twitter } from "@/assets/images"
 
 const getBaseURL = (NODE_ENV: string | undefined) => {
     switch (NODE_ENV) {
@@ -193,35 +193,35 @@ export const HowToUseList = [
     {
         key: "Preferred Network",
         id: 2,
-        icon: howToUse01,
+        icon: howToUse02,
         title: "Preferred Network",
         description: "Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.",
     },
     {
         key: "batching transactions",
         id: 3,
-        icon: howToUse01,
+        icon: howToUse03,
         title: "Batching Transactions",
         description: "One can selecte multiple transaction into one and execute in just single click and Done.",
     },
     {
         key: "cross-chain batching",
         id: 4,
-        icon: howToUse01,
+        icon: howToUse04,
         title: "Cross-Chain Batching",
         description: "Even one can create multiple cross-chain trading batch and excute in single shot.",
     },
     {
         key: "refinance defi positions",
         id: 5,
-        icon: howToUse01,
+        icon: howToUse05,
         title: "Refinance Defi Positions",
         description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
     },
     {
         key : "pos-staking",
         id: 6, 
-        icon: howToUse01,
+        icon: howToUse06 ,
         title: "PoS Staking",
         description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
     },
