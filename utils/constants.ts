@@ -1,48 +1,21 @@
-import PartnerLogo from "../assets/icons/app-logo.svg"
-import DiscordLogo from "../assets/icons/discord.svg"
-import GithubLogo from "../assets/icons/github.svg"
-import MediumLogo from "../assets/icons/medium.svg"
-import TwitterLogo from "../assets/icons/twitterX.png"
-import TelegramLogo from "../assets/icons/telegram.png"
-import eth from "../assets/icons/eth.svg"
-import arbitrum from "../assets/icons/arbitrum.svg"
-import avalanche from "../assets/icons/avalanche.svg"
-import bsc from "../assets/icons/bsc.svg"
-import conflux from "../assets/icons/conflux.svg"
-import kava from "../assets/icons/kava.svg"
-import optimism from "../assets/icons/optimism.svg"
-import polygon from "../assets/icons/polygon.svg"
-import team1 from "../assets/icons/team1.jpg"
-import team2 from "../assets/icons/team2.jpg"
-// import feature1 from "../assets/icons/feature1.svg"
-// import feature2 from "../assets/icons/feature2.svg"
-// import feature3 from "../assets/icons/feature3.svg"
-// import feature4 from "../assets/icons/feature4.svg"
-// import feature5 from "../assets/icons/feature5.svg"
-import feature1 from "../assets/icons/howtouse/anynetwork.png"
-import feature2 from "../assets/icons/howtouse/prefer.png"
-import feature3 from "../assets/icons/howtouse/batch.png"
-import feature4 from "../assets/icons/howtouse/cbatch.png"
-import f1 from "../assets/icons/features/batch.png"
-import f2 from "../assets/icons/features/refinance.png"
-import f3 from "../assets/icons/features/lending.png"
-import f4 from "../assets/icons/features/stop.png"
-// import f1 from "../assets/icons/f1.svg"
-// import f2 from "../assets/icons/f2.svg"
-// import f3 from "../assets/icons/f3.svg"
-// import f4 from "../assets/icons/f4.svg"
-import partner1 from "../assets/icons/partner1.svg"
-import partner2 from "../assets/icons/partner2.svg"
-import partner3 from "../assets/icons/partner3.svg"
-import partner4 from "../assets/icons/partner4.svg"
-import partner5 from "../assets/icons/partner5.svg"
-import invetor1 from "../assets/icons/invetor1.svg"
-import invetor2 from "../assets/icons/invetor2.svg"
-import invetor3 from "../assets/icons/invetor3.svg"
-import baseGrant from "../assets/icons/baseGrant.png"
-import devfolioGrant from "../assets/icons/devfolioGrant.png"
-import link from "../assets/icons/link.png"
-import ethIndiaGrant from "../assets/icons/ethIndiaGrant.png"
+import { arbitrum, avalanche, base, baseGrant, bsc, conflux, devfolioGrant, discord, eth, ethIndiaGrant, feature1, feature2, feature3, feature4, github, gmail, howToUse01, howToUse02, howToUse03, howToUse04, howToUse05, howToUse06, link, optimism, polygon, team1, team2, team3, telegram, twitter } from "@/assets/images"
+
+const getBaseURL = (NODE_ENV: string | undefined) => {
+    switch (NODE_ENV) {
+      case 'production':
+        return 'https://defilens-data.onrender.com/';
+
+      case 'staging':
+        return 'https://defilens-data.onrender.com/';
+
+      case 'dev':
+        return 'http://localhost:8080/';
+
+      default: return 'http://localhost:8080/';
+    }
+  };
+
+export const BASE_URL = getBaseURL(process.env.NEXT_PUBLIC_NODE_ENV);
 
 export const NavigationList = [
     {
@@ -84,60 +57,68 @@ export const NavigationList = [
 ]
 
 export const SocialHandles = [
+    {
+      icon: telegram,
+      url: "https://t.me/rksunny",
+    },
     // {
-    //   icon: DiscordLogo,
+    //   icon: discord,
     //   url: "https://discord.com",
     // },
     {
-        icon: GithubLogo,
-        url: "https://github.com/DefiLens",
-    },
-    {
-        icon: TwitterLogo,
+        icon: twitter,
         url: "https://twitter.com/DefiLensTech",
     },
-    // {
-    //   icon: TelegramLogo,
-    //   url: "https://telegram.org",
-    // },
-    // {
-    //   icon: MediumLogo,
-    //   url: "https://medium.com",
-    // },
+    {
+        icon: gmail,
+        url: "radadiyasunny970@gmail.com",
+    },
+    {
+        icon: github,
+        url: "https://github.com/DefiLens",
+    },
 ]
 
 export const BlockchainList = [
     {
-        name: "eth",
+        key: "eth",
+        name: "Ethereum",
         icon: eth,
     },
     {
-        name: "polygon",
+        key: "polygon",
+        name: "Polygon",
         icon: polygon,
     },
     {
-        name: "arbitrum",
+        key: "arbitrum",
+        name: "Arbitrum",
         icon: arbitrum,
     },
     {
-        name: "avalanche",
+        key: "avalanche",
+        name: "Avalanche",
         icon: avalanche,
     },
+    // {
+    //     key: "bsc",
+    //     name: "Binance",
+    //     icon: bsc,
+    // },
+    // {
+    //     key: "conflux",
+    //     name: "Conflux",
+    //     icon: conflux,
+    // },
     {
-        name: "bsc",
-        icon: bsc,
-    },
-    {
-        name: "conflux",
-        icon: conflux,
-    },
-    {
-        name: "kava",
-        icon: kava,
-    },
-    {
-        name: "optimism",
+        key: "optimism",
+        name: "Optimism",
         icon: optimism,
+    },
+    {
+        key: "base",
+        name: "Base",
+        icon: base,
     },
 ]
 
@@ -191,146 +172,244 @@ export const OurTeam = [
         key: "paril-beladiya",
         icon: team2,
         name: "Paril Beladiya",
-        position: "Full Stack Dev",
+        position: "MERN Stack Dev",
+    },
+    {
+        key: "tirth-zalavadiya",
+        icon: team3,
+        name: "Tirth Zalavadiya",
+        position: "Ui/Ux Designer",
     },
 ]
 
 export const HowToUseList = [
     {
         key: "Any EVM Network",
-        icon: feature1,
+        id: 1,
+        icon: howToUse01,
         title: "Any EVM Network",
-        description:
-            "One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.",
+        description: "One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.",
     },
     {
         key: "Preferred Network",
-        icon: feature2,
+        id: 2,
+        icon: howToUse02,
         title: "Preferred Network",
-        description:
-            `Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.`,
+        description: "Transfer assets seamlessly between different chains, even if your gas is on Chain A and your assets are on Chain B. Cover gas fees on Chain A and sponsor the transaction on Chain B for a hassle-free cross-chain experience.",
     },
     {
         key: "batching transactions",
-        icon: feature3,
+        id: 3,
+        icon: howToUse03,
         title: "Batching Transactions",
-        description:
-            "One can selecte multiple transaction into one and execute in just single click and Done.",
+        description: "One can selecte multiple transaction into one and execute in just single click and Done.",
     },
     {
         key: "cross-chain batching",
-        icon: feature4,
+        id: 4,
+        icon: howToUse04,
         title: "Cross-Chain Batching",
-        description:
-            "Even one can create multiple cross-chain trading batch and excute in single shot.",
+        description: "Even one can create multiple cross-chain trading batch and excute in single shot.",
     },
-    // {
-    //     key: "refinance defi positions",
-    //     icon: feature4,
-    //     title: "Refinance Defi Positions",
-    //     description:
-    //         "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
-    // },
-    // {
-    //   key : "pos-staking",
-    //   icon: feature5,
-    //   title: "PoS Staking",
-    //   description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
-    // },
+    {
+        key: "refinance defi positions",
+        id: 5,
+        icon: howToUse05,
+        title: "Refinance Defi Positions",
+        description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+    },
+    {
+        key : "pos-staking",
+        id: 6,
+        icon: howToUse06 ,
+        title: "PoS Staking",
+        description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
+    },
 ]
 
 export const FeaturesList = [
     {
         key: "Batching Transaction",
-        icon: f1,
+        icon: feature1,
         title: "Batching Transaction",
         description:
             "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
     },
     {
+        key: "Condtional Trading",
+        title: "Condtional Trading",
+        icon: feature3,
+        description:
+            "It allows users to set specific conditions for their trades. When these predetermined conditions are met, the platform automatically executes the transaction. Like DCA, Autosave etc.",
+    },
+    {
         key: "Chain Abstraction",
-        icon: f2,
+        icon: feature2,
         title: "Chain Abstraction",
         description:
-            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains.",
+            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains via ERC4337 and ERC7579.",
     },
-    {
-        key: "Manage all Defi Positions",
-        icon: f3,
-        title: "Manage all Defi Positions",
-        description:
-            "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
-    },
+    // {
+    //     key: "Manage all Defi Positions",
+    //     title: "Manage all Defi Positions",
+    //     icon: feature3,
+    //     description:
+    //         "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
+    // },
     {
         key: "Single Click Execution",
-        icon: f4,
+        icon: feature4,
         title: "Single Click Execution",
         description:"DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks."
     },
 ]
 
 export const PartnersWith = [
-    {
-        key: "partner1",
-        icon: partner1,
-    },
-    {
-        key: "partner2",
-        icon: partner2,
-    },
-    {
-        key: "partner3",
-        icon: partner3,
-    },
-    {
-        key: "partner4",
-        icon: partner4,
-    },
-    {
-        key: "partner5",
-        icon: partner5,
-    },
+    // {
+    //     key: "partner1",
+    //     icon: partner1,
+    // },
+    // {
+    //     key: "partner2",
+    //     icon: partner2,
+    // },
+    // {
+    //     key: "partner3",
+    //     icon: partner3,
+    // },
+    // {
+    //     key: "partner4",
+    //     icon: partner4,
+    // },
+    // {
+    //     key: "partner5",
+    //     icon: partner5,
+    // },
 ]
 
 export const InvestorsList = [
-    {
-        key: "invetor1",
-        icon: invetor1,
-    },
-    {
-        key: "invetor2",
-        icon: invetor2,
-    },
-    {
-        key: "invetor3",
-        icon: invetor3,
-    },
+    // {
+    //     key: "invetor1",
+    //     icon: invetor1,
+    // },
+    // {
+    //     key: "invetor2",
+    //     icon: invetor2,
+    // },
+    // {
+    //     key: "invetor3",
+    //     icon: invetor3,
+    // },
 ]
 
 export const UpcomingList = [
+    // {
+    //     id: 1,
+    //     icon: f1,
+    //     title: "Batching Transaction",
+    //     description: "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
+    // },
+    // {
+    //     id: 2,
+    //     icon: f2,
+    //     title: "Cross-Chain Lending",
+    //     description: "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+    // },
+    // {
+    //     id: 3,
+    //     icon: f3,
+    //     title: "Refinance Defi Positions",
+    //     description: "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+    // },
+    // {
+    //     id: 4,
+    //     icon: f4,
+    //     title: "One Stop Defi Solution",
+    //     description: "DefiLens covering wide range of Defi Integrations with smooth execution",
+    // },
+]
+
+export const OurUsersSayList = [
     {
-        id: 1,
-        icon: f1,
-        title: "Batching Transaction",
-        description: "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
+        key: "save_as_jay",
+        tweetId: "1726969885253837291",
     },
     {
-        id: 2,
-        icon: f2,
-        title: "Cross-Chain Lending",
-        description: "With just one click, users can effortlessly lend their assets across different blockchain networks. No more complex approvals or manual bridging.",
+        key: "biconomy",
+        tweetId: "1687428141076426752",
     },
     {
-        id: 3,
-        icon: f3,
-        title: "Refinance Defi Positions",
-        description: "Refinance multiple defi positions like lending, derivatives from one protocol to another defi protocol.",
+        key: "Rahatcodes",
+        tweetId: "1687435235464507392",
     },
     {
-        id: 4,
-        icon: f4,
-        title: "One Stop Defi Solution",
-        description: "DefiLens covering wide range of Defi Integrations with smooth execution",
+        key: "schin_tomar",
+        tweetId: "1652224665614716928",
+    },
+    {
+        key: "0xKofi",
+        tweetId: "1704149603543585050",
+    },
+    {
+        key: "UniverseOnBase",
+        tweetId: "1717574616431079668",
+    },
+    {
+        key: "ThisisVanshika",
+        tweetId: "1651778427576520704",
+    },
+    {
+        key: "biconomy",
+        tweetId: "1651586021849546754",
+    },
+]
+
+export const FAQsList = [
+    {
+      id: 1,
+      question: 'What is DefiLens ?',
+      answer: 'Simplifying Defi Trading Experience Smart Batching via One-click',
+    },
+    {
+      id: 2,
+      question: 'Why should I Trust DefiLens ?',
+      answer: 'DefiLens is pioneering a platform that streamlines trading activities. To offering the ease of trading experience and swift portfolio management to users.',
+    },
+    {
+      id: 3,
+      question: 'What is a EVM Network ?',
+      answer: 'One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.',
+    },
+    {
+      id: 4,
+      question: 'What is a Batching Transactions ?',
+      answer: 'SOne can selecte multiple transaction into one and execute in just single click and Done.',
+    },
+    {
+      id: 5,
+      question: 'What is a Cross-Chain Batching ?',
+      answer: 'Even one can create multiple cross-chain trading batch and excute in single shot.',
+    },
+]
+
+export const FooterResources = [
+    {
+        key: 'app',
+        Title: 'App',
+        url: 'https://app.defilens.tech',
+    },
+    {
+        key: 'documentation',
+        Title: 'Documentation',
+        url: 'https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8',
+    },
+]
+
+export const FooterDeveloper = [
+    {
+        key: 'GgitHub',
+        Title: 'GitHub',
+        url: 'https://github.com/DefiLens',
     },
 ]
 

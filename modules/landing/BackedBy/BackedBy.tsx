@@ -2,19 +2,24 @@ import { BackedByList } from "@/utils/constants";
 import Image from "next/image";
 
 const BackedBy = () => (
-    <div id="BackedBy" className="bg-gradient-to-r from-[#111827] via-[#141533] to-[#13172A] text-white w-full flex flex-col gap-5 p-8 pt-32 sm:p-20 sm:pt-36 md:p-24 md:pt-32 lg:p-40 lg:pt-36 xl:p-56 xl:py-20">
-      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-extrabold">
-        Backed By
-      </h1>
+    <div className="flex flex-col justify-center items-center gap-3 text-primary-1000 bg-primary-100 p-8 py-20 sm:p-20 sm:py-20 md:p-32 md:py-20 lg:p-38 lg:py-20 2xl:p-40 2xl:py-28">
+        <div className="flex flex-col justify-center items-center gap-5">
+            <h1 className="text-center text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight">
+                Backed
+                <span className="px-3 text-primary-700">
+                    By
+                </span>
+            </h1>
+        </div>
       <div className="w-full h-full flex justify-between items-start gap-8 mt-0 sm:mt-8">
         <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center gap-10">
             {BackedByList?.length > 0 &&
                 BackedByList.map((item:any) => (
                 <div
                     key={item.key}
-                    className="w-full lg:w-96 h-full flex flex-col justify-center items-center gap-3 bg-gray-200 rounded-xl p-8 flex-grow"
+                    className="w-full lg:w-96 h-full flex flex-col justify-center items-center gap-3 border border-primary-750 rounded-3xl shadow-xl shadow-purple-50 p-8 flex-grow"
                 >
-                    <div className="h-full flex flex-col lg:flex-row justify-center items-center gap-7 lg:gap-3 2xl:gap-5">
+                    <div className="h-full lg:h-20 flex flex-col lg:flex-row justify-center items-center gap-7 lg:gap-3 2xl:gap-5">
                         {item.icon && (
                             <Image
                                 src={item.icon}
@@ -44,14 +49,16 @@ const BackedBy = () => (
                             />
                         )}
                     </div>
-                    <div className="h-full flex flex-col justify-center items-start gap-10">
-                        <a
-                            href={item.url}
-                            target="_blank"
-                            className="flex justify-center items-center gap-1 transition duration-300 text-base md:text-lg font-semibold bg-gradient-to-r from-[#2D66F4] to-[#9F2DF4] rounded-full shadow-md py-2 sm:py-3 px-8 sm:px-10 mt-6 md:mt-8"
-                        >
-                            Explore
-                        </a>
+                    <div className="h-full transition duration-300 text-sm md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5  mt-6 md:mt-8">
+                        <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-full">
+                            <a
+                                href={item.url}
+                                target="_blank"
+                                className="flex justify-center items-center gap-1 rounded-full hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100 py-2 px-8 sm:px-10"
+                            >
+                                Explore
+                            </a>
+                        </div>
                     </div>
                 </div>
             ))}

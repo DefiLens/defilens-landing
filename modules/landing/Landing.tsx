@@ -1,36 +1,28 @@
-import Layout from "@/shared/layout/LayoutContainer";
-import CapabilitiyContainer from "./Capabilitiy/CapabilitiyContainer";
-import ReviewsContainer from "./Reviews/ReviewsContainer";
-import RoadmapContainer from "./Roadmap/RoadmapContainer";
+import Layout from "@/shared/Layout/LayoutContainer";
+import HeroContainer from "./Hero/HeroContainer";
+import TopContainer from "../../shared/Top/TopContainer";
+import HeaderContainer from "../../shared/Header/HeaderContainer";
 import HowToUseContainer from "./HowToUse/HowToUseContainer";
 import FeaturesContainer from "./Features/FeaturesContainer";
-import InvestorsContainer from "./Investors/InvestorsContainer";
-import PartnersContainer from "./Partners/PartnersContainer";
-import SocialGraphContainer from "./SocialGraph/SocialGraphContainer";
-import SecurityContainer from "./Security/SecurityContainer";
-import FaqsContainer from "./Faqs/FaqsContainer";
-import TeamContainer from "./Team/TeamContainer";
-import NewsletterContainer from "./Newsletter/NewsletterContainer";
-import UpcomingContainer from "./Upcoming/UpcomingContainer";
 import BackedByContainer from "./BackedBy/BackedByContainer";
+import OurUsersSayContainer from "./OurUsersSay/OurUsersSayContainer";
+import TeamsContainer from "./Teams/TeamsContainer";
+import FaqContainer from "./Faq/FaqContainer";
+import FooterContainer from "@/shared/Footer/FooterContainer";
 
 const Landing = () => (
   <Layout>
     <>
-      <SocialGraphContainer />
+      <TopContainer />
+      <HeaderContainer />
+      <HeroContainer />
       {/* <HowToUseContainer /> */}
-      {/* <UpcomingContainer /> */}
       <FeaturesContainer />
       <BackedByContainer />
-      {/* <InvestorsContainer />
-      <SecurityContainer />
-      <PartnersContainer /> */}
-      {/* <CapabilitiyContainer /> */}
-      {/* <ReviewsContainer /> */}
-      {/* <RoadmapContainer /> */}
-      {/* <TeamContainer /> */}
-      <NewsletterContainer />
-      {/* <FaqsContainer /> */}
+      <OurUsersSayContainer />
+      <TeamsContainer />
+      {/* <FaqContainer /> */}
+      <FooterContainer />
     </>
   </Layout>
 );

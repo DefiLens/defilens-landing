@@ -1,6 +1,8 @@
 import Head from "next/head";
 import LandingContainer from "@/modules/landing/LandingContainer";
 
+import { Toaster } from 'react-hot-toast'
+
 export default function Home() {
   return (
     <>
@@ -10,6 +12,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/next.svg" />
       </Head>
+      <Toaster
+        position="top-right"
+      />
       <LandingContainer />
     </>
   );

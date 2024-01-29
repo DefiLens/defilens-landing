@@ -1,13 +1,9 @@
-import { ILayout } from "@/utils/types";
-import FooterContainer from "../footer/FooterContainer";
-import HeaderContainer from "../header/HeaderContainer";
+import { tLayout } from "./types/index";
 
-const Layout = ({ children }: ILayout) => {
+const Layout = ({ children }: tLayout) => {
   return (
-    <div className="layout-container h-full">
-      {/* <HeaderContainer /> */}
-      <div className="main-content h-full">{children}</div>
-      <FooterContainer />
+    <div>
+      {children}
     </div>
   );
 };

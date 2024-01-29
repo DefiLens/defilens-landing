@@ -1,9 +1,9 @@
-import { ILayout } from "@/utils/types";
+import { tLayout } from "./types/index";
 import Layout from "./Layout";
 
 const LayoutContainer = ({
   children
-}: ILayout) => (
+}: tLayout) => (
   <Layout>
     {children}
   </Layout>

@@ -1,4 +1,4 @@
-import BackedBy from "./BackedBy";
+import BackedBy from './BackedBy';
 
 const BackedByContainer = () => (
   <BackedBy />
