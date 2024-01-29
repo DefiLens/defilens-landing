@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { loader, logoLight } from "@/assets/images";
 import { FooterDeveloper, FooterResources, SocialHandles } from "@/utils/constants";
-import { tFooter } from "./types";
+// import { tFooter } from "./types";
+import { tFooter } from "../footer/types";
 
 const Footer = ({
   email,
