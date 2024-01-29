@@ -16,12 +16,12 @@ const Landing = () => (
       <TopContainer />
       <HeaderContainer />
       <HeroContainer />
-      <HowToUseContainer />
+      {/* <HowToUseContainer /> */}
       <FeaturesContainer />
       <BackedByContainer />
       <OurUsersSayContainer />
       <TeamsContainer />
-      <FaqContainer />
+      {/* <FaqContainer /> */}
       <FooterContainer />
     </>
   </Layout>

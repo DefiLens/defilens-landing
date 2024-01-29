@@ -10,15 +10,15 @@ const HowToUseContainer = () => {
 
   ref.current = active
 
-  useEffect(() => {
-    const handleScroll = debounce(() => {
-      setActive((current) => (current < HowToUseList.length ? current + 1 : 1));
-    }, 300);
+  // useEffect(() => {
+  //   const handleScroll = debounce(() => {
+  //     setActive((current) => (current < HowToUseList.length ? current + 1 : 1));
+  //   }, 300);
 
-    window.addEventListener('scroll', handleScroll)
+  //   window.addEventListener('scroll', handleScroll)
 
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  //   return () => window.removeEventListener('scroll', handleScroll)
+  // }, [])
 
   useEffect(() => {
     const intervalSlider = setInterval(() => {
@@ -31,6 +31,7 @@ const HowToUseContainer = () => {
   return (
     <HowToUse
       active={active}
+      setActive={setActive}
     />
     );
 };
