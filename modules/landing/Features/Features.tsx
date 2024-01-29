@@ -9,7 +9,7 @@ const Features = () => (
                     Features
                 </h1>
                 <h6 className="text-center text-primary-200 text-xs md:text-sm lg:text-base font-medium !leading-snug px-5 md:px-10 lg:px-20 xl:px-60">
-                The Vent Team can take your vision all the way to launch with token sale management, marketing support, and community backing.
+                
                 </h6>
             </div>
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-10  mt-0 sm:mt-14">

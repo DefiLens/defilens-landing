@@ -26,7 +26,7 @@ const Footer = ({
               className=""
             />
           </Link>
-          <div className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-semibold text-primary-900">
+          {/* <div className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-semibold text-primary-900">
             Keep updated. Join our newsletter.
             <div className="w-full flex justify-start items-center gap-1 border shadow rounded-2xl p-1.5">
               <input
@@ -57,7 +57,7 @@ const Footer = ({
                 </div>
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="flex justify-start items-start gap-5 px-2">
             {SocialHandles.map((handles, index) => (
               <div key={index} className="">

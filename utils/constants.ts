@@ -4,17 +4,17 @@ const getBaseURL = (NODE_ENV: string | undefined) => {
     switch (NODE_ENV) {
       case 'production':
         return 'https://defilens-data.onrender.com/';
-  
+
       case 'staging':
         return 'https://defilens-data.onrender.com/';
-  
+
       case 'dev':
         return 'http://localhost:8080/';
-  
+
       default: return 'http://localhost:8080/';
     }
   };
-  
+
 export const BASE_URL = getBaseURL(process.env.NEXT_PUBLIC_NODE_ENV);
 
 export const NavigationList = [
@@ -59,19 +59,19 @@ export const NavigationList = [
 export const SocialHandles = [
     {
       icon: telegram,
-      url: "https://telegram.org",
+      url: "https://t.me/rksunny",
     },
-    {
-      icon: discord,
-      url: "https://discord.com",
-    },
+    // {
+    //   icon: discord,
+    //   url: "https://discord.com",
+    // },
     {
         icon: twitter,
         url: "https://twitter.com/DefiLensTech",
     },
     {
         icon: gmail,
-        url: "mailto:defilens.tech@gmail.com",
+        url: "radadiyasunny970@gmail.com",
     },
     {
         icon: github,
@@ -100,16 +100,16 @@ export const BlockchainList = [
         name: "Avalanche",
         icon: avalanche,
     },
-    {
-        key: "bsc",
-        name: "Binance",
-        icon: bsc,
-    },
-    {
-        key: "conflux",
-        name: "Conflux",
-        icon: conflux,
-    },
+    // {
+    //     key: "bsc",
+    //     name: "Binance",
+    //     icon: bsc,
+    // },
+    // {
+    //     key: "conflux",
+    //     name: "Conflux",
+    //     icon: conflux,
+    // },
     {
         key: "optimism",
         name: "Optimism",
@@ -220,7 +220,7 @@ export const HowToUseList = [
     },
     {
         key : "pos-staking",
-        id: 6, 
+        id: 6,
         icon: howToUse06 ,
         title: "PoS Staking",
         description: "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
@@ -236,19 +236,26 @@ export const FeaturesList = [
             "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
     },
     {
+        key: "Condtional Trading",
+        title: "Condtional Trading",
+        icon: feature3,
+        description:
+            "It allows users to set specific conditions for their trades. When these predetermined conditions are met, the platform automatically executes the transaction. Like DCA, Autosave etc.",
+    },
+    {
         key: "Chain Abstraction",
         icon: feature2,
         title: "Chain Abstraction",
         description:
-            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains.",
+            "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains via ERC4337 and ERC7579.",
     },
-    {
-        key: "Manage all Defi Positions",
-        title: "Manage all Defi Positions",
-        icon: feature3,
-        description:
-            "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
-    },
+    // {
+    //     key: "Manage all Defi Positions",
+    //     title: "Manage all Defi Positions",
+    //     icon: feature3,
+    //     description:
+    //         "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
+    // },
     {
         key: "Single Click Execution",
         icon: feature4,
@@ -347,7 +354,7 @@ export const OurUsersSayList = [
         key: "UniverseOnBase",
         tweetId: "1717574616431079668",
     },
-    {   
+    {
         key: "ThisisVanshika",
         tweetId: "1651778427576520704",
     },
@@ -369,7 +376,7 @@ export const FAQsList = [
       answer: 'DefiLens is pioneering a platform that streamlines trading activities. To offering the ease of trading experience and swift portfolio management to users.',
     },
     {
-      id: 3, 
+      id: 3,
       question: 'What is a EVM Network ?',
       answer: 'One can create batch of transctions for any evm networks, even cross-chain transaction like lending, swap etc.',
     },
@@ -394,7 +401,7 @@ export const FooterResources = [
     {
         key: 'documentation',
         Title: 'Documentation',
-        url: 'https://defilens.notion.site/DefiLens-Progress-And-Next-64c7b0ff85a9473b9685165608df2758',
+        url: 'https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8',
     },
 ]
 
