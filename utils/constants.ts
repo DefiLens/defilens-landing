@@ -9,9 +9,9 @@ const getBaseURL = (NODE_ENV: string | undefined) => {
         return 'https://defilens-data.onrender.com/';
 
       case 'dev':
-        return 'http://localhost:8080/';
+        return 'https://defilens-data.onrender.com/';
 
-      default: return 'http://localhost:8080/';
+      default: return 'https://defilens-data.onrender.com/';
     }
   };
 
