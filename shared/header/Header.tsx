@@ -3,7 +3,7 @@ import Image from "next/image";
 import { logoLight } from "@/assets/images";
 
 const Header = () => (
-    <div className="fixed top-10 md:top-8 right-0 left-0 z-10 flex justify-between items-center gap-3 bg-primary-100 md:border md:shadow-lg md:rounded-full m-0 md:mx-24 my-1 md:my-5 p-3">
+    <div className="h-[70px] fixed top-10 md:top-8 right-0 left-0 z-10 flex justify-between items-center gap-3 bg-primary-100 md:border md:shadow-lg md:rounded-full m-0 md:mx-24 my-1 md:my-5 p-3">
         <Link
             href="/"
             className=""
