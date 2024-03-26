@@ -42,6 +42,12 @@ import conflux from './conflux.svg';
 import optimism from './optimism.svg';
 import base from './base.svg';
 import loader from './loader.svg';
+import portfolio from './nav-portfolio.svg';
+import batching from './nav-batching.svg';
+import conditional_trading from './nav-conditional-trading.svg';
+import mirgrate_asset from './nav-mirgrate-asset.svg';
+import devfolio from './devfolio.svg';
+import ethIndia from './ethIndia.svg';
 
 export {
     logoLight,
@@ -88,4 +94,10 @@ export {
     optimism,
     base,
     loader,
+    portfolio,
+    batching, 
+    conditional_trading, 
+    mirgrate_asset,
+    devfolio,
+    ethIndia
 };

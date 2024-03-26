@@ -13,16 +13,18 @@ import FooterContainer from "../../shared/footer/FooterContainer";
 const Landing = () => (
   <Layout>
     <>
-      <TopContainer />
       <HeaderContainer />
-      <HeroContainer />
-      {/* <HowToUseContainer /> */}
-      <FeaturesContainer />
-      <BackedByContainer />
-      <OurUsersSayContainer />
-      <TeamsContainer />
-      {/* <FaqContainer /> */}
-      <FooterContainer />
+      <div className="max-w-[1400px] mx-auto">
+        <TopContainer />
+        <HeroContainer />
+        {/* <HowToUseContainer /> */}
+        <FeaturesContainer />
+        <BackedByContainer />
+        <TeamsContainer />
+        <OurUsersSayContainer />
+        {/* <FaqContainer /> */}
+        <FooterContainer />
+      </div>
     </>
   </Layout>
 );
