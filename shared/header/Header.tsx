@@ -18,7 +18,7 @@ const Header = () => (
                         className=""
                     />
                 </Link>
-                <Link
+                {/* <Link
                     href="https://app.defilens.tech/portfolio"
                     className="lg:flex hidden flex-row justify-between items-center gap-3 text-black text-lg md"
                 >
@@ -56,7 +56,7 @@ const Header = () => (
                         className=""
                     />
                     <span>Migrate Asset</span>
-                </Link>
+                </Link> */}
             </div>
             <div className="transition duration-300 text-xs md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5">
                 <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-full">
