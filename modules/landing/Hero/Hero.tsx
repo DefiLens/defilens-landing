@@ -8,17 +8,11 @@ const Hero = () => (
         <div className="bg-transparent h-full flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100">
             <div className="h-full flex flex-col justify-center items-start gap-5">
                 <h1 className="text-start text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight">
-                    DefiLens: Unify, Simplify, and Amplify Your DeFi Trading via
+                    Unified Defi trading experience with
                     <span className="px-3 text-primary-700">One-click</span>
                 </h1>
                 <h6 className="text-start text-primary-300 text-xs md:text-sm lg:text-base font-medium !leading-snug">
-                    DefiLens is your all-in-one solution for DeFi trading. With
-                    innovative features like Smart Batching and Conditional
-                    Trading, powered by Account Abstraction (ERC-4337) and
-                    Modular Smart Accounts (ERC-7579), we bring a unified,
-                    simplified, and amplified trading experience across multiple
-                    chains. Take control of your DeFi assets effortlessly with
-                    DefiLens.
+                    DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.
                 </h6>
 
                 <div className="transition duration-300 text-sm md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5">

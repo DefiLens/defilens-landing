@@ -477,4 +477,4 @@ export const BackedByList = [
   },
 ];
 
-export const backendIcons = [base, link, devfolio, ethIndia];
+export const backendIcons = [base, ethIndia];
