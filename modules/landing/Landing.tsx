@@ -20,7 +20,7 @@ const Landing = () => (
         {/* <HowToUseContainer /> */}
         <FeaturesContainer />
         <BackedByContainer />
-        <TeamsContainer />
+        {/* <TeamsContainer /> */}
         <OurUsersSayContainer />
         {/* <FaqContainer /> */}
         <FooterContainer />

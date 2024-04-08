@@ -109,6 +109,15 @@ const Footer = ({
                 </div>
 
                 <div className="w-full md:w-[25%] lg:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-5 md:mt-12">
+                    <h3 className="ttext-sm sm:text-base font-bold uppercase">
+                        Email
+                    </h3>
+                    <div className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-medium text-primary-300">
+                        contact@defilens.com
+                    </div>
+                </div>
+
+                <div className="w-full md:w-[25%] lg:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-5 md:mt-12">
                     <h3 className="text-sm sm:text-base font-bold uppercase">
                         Resources
                     </h3>

@@ -95,18 +95,18 @@ export const SocialHandles = [
     icon: telegram,
     url: "https://t.me/rksunny",
   },
-  // {
-  //   icon: discord,
-  //   url: "https://discord.com",
-  // },
+  {
+    icon: discord,
+    url: "https://discord.gg/aMppurzv",
+  },
   {
     icon: twitter,
     url: "https://twitter.com/DefiLensTech",
   },
-  {
-    icon: gmail,
-    url: "radadiyasunny970@gmail.com",
-  },
+  // {
+  //   icon: gmail,
+  //   url: "contact@defilens.com",
+  // },
   {
     icon: github,
     url: "https://github.com/DefiLens",
