@@ -36,16 +36,16 @@ import {
 const getBaseURL = (NODE_ENV: string | undefined) => {
   switch (NODE_ENV) {
     case "production":
-      return "https://defilens-data.onrender.com/";
+      return "https://server.defilens.tech/api/v1";
 
     case "staging":
-      return "https://defilens-data.onrender.com/";
+      return "https://server.defilens.tech/api/v1";
 
     case "dev":
-      return "https://defilens-data.onrender.com/";
+      return "https://server.defilens.tech/api/v1";
 
     default:
-      return "https://defilens-data.onrender.com/";
+      return "https://server.defilens.tech/api/v1";
   }
 };
 
