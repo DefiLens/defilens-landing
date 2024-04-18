@@ -17,7 +17,7 @@ const FooterContainer = () =>  {
     }
     try {
       setIsNewsletterLoading(true)
-      await axiosInstance.post('newsletter', arg)
+      await axiosInstance.post('/general/newsletter', arg)
         .then(async (res) => {
           toast.success("Thanks for Joining our Newsletter.");
           setEmail('')
