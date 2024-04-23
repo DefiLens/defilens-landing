@@ -478,3 +478,15 @@ export const BackedByList = [
 ];
 
 export const backendIcons = [base, ethIndia];
+
+export const meta = {
+  title: "DefiLens",
+  description:
+    "DefiLens unified Defi trading experience with One-click. DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.",
+  keywords: "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
+  url: "https://defilens.tech",
+  image: "https://defilens.tech/twitter-cover.png",
+  SITE_NAME: "defilens.tech",
+  APP_NAME: "DefiLens",
+  username: "@DefiLensTech",
+};
