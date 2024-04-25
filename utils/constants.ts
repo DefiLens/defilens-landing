@@ -93,7 +93,7 @@ export const NavigationList = [
 export const SocialHandles = [
   {
     icon: telegram,
-    url: "https://t.me/rksunny",
+    url: "https://t.me/defilenscommunity",
   },
   {
     icon: discord,
