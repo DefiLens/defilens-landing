@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { debounce } from 'lodash';
+// import { debounce } from 'lodash';
 import HowToUse from './HowToUse';
 import { HowToUseList } from '@/utils/constants';
 
