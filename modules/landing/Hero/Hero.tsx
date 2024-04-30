@@ -17,9 +17,9 @@ const Hero = () => (
 
                 <div className="transition duration-300 text-sm md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5">
                     <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-full py-2 px-7">
-                        <div className="flex flex-row items-center gap-3 md:gap-4">
+                        <div className="flex flex-row items-center gap-3 md:gap-3">
                             <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
-                                Backed<span className="px-1 text-primary-700">By</span>
+                                Supported<span className="px-1 text-primary-700">By</span>
                             </h1>
                             {backendIcons.map((item: string, index: number) => (
                                 <div
@@ -45,7 +45,7 @@ const Hero = () => (
                             target="_blank"
                             className="flex justify-center items-center gap-1 rounded-full hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100 py-2 px-7"
                         >
-                            Launch APP <HiArrowNarrowRight size="20px" />
+                            Launch App <HiArrowNarrowRight size="20px" />
                         </a>
                     </div>
                 </div>

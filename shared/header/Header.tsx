@@ -65,7 +65,7 @@ const Header = () => (
                         target="_blank"
                         className="flex justify-center items-center gap-1 rounded-full hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100 py-2 px-4 sm:px-7"
                     >
-                        Launch APP
+                        Launch App
                     </Link>
                 </div>
             </div>
