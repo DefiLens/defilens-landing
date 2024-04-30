@@ -11,7 +11,6 @@ const OurUsersSay = () => (
                 </span>
             </h1>
         </div>
-
        
       <div className="w-full h-full flex justify-between items-start gap-8 mt-0 sm:mt-10">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center items-center lg:items-start gap-10">

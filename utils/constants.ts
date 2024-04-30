@@ -201,18 +201,21 @@ export const OurTeam = [
     icon: team1,
     name: "Sunny Radadiya",
     position: "Founder & Web3 Dev",
+    twitter: ""
   },
   {
-    key: "paril-beladiya",
+    key: "sarthak-verma",
     icon: team2,
-    name: "Paril Beladiya",
-    position: "MERN Stack Dev",
+    name: "Sarthak Verma",
+    position: "Product and Engineer",
+    twitter: ""
   },
   {
-    key: "tirth-zalavadiya",
+    key: "akshay-jangra",
     icon: team3,
-    name: "Tirth Zalavadiya",
-    position: "Ui/Ux Designer",
+    name: "Akshay Jangra",
+    position: "Full-Stack Engineer",
+    twitter: ""
   },
 ];
 
