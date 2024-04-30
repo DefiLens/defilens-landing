@@ -5,7 +5,7 @@ const BackedBy = () => (
     <div className="flex flex-col justify-center items-center gap-3 text-primary-1000 bg-primary-100 p-8 py-20 sm:p-20 sm:py-20 md:p-32 md:py-20 lg:p-38 lg:py-20 2xl:p-40 2xl:py-28">
         <div className="flex flex-col justify-center items-center gap-5">
             <h1 className="text-center text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight">
-                Backed
+                Supported
                 <span className="px-3 text-primary-700">
                     By
                 </span>
@@ -14,7 +14,7 @@ const BackedBy = () => (
       <div className="w-full h-full flex justify-between items-start gap-8 mt-0 sm:mt-8">
         <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center gap-10">
             {BackedByList?.length > 0 &&
-                BackedByList.map((item:any) => (
+                BackedByList.map((item) => (
                 <div
                     key={item.key}
                     className="w-full lg:w-96 h-full flex flex-col justify-center items-center gap-3 border border-primary-750 rounded-3xl shadow-xl shadow-purple-50 p-8 flex-grow"
