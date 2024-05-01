@@ -453,7 +453,7 @@ export const FooterResources = [
 export const FooterDeveloper = [
   {
     key: "GgitHub",
-    Title: "GitHub",
+    Title: "Github",
     url: "https://github.com/DefiLens",
   },
 ];
@@ -483,10 +483,28 @@ export const meta = {
   title: "DefiLens",
   description:
     "DefiLens unified Defi trading experience with One-click. DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.",
-  keywords: "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
+  keywords:
+    "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
   url: "https://defilens.tech",
   image: "https://defilens.tech/twitter-cover.png",
+  app: "/", // "https://app.defilens.tech/"
   SITE_NAME: "defilens.tech",
   APP_NAME: "DefiLens",
   username: "@DefiLensTech",
+  email: "contact@defilens.com",
+};
+
+export const buttonsText = {
+  headerCta: "Join Waitlist", // "Launch App"
+  heroCta: "Join Waitlist",
+  feedbackBtn: "Feedback",
+  submitBtn: "Submit",
+};
+
+export const toastMessage = {
+  newsletter: {
+    success: "Thanks for joining Newsletter.",
+    failed: "Failed to join Newsletter! Please try again.",
+    catch: "Oops! Something went wrong",
+  },
 };

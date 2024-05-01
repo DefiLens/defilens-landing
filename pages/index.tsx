@@ -1,4 +1,4 @@
-import LandingContainer from "@/modules/landing/LandingContainer";
+import App from "@/modules/App";
 import { Toaster } from "react-hot-toast";
 import MetaTags from "@/shared/MetaTags";
 
@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <MetaTags />
       <Toaster position="top-right" />
-      <LandingContainer />
+      <App />
     </>
   );
 }
