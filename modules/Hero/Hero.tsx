@@ -35,9 +35,9 @@ const Hero = () => {
           }}
         >
           {/* Heading and Description */}
-          <h1 className="text-start text-xl md:text-3xl lg:text-7xl font-bold">
-            Unified Defi trading experience with
-            <span className="px-3 text-primary-700">One-click</span>
+          <h1 className="text-start text-xl md:text-3xl lg:text-7xl font-bold font-satoshi">
+            <span className="mr-3">Unified Defi trading experience with</span>
+            <span className="inline-flex text-primary-700">One-click</span>
           </h1>
           <h6 className="text-start text-primary-300 text-xs md:text-sm lg:text-lg font-bold">
             DefiLens abstract chains and execute multiple orders in batch
@@ -45,7 +45,7 @@ const Hero = () => {
           </h6>
           <div className="mt-8 inline-flex items-center justify-between w-full">
             {/* Supported By */}
-            <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold">
+            <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold font-satoshi">
               <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
                 Supported<span className="px-1 text-primary-700">by</span>
               </h1>
