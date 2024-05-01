@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import toast from "react-hot-toast";
-import axiosInstance from "@/axiosInstance/axiosInstance";
+import axiosInstance from "@/utils/axiosInstance";
 import Footer from "./Footer";
 import { toastMessage } from "@/utils/constants";
 

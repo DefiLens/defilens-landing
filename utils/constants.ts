@@ -487,7 +487,8 @@ export const meta = {
     "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
   url: "https://defilens.tech",
   image: "https://defilens.tech/twitter-cover.png",
-  app: "/", // "https://app.defilens.tech/"
+  app: "/", // Add Waitlist link here
+  // app: "https://app.defilens.tech/",
   SITE_NAME: "defilens.tech",
   APP_NAME: "DefiLens",
   username: "@DefiLensTech",
@@ -496,7 +497,7 @@ export const meta = {
 
 export const buttonsText = {
   headerCta: "Join Waitlist", // "Launch App"
-  heroCta: "Join Waitlist",
+  heroCta: "Join Waitlist", // "Launch App"
   feedbackBtn: "Feedback",
   submitBtn: "Submit",
 };
