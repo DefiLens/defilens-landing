@@ -1,14 +1,12 @@
-import { useEffect, useState, useRef } from 'react';
-// import { debounce } from 'lodash';
-import HowToUse from './HowToUse';
-import { HowToUseList } from '@/utils/constants';
+import { useEffect, useState, useRef } from "react";
+import HowToUse from "./HowToUse";
+import { HowToUseList } from "@/utils/constants";
 
 const HowToUseContainer = () => {
+  const ref = useRef<any>(null);
+  const [active, setActive] = useState(1);
 
-  const ref = useRef<any>(null)
-  const [active, setActive] = useState(1)
-
-  ref.current = active
+  ref.current = active;
 
   // useEffect(() => {
   //   const handleScroll = debounce(() => {
@@ -22,18 +20,15 @@ const HowToUseContainer = () => {
 
   useEffect(() => {
     const intervalSlider = setInterval(() => {
-      setActive((current: any) => (current < HowToUseList.length ? current + 1 : 1));
+      setActive((current: any) =>
+        current < HowToUseList.length ? current + 1 : 1
+      );
     }, 5000);
 
     return () => clearInterval(intervalSlider);
   }, []);
 
-  return (
-    <HowToUse
-      active={active}
-      setActive={setActive}
-    />
-    );
+  return <HowToUse active={active} setActive={setActive} />;
 };
 
 export default HowToUseContainer;

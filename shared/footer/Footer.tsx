@@ -4,6 +4,7 @@ import {loader, logoLight} from "@/assets/images"
 import {
     FooterDeveloper,
     FooterResources,
+    meta,
     SocialHandles,
 } from "@/utils/constants"
 import {tFooter} from "./types"
@@ -112,9 +113,11 @@ const Footer = ({
                     <h3 className="ttext-sm sm:text-base font-bold uppercase">
                         Email
                     </h3>
-                    <div className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-medium text-primary-300">
-                        contact@defilens.com
-                    </div>
+                    <a className="flex flex-col justify-start items-start gap-3 text-xs sm:text-sm font-medium text-primary-300"
+                        href={`mailto:${meta.email}`}
+                    >
+                        {meta.email}
+                    </a>
                 </div>
 
                 <div className="w-full md:w-[25%] lg:w-[22%] flex flex-col justify-start items-start gap-3 px-5 mt-5 md:mt-12">
@@ -152,7 +155,7 @@ const Footer = ({
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-3 text-primary-300 text-xs font-medium p-5 sm:px-8">
+            {/* <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-3 text-primary-300 text-xs font-medium p-5 sm:px-8">
                 <div className="text-center">© Copyright DefiLens, Inc.</div>
                 <div className="flex justify-center items-center gap-3 md:gap-5">
                     <div className="text-center">Terms & Conditions</div>
@@ -160,7 +163,7 @@ const Footer = ({
                     <div className="text-center">Cookies</div>
                     <div className="text-center">Disclaimers</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
 )

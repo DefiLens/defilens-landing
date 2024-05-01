@@ -7,7 +7,7 @@ const BackedBy = () => (
             <h1 className="text-center text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight">
                 Supported
                 <span className="px-3 text-primary-700">
-                    By
+                    by
                 </span>
             </h1>
         </div>
