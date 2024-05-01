@@ -32,9 +32,15 @@ a {
 }
 
 /* Handle */
+// Hide the scrollbar
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
 ::-webkit-scrollbar-thumb {
   background: #6D55FC;
-  cursor: pointer;
+  cursor: default;
+  border-radius: 28px;
 }
 
 /* Handle on hover */
@@ -44,8 +50,9 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   height: 8px;
+  border-radius: 100px;
 }
 
 
