@@ -3,27 +3,18 @@ import {
   avalanche,
   base,
   baseGrant,
-  bsc,
-  conflux,
-  devfolio,
   devfolioGrant,
   discord,
   eth,
   ethIndia,
   ethIndiaGrant,
-  feature1,
-  feature2,
-  feature3,
-  feature4,
   github,
-  gmail,
   howToUse01,
   howToUse02,
   howToUse03,
   howToUse04,
   howToUse05,
   howToUse06,
-  link,
   optimism,
   polygon,
   team1,
@@ -33,7 +24,28 @@ import {
   twitter,
 } from "@/assets/images";
 import { IconType } from "react-icons";
-import { HiArrowDownCircle, HiCursorArrowRays, HiCubeTransparent, HiMiniSquare3Stack3D, HiOutlineCheckCircle } from "react-icons/hi2";
+import {
+  HiCursorArrowRays,
+  HiCubeTransparent,
+  HiMiniSquare3Stack3D,
+  HiOutlineCheckCircle,
+} from "react-icons/hi2";
+
+export const meta = {
+  title: "DefiLens",
+  description:
+    "DefiLens unified Defi trading experience with One-click. DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.",
+  keywords:
+    "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
+  url: "https://defilens.tech",
+  image: "https://defilens.tech/twitter-cover.png",
+  app: "/", // Add Waitlist link here
+  // app: "https://app.defilens.tech/",
+  SITE_NAME: "defilens.tech",
+  APP_NAME: "DefiLens",
+  username: "@DefiLensTech",
+  email: "contact@defilens.com",
+};
 
 const getBaseURL = (NODE_ENV: string | undefined) => {
   switch (NODE_ENV) {
@@ -94,22 +106,21 @@ export const NavigationList = [
 
 export const SocialHandles = [
   {
+    title: "Community on Telegram",
     icon: telegram,
     url: "https://t.me/defilenscommunity",
   },
-  {
-    icon: discord,
-    url: "https://discord.gg/aMppurzv",
-  },
-  {
-    icon: twitter,
-    url: "https://twitter.com/DefiLensTech",
-  },
   // {
-  //   icon: gmail,
-  //   url: "contact@defilens.com",
+  //   icon: discord,
+  //   url: "https://discord.gg/aMppurzv",
   // },
   {
+    title: "Follow us on X",
+    icon: twitter,
+    url: "https://x.com/DefiLensTech",
+  },
+  {
+    title: "Code on Github",
     icon: github,
     url: "https://github.com/DefiLens",
   },
@@ -301,7 +312,7 @@ export const FeaturesList: {
     icon: HiCursorArrowRays,
     title: "Single Click Execution",
     description:
-    "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks.",
+      "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks.",
   },
   // {
   //     key: "Manage all Defi Positions",
@@ -444,26 +455,34 @@ export const FAQsList = [
   },
 ];
 
-export const FooterResources = [
-  {
-    key: "app",
-    Title: "App",
-    url: "https://app.defilens.tech",
-  },
-  {
-    key: "documentation",
-    Title: "Documentation",
-    url: "https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8",
-  },
-];
-
-export const FooterDeveloper = [
-  {
-    key: "GgitHub",
-    Title: "Github",
-    url: "https://github.com/DefiLens",
-  },
-];
+export const footerLinks = {
+  about: [
+    {
+      key: "team",
+      title: "Team (coming soon)",
+      url: "/team"
+    }
+  ],
+  products: [
+    {
+      key: "app",
+      title: "App",
+      url: meta.app,
+    },
+    {
+      key: "frame",
+      title: "DegenFi Frame",
+      url: "https://warpcast.com/degenfi"
+    }
+  ],
+  resources: [
+    {
+      key: "documentation",
+      title: "Documentation",
+      url: "https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8",
+    },
+  ],
+};
 
 export const SupportedByList = [
   {
@@ -485,22 +504,6 @@ export const SupportedByList = [
 ];
 
 export const backendIcons = [base, ethIndia];
-
-export const meta = {
-  title: "DefiLens",
-  description:
-    "DefiLens unified Defi trading experience with One-click. DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.",
-  keywords:
-    "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
-  url: "https://defilens.tech",
-  image: "https://defilens.tech/twitter-cover.png",
-  app: "/", // Add Waitlist link here
-  // app: "https://app.defilens.tech/",
-  SITE_NAME: "defilens.tech",
-  APP_NAME: "DefiLens",
-  username: "@DefiLensTech",
-  email: "contact@defilens.com",
-};
 
 export const buttonsText = {
   headerCta: "Join Waitlist", // "Launch App"
