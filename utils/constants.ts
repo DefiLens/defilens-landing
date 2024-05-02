@@ -32,6 +32,8 @@ import {
   telegram,
   twitter,
 } from "@/assets/images";
+import { IconType } from "react-icons";
+import { HiArrowDownCircle, HiCursorArrowRays, HiCubeTransparent, HiMiniSquare3Stack3D, HiOutlineCheckCircle } from "react-icons/hi2";
 
 const getBaseURL = (NODE_ENV: string | undefined) => {
   switch (NODE_ENV) {
@@ -266,28 +268,40 @@ export const HowToUseList = [
       "User can refinance their multiple loans or defi positions like lending, derivatives, options and swaps in single click and Done.",
   },
 ];
-
-export const FeaturesList = [
+``;
+export const FeaturesList: {
+  key: string;
+  icon: IconType;
+  title: string;
+  description: string;
+}[] = [
   {
     key: "Batching Transaction",
-    icon: feature1,
+    icon: HiMiniSquare3Stack3D,
     title: "Batching Transaction",
     description:
       "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
   },
   {
+    key: "Chain Abstraction",
+    icon: HiCubeTransparent,
+    title: "Chain Abstraction",
+    description:
+      "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains via ERC4337 and ERC7579.",
+  },
+  {
     key: "Condtional Trading",
+    icon: HiOutlineCheckCircle,
     title: "Condtional Trading",
-    icon: feature3,
     description:
       "It allows users to set specific conditions for their trades. When these predetermined conditions are met, the platform automatically executes the transaction. Like DCA, Autosave etc.",
   },
   {
-    key: "Chain Abstraction",
-    icon: feature2,
-    title: "Chain Abstraction",
+    key: "Single Click Execution",
+    icon: HiCursorArrowRays,
+    title: "Single Click Execution",
     description:
-      "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains via ERC4337 and ERC7579.",
+    "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks.",
   },
   // {
   //     key: "Manage all Defi Positions",
@@ -296,13 +310,6 @@ export const FeaturesList = [
   //     description:
   //         "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
   // },
-  {
-    key: "Single Click Execution",
-    icon: feature4,
-    title: "Single Click Execution",
-    description:
-      "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks.",
-  },
 ];
 
 export const PartnersWith = [
@@ -458,7 +465,7 @@ export const FooterDeveloper = [
   },
 ];
 
-export const BackedByList = [
+export const SupportedByList = [
   {
     key: "Base",
     url: "https://twitter.com/UniverseOnBase/status/1717574616431079668",
@@ -472,7 +479,7 @@ export const BackedByList = [
     url: "https://devfolio.co/projects/defilens-c7b4",
     icon: null,
     icon1: devfolioGrant,
-    icon2: link,
+    icon2: null,
     icon3: ethIndiaGrant,
   },
 ];

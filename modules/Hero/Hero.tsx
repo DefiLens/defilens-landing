@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useInView } from "framer-motion";
 import { clsx } from "clsx";
-import { HiChevronRight } from "react-icons/hi2";
 import { hero } from "@/assets/images";
 import {
   backendIcons,
@@ -22,13 +22,13 @@ const Hero = () => {
         "p-8 sm:p-20 md:p-32 lg:p-24 pt-40 sm:pt-40 md:pt-40 lg:pt-44 2xl:pt-48"
       )}
     >
-      <div className="bg-transparent h-full flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100">
+      <div className="bg-transparent max-w-[1380px] w-full md:w-[94%] h-full flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100">
         {/* Left Content */}
         <div
           className="h-full flex flex-col justify-center items-start gap-5"
           ref={ref}
           style={{
-            transform: isInView ? "none" : "translateY(64px)",
+            transform: isInView ? "none" : "translateY(-64px)",
             opacity: isInView ? 1 : 0,
             transition:
               "transform: none;opacity: 0;transition: all 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="mr-3">Unified Defi trading experience with</span>
             <span className="inline-flex text-primary-700">One-click</span>
           </h1>
-          <h6 className="text-start text-primary-300 text-xs md:text-sm lg:text-lg font-bold">
+          <h6 className="text-start text-primary-300 text-xs md:text-sm lg:text-xl leading-8 font-semibold">
             DefiLens abstract chains and execute multiple orders in batch
             across-chains with smart wallet designed platform.
           </h6>
@@ -56,20 +56,16 @@ const Hero = () => {
               ))}
             </div>
             {/* Launch App Button */}
-            <div className="transition duration-200 h-fit text-sm md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5">
-              <div className="flex h-full w-full items-center justify-center bg-primary-100 rounded-full">
-                <a
+            <div className="transition-all text-xs md:text-base font-semibold bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
+              <button className="flex h-full w-full items-center justify-center rounded-full">
+                <Link
                   href={meta.app}
                   target="_blank"
-                  className="flex justify-center items-center gap-1 rounded-full hover:bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 hover:text-primary-100 py-2 px-6 group transition-colors duration-200"
+                  className="flex justify-center items-center gap-1 rounded-full text-white py-2 px-4 sm:px-7"
                 >
-                  {buttonsText.heroCta}{" "}
-                  <HiChevronRight
-                    size="16px"
-                    className="group-hover:translate-x-1 transition-transform duration-200"
-                  />
-                </a>
-              </div>
+                  {buttonsText.headerCta}
+                </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -81,10 +77,10 @@ const Hero = () => {
           className="w-auto lg:w-[350px] xl:w-[450px] 2xl:w-[575px] 3xl:w-[750px]"
           ref={ref}
           style={{
-            transform: isInView ? "none" : "translateY(64px)",
+            transform: isInView ? "none" : "translateY(-64px)",
             opacity: isInView ? 1 : 0,
             transition:
-              "transform: none;opacity: 0;transition: all 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+              "transform: none;opacity: 0;transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
           }}
         />
       </div>
@@ -97,7 +93,7 @@ const Hero = () => {
           transform: isInView ? "none" : "translateY(-64px)",
           opacity: isInView ? 1 : 0,
           transition:
-            "transform: none;opacity: 0;transition: all 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+            "transform: none;opacity: 0;transition: all 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
         }}
       >
         {BlockchainList.length > 0 &&

@@ -10,12 +10,12 @@ const Header = () => {
       <div className="max-w-[1380px] w-full md:w-[94%] mx-auto h-[70px] placeholder:h-[70px] flex justify-between items-center gap-3 py-10 px-[14px]">
         <div className="flex justify-between items-center gap-8">
           <Link href={meta.app}>
-            <Image src={logoLight} width={150} height={150} alt="DefiLens" />
+            <Image src={logoLight} priority fetchPriority="high" width={150} height={150} alt="DefiLens" />
           </Link>
         </div>
         {/* CTA */}
         {/* <div className="transition-all duration-300 text-xs md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5"> */}
-        <div className="transition-all duration-300 text-xs md:text-base font-semibold bg-primary-700 rounded-full shadow-md p-0.5">
+        <div className="transition-all text-xs md:text-base font-semibold bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
           <button className="flex h-full w-full items-center justify-center rounded-full">
             <Link
               href={meta.app}
