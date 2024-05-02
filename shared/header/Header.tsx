@@ -5,13 +5,25 @@ import { buttonsText, meta } from "@/utils/constants";
 
 const Header = () => {
   return (
-    <div className="w-full absolute top-0 z-10 bg-transparent"> 
+    <div className="w-full absolute top-0 z-10 bg-transparent">
       {/* <div className="max-w-[1380px] w-full md:w-[94%] mx-auto h-[70px] placeholder:h-[70px] flex justify-between items-center gap-3 bg-primary-100 md:border md:shadow-lg md:rounded-full py-3 px-[14px]"> */}
       <div className="max-w-[1380px] w-full md:w-[94%] mx-auto h-[70px] placeholder:h-[70px] flex justify-between items-center gap-3 py-10 px-[14px]">
-        <div className="flex justify-between items-center gap-8">
+        <div className="relative flex justify-between items-center gap-8">
           <Link href={meta.app}>
-            <Image src={logoLight} priority fetchPriority="high" width={150} height={150} alt="DefiLens" />
+            <Image
+              src={logoLight}
+              priority
+              fetchPriority="high"
+              width={150}
+              height={150}
+              alt="DefiLens"
+            />
           </Link>
+          <p className="absolute hidden sm:block top-2 -right-[120px] px-4 pb-0.5 rounded-full font-satoshi border border-purple-300 bg-purple-400 bg-opacity-30">
+            <span className="text-sm font-semibold text-purple-800">
+              private beta
+            </span>
+          </p>
         </div>
         {/* CTA */}
         {/* <div className="transition-all duration-300 text-xs md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5"> */}
