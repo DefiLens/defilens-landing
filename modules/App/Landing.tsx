@@ -1,12 +1,12 @@
 import Layout from "@/shared/layout";
-import HeroContainer from "../Hero";
+import HeroContainer from "@/modules/Hero";
 // import TopContainer from "@/shared/Top/TopContainer";
 import HeaderContainer from "@/shared/header";
-// import HowToUseContainer from "./HowToUse/HowToUseContainer";
-import FeaturesContainer from "../Features";
-import BackedByContainer from "../BackedBy";
-// import OurUsersSayContainer from "./OurUsersSay/OurUsersSayContainer";
-// import TeamsContainer from "./Teams/TeamsContainer";
+// import HowToUseContainer from "@/modules/HowToUse";
+import FeaturesContainer from "@/modules/Features";
+import BackedByContainer from "@/modules/BackedBy";
+// import OurUsersSayContainer from "@/modules/OurUsersSay";
+// import TeamsContainer from "@/modules/Teams";
 // import FaqContainer from "./Faq/FaqContainer";
 import FooterContainer from "@/shared/footer";
 
