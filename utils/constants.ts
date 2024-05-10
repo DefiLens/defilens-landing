@@ -39,8 +39,7 @@ export const meta = {
     "defi, ethereum, base, arbitrum, polygon, optimism, cross chain, cross-chain, acccount abstraction, smart account, trading, batching, rebalance",
   url: "https://defilens.tech",
   image: "https://defilens.tech/twitter-cover.png",
-  app: "/", // Add Waitlist link here
-  // app: "https://app.defilens.tech/",
+  app: "https://app.defilens.tech/",
   SITE_NAME: "defilens.tech",
   APP_NAME: "DefiLens",
   username: "@DefiLensTech",
@@ -460,8 +459,8 @@ export const footerLinks = {
     {
       key: "team",
       title: "Team (coming soon)",
-      url: "/team"
-    }
+      url: "/",
+    },
   ],
   products: [
     {
@@ -472,8 +471,8 @@ export const footerLinks = {
     {
       key: "frame",
       title: "DegenFi Frame",
-      url: "https://warpcast.com/degenfi"
-    }
+      url: "https://warpcast.com/degenfi",
+    },
   ],
   resources: [
     {
@@ -506,8 +505,8 @@ export const SupportedByList = [
 export const backendIcons = [base, ethIndia];
 
 export const buttonsText = {
-  headerCta: "Join Waitlist", // "Launch App"
-  heroCta: "Join Waitlist", // "Launch App"
+  headerCta: "Launch App", // "Launch App"
+  heroCta: "Launch App", // "Launch App"
   feedbackBtn: "Feedback",
   submitBtn: "Submit",
 };

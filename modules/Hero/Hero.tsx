@@ -63,7 +63,7 @@ const Hero = () => {
                   target="_blank"
                   className="flex justify-center items-center gap-1 rounded-full text-white py-2 px-4 sm:px-7"
                 >
-                  {buttonsText.headerCta}
+                  {buttonsText.heroCta}
                 </Link>
               </button>
             </div>
