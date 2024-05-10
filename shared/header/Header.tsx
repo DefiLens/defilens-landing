@@ -27,8 +27,8 @@ const Header = () => {
         </div>
         {/* CTA */}
         {/* <div className="transition-all duration-300 text-xs md:text-base font-semibold bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 rounded-full shadow-md p-0.5"> */}
-        <div className="transition-all text-xs md:text-base font-semibold bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
-          <button className="flex h-full w-full items-center justify-center rounded-full">
+        <div className="relative text-xs md:text-base font-semibold">
+          <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
             <Link
               href={meta.app}
               target="_blank"
@@ -38,6 +38,13 @@ const Header = () => {
               {buttonsText.headerCta}
             </Link>
           </button>
+          <Image
+            src="/images/join_waitlist_text.png"
+            alt="join waitlist"
+            width={1240}
+            height={124}
+            className="absolute top-12 right-12 z-10"
+          />
         </div>
       </div>
     </div>
