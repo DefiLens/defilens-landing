@@ -27,12 +27,12 @@ const Hero = () => {
         <div
           className="h-full flex flex-col justify-center items-start gap-5"
           ref={ref}
-          // style={{
-          //   transform: isInView ? "none" : "translateY(-64px)",
-          //   opacity: isInView ? 1 : 0,
-          //   transition:
-          //     "transform: none;opacity: 0;transition: all 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
-          // }}
+          style={{
+            transform: isInView ? "none" : "translateY(-64px)",
+            opacity: isInView ? 1 : 0,
+            transition:
+              "transform: none;opacity: 0;transition: all 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+          }}
         >
           {/* Heading and Description */}
           <h1 className=" text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi">
@@ -77,12 +77,12 @@ const Hero = () => {
           alt="hero-img"
           className="w-auto lg:w-[350px] xl:w-[450px] 2xl:w-[575px] 3xl:w-[750px]"
           ref={ref}
-          // style={{
-          //   transform: isInView ? "none" : "translateY(-64px)",
-          //   opacity: isInView ? 1 : 0,
-          //   transition:
-          //     "transform: none;opacity: 0;transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
-          // }}
+          style={{
+            transform: isInView ? "none" : "translateY(-64px)",
+            opacity: isInView ? 1 : 0,
+            transition:
+              "transform: none;opacity: 0;transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+          }}
         />
       </div>
 
@@ -90,12 +90,12 @@ const Hero = () => {
       <div
         className="w-full h-full grid grid-cols-3 sm:flex flex-wrap justify-center items-center gap-5 lg:gap-8 mt-5 lg:mt-20 select-none"
         ref={ref}
-        // style={{
-        //   transform: isInView ? "none" : "translateY(-64px)",
-        //   opacity: isInView ? 1 : 0,
-        //   transition:
-        //     "transform: none;opacity: 0;transition: all 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
-        // }}
+        style={{
+          transform: isInView ? "none" : "translateY(-64px)",
+          opacity: isInView ? 1 : 0,
+          transition:
+            "transform: none;opacity: 0;transition: all 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+        }}
       >
         {BlockchainList.length > 0 &&
           BlockchainList.map((item) => (
