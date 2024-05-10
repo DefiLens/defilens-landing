@@ -2,10 +2,10 @@ import Card from "@/shared/Card";
 import { FeaturesList } from "@/utils/constants";
 
 const Features = () => (
-  <div className="features-container min-h-screen flex flex-col justify-center items-center py-20 lg:py-20">
+  <div className="features-container min-h-screen flex flex-col justify-center items-center p-5 lg:p-24 py-20 lg:py-20">
     <div className="max-w-[1380px] w-full md:w-[94%] flex flex-col justify-center items-center gap-3 text-black">
       {/* Heading */}
-      <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold font-satoshi">
+      <h1 className="text-center mb-5 sm:mb-0 text-2xl md:text-3xl lg:text-4xl font-extrabold font-satoshi">
         Private beta <span className="font-medium text-primary-700 underline underline-offset-[6px]">Features</span>
       </h1>
       {/* Features Cards */}
