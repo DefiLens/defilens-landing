@@ -18,11 +18,15 @@ const Header = () => {
               alt="DefiLens"
             />
           </Link>
-          <p className="absolute hidden sm:block top-2 -right-[120px] px-4 pb-0.5 rounded-full font-satoshi border border-purple-300 bg-purple-400 bg-opacity-30">
+          <a
+            href={meta.app}
+            target="_blank"
+            className="absolute hidden sm:block top-2 -right-[220px] px-4 pb-0.5 rounded-full font-satoshi border border-purple-300 bg-purple-400 bg-opacity-30"
+          >
             <span className="text-sm font-semibold text-purple-800">
-              private beta
+              join waitlist for private beta
             </span>
-          </p>
+          </a>
         </div>
         {/* CTA */}
         <div className="relative text-xs md:text-base font-semibold">

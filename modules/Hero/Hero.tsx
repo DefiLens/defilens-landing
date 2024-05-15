@@ -15,7 +15,7 @@ const Hero = () => {
     <div
       className={clsx(
         "hero-container flex flex-col justify-start items-center text-center gap-4 lg:gap-6",
-        "sm:h-screen 2xl:gap-32 text-primary-1000 bg-primary-100",
+        "sm:min-h-screen 2xl:gap-32 text-primary-1000 bg-primary-100",
         "p-8 sm:p-20 lg:p-24 pt-32 sm:pt-40 md:pt-40 lg:pt-44 2xl:pt-48"
       )}
     >
