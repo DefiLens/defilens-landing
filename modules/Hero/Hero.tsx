@@ -1,7 +1,6 @@
-import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { clsx } from "clsx";
 import { hero } from "@/assets/images";
 import {
@@ -12,8 +11,6 @@ import {
 } from "@/utils/constants";
 
 const Hero = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
   return (
     <div
       className={clsx(
@@ -24,27 +21,45 @@ const Hero = () => {
     >
       <div className="bg-transparent max-w-[1380px] w-full md:w-[94%] h-full flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100">
         {/* Left Content */}
-        <div
-          className="h-full flex flex-col justify-center items-start gap-5"
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateY(-64px)",
-            opacity: isInView ? 1 : 0,
-            transition:
-              "transform: none;opacity: 0;transition: all 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
-          }}
-        >
+        <div className="h-full flex flex-col justify-center items-start gap-5">
           {/* Heading and Description */}
-          <h1 className=" text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi">
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi"
+          >
             <span className="mr-3">Unified Defi trading experience with</span>
             <span className="inline-flex text-primary-700">One-click</span>
-          </h1>
-          <h6 className=" text-center sm:text-start text-primary-300 text-xs md:text-sm lg:text-xl leading-5 sm:leading-8 font-semibold">
+          </motion.h1>
+          <motion.h6
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className=" text-center sm:text-start text-primary-300 text-xs md:text-sm lg:text-xl leading-5 sm:leading-8 font-semibold"
+          >
             DefiLens abstract chains and execute multiple orders in batch
             across-chains with smart wallet designed platform.
-          </h6>
+          </motion.h6>
           {/* Supported by */}
-          <div className="mt-8 inline-flex items-center justify-between w-full">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.4,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="mt-8 inline-flex items-center justify-between w-full"
+          >
             {/* Supported By */}
             <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold font-satoshi">
               <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
@@ -68,35 +83,29 @@ const Hero = () => {
                 </Link>
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* hero image in right */}
-
-        <Image
-          src={hero}
-          alt="hero-img"
-          className="w-auto lg:w-[350px] xl:w-[450px] 2xl:w-[575px] 3xl:w-[750px]"
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateY(-64px)",
-            opacity: isInView ? 1 : 0,
-            transition:
-              "transform: none;opacity: 0;transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.7,
+            ease: [0, 0.71, 0.2, 1.01],
           }}
-        />
+          className="w-full h-full"
+        >
+          <Image
+            src={hero}
+            alt="hero-img"
+            className="w-auto lg:w-[350px] xl:w-[450px] 2xl:w-[575px] 3xl:w-[750px]"
+          />
+        </motion.div>
       </div>
 
       {/* Supported Networks */}
-      <div
-        className="w-full h-full grid grid-cols-3 sm:flex flex-wrap justify-center items-center gap-5 lg:gap-8 mt-5 lg:mt-20 select-none"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateY(-64px)",
-          opacity: isInView ? 1 : 0,
-          transition:
-            "transform: none;opacity: 0;transition: all 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;",
-        }}
-      >
+      <div className="w-full h-full grid grid-cols-3 sm:flex flex-wrap justify-center items-center gap-5 lg:gap-8 mt-5 lg:mt-20 select-none">
         {BlockchainList.length > 0 &&
           BlockchainList.map((item) => (
             <div key={item.key} className="flex items-center gap-3">
