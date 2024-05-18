@@ -1,6 +1,5 @@
 import { OurTeam } from "@/utils/constants";
 import Image from "next/image";
-import { TwitterTweetEmbed } from "react-twitter-embed";
 
 const Teams = () => (
     <div className="teams-container flex flex-col justify-center items-center gap-3 text-primary-1000 bg-primary-100 p-8 py-14 sm:p-20 sm:py-14 md:p-32 md:py-14 lg:p-38 lg:py-14 2xl:p-40 2xl:py-20">

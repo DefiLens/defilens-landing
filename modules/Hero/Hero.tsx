@@ -44,7 +44,7 @@ const Hero = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className=" text-center sm:text-start text-primary-300 text-xs md:text-sm lg:text-xl leading-5 sm:leading-8 font-semibold"
+            className="text-center sm:text-start text-primary-850 text-xs md:text-sm lg:text-xl leading-5 sm:leading-8 font-medium"
           >
             DefiLens abstract chains and execute multiple orders in batch
             across-chains with smart wallet designed platform.
