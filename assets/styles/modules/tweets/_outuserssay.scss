@@ -1,0 +1,11 @@
+.tweet-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust minmax value as needed */
+  gap: 20px; /* Adjust gap between grid items as needed */
+  padding: 20px;
+  box-sizing: border-box;
+}

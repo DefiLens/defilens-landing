@@ -11,7 +11,7 @@ const Footer = ({
   isNewsletterLoading,
   handleCreateNewsletter,
 }: tFooter) => (
-  <footer className="footer-container">
+  <footer className="footer-container lg:px-24">
     <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-3 py-10 px-5 mx-auto max-w-[1380px] w-full md:w-[94%] text-primary-1000">
       {/* Logo and Socials */}
       <div className="w-full sm:w-1/4 flex flex-row sm:flex-col justify-between sm:justify-start items-center sm:items-start gap-6">

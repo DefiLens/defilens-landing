@@ -14,7 +14,7 @@ export default function Card({ icon, title, description }: Props) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.5}
-      className="fix-safari-tilt relative hover:shadow-xl hover:shadow-purple-100/70 overflow-hidden rounded-2xl bg-gradient-to-b from-white to-purple-200 p-px"
+      className="fix-safari-tilt relative hover:shadow-xl cursor-default hover:shadow-purple-100/70 overflow-hidden rounded-2xl bg-gradient-to-b from-white to-purple-200 p-px"
     >
       <div className="relative flex h-full flex-col gap-6 rounded-2xl p-8 bg-purple-50">
         {icon}

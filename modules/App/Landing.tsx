@@ -5,7 +5,7 @@ import HeaderContainer from "@/shared/header";
 // import HowToUseContainer from "@/modules/HowToUse";
 import FeaturesContainer from "@/modules/Features";
 import BackedByContainer from "@/modules/BackedBy";
-// import OurUsersSayContainer from "@/modules/OurUsersSay";
+import OurUsersSayContainer from "@/modules/OurUsersSay";
 // import TeamsContainer from "@/modules/Teams";
 // import FaqContainer from "./Faq/FaqContainer";
 import FooterContainer from "@/shared/footer";
@@ -21,7 +21,7 @@ const Landing = () => (
         <FeaturesContainer />
         <BackedByContainer />
         {/* <TeamsContainer /> */}
-        {/* <OurUsersSayContainer /> */}
+        <OurUsersSayContainer />
         {/* <FaqContainer /> */}
         <FooterContainer />
       </div>
