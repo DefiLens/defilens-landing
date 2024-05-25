@@ -29,7 +29,9 @@ import {
   HiCubeTransparent,
   HiMiniSquare3Stack3D,
   HiOutlineCheckCircle,
-  HiOutlineSun
+  HiOutlineSun,
+  HiArrowsRightLeft,
+  HiCheckBadge
 } from "react-icons/hi2";
 
 export const meta = {
@@ -309,14 +311,14 @@ export const FeaturesList: {
   },
   {
     key: "Migrate DeFi Positions",
-    icon: HiOutlineCheckCircle,
+    icon: HiArrowsRightLeft,
     title: "Migrate DeFi Positions",
     description:
       "Easily transfer and manage your DeFi positions across various protocols and chains.",
   },
   {
     key: "Pay Once in Stablecoin",
-    icon: HiOutlineCheckCircle,
+    icon: HiCheckBadge,
     title: "Pay Once in Stablecoin",
     description:
       "Simplify payments by covering all transaction fees using stablecoins in one go.",
@@ -325,7 +327,7 @@ export const FeaturesList: {
     key: "Single Click Execution",
     icon: HiCursorArrowRays,
     title: "Single Click Execution",
-    description: "Execute batch of DeFi actions with just a single click witg eliminating complexity.",
+    description: "Execute batch of DeFi actions with just a single click with eliminating complexity.",
       // "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster executions.",
   },
   // {

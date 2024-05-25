@@ -63,7 +63,7 @@ const Hero = () => {
             {/* Supported By */}
             <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold font-satoshi">
               <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
-                Supported<span className="px-1 text-primary-700">by</span>
+                Grant Received<span className="px-1 text-primary-700">from</span>
               </h1>
               {backendIcons.map((item: string, index) => (
                 <div key={index} className="w-6 h-6 md:w-8 md:h-8">
