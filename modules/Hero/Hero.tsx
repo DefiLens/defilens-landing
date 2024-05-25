@@ -33,8 +33,8 @@ const Hero = () => {
             }}
             className="text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi"
           >
-            <span className="mr-3">Unified Defi trading experience with</span>
-            <span className="inline-flex text-primary-700">One-click</span>
+            <span className="mr-3">Unified Defi experience with</span>
+            <span className="inline-flex text-primary-700">Chain Abstraction</span>
           </motion.h1>
           <motion.h6
             initial={{ opacity: 0, scale: 0.5 }}
