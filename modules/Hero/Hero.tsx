@@ -49,16 +49,16 @@ const Hero = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="text-center lg:text-start text-4xl md:text-5xl lg:text-5xl font-bold font-satoshi"
+            className="text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi"
           >
-            <div className="font-bold text-primary-800 mb-4 fade-in leading-[1.2]">
+            <div className="font-bold text-primary-800 mb-4 leading-[1.2]">
               {/* <span>{headings[currentHeading]}</span>
               {(currentHeading === 1 || currentHeading === 2) && (
                 <span className="inline-flex text-primary-700 ml-2">
                   One-click
                 </span>
               )} */}
-              <span>"Rebalance or Migrate portfolio with</span>
+              <span>Rebalance or Migrate portfolio with</span>
               <span className="inline-flex text-primary-700 ml-2">One-click</span>
             </div>
           </motion.h1>
