@@ -29,6 +29,9 @@ import {
   HiCubeTransparent,
   HiMiniSquare3Stack3D,
   HiOutlineCheckCircle,
+  HiOutlineSun,
+  HiArrowsRightLeft,
+  HiCheckBadge
 } from "react-icons/hi2";
 
 export const meta = {
@@ -286,32 +289,46 @@ export const FeaturesList: {
   description: string;
 }[] = [
   {
+    key: "Rebalance Portfolio",
+    icon: HiOutlineSun,
+    title: "Rebalance Portfolio",
+    description: "Optimize your asset allocation effortlessly across multiple chains.",
+    // "Diversify your investments across chains with DeFiLens strategies like Buy & Hold, Constant Proportion Portfolio Insurance (CPPI), and Constant Mix.",
+  },
+  {
     key: "Batching Transaction",
     icon: HiMiniSquare3Stack3D,
     title: "Batching Transaction",
-    description:
-      "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
+    description: "Execute multiple transactions in a single batch to save time and reduce costs.",
+      // "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
   },
   {
-    key: "Chain Abstraction",
+    key: "Cross-Chain Lending",
     icon: HiCubeTransparent,
     title: "Chain Abstraction",
     description:
-      "DefiLens addresses the complexity of Layer 2 growth by eliminating manual network switching and bridging, offering a unified platform for seamless trading across various chains via ERC4337 and ERC7579.",
+      "Access and manage lending positions seamlessly across different blockchains.",
   },
   {
-    key: "Condtional Trading",
-    icon: HiOutlineCheckCircle,
-    title: "Condtional Trading",
+    key: "Migrate DeFi Positions",
+    icon: HiArrowsRightLeft,
+    title: "Migrate DeFi Positions",
     description:
-      "It allows users to set specific conditions for their trades. When these predetermined conditions are met, the platform automatically executes the transaction. Like DCA, Autosave etc.",
+      "Easily transfer and manage your DeFi positions across various protocols and chains.",
+  },
+  {
+    key: "Pay Once in Stablecoin",
+    icon: HiCheckBadge,
+    title: "Pay Once in Stablecoin",
+    description:
+      "Simplify payments by covering all transaction fees using stablecoins in one go.",
   },
   {
     key: "Single Click Execution",
     icon: HiCursorArrowRays,
     title: "Single Click Execution",
-    description:
-      "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster and cost-efficient DeFi operations across Layer 2 networks.",
+    description: "Execute batch of DeFi actions with just a single click with eliminating complexity.",
+      // "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster executions.",
   },
   // {
   //     key: "Manage all Defi Positions",
