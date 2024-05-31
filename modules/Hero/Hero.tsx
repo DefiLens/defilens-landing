@@ -9,8 +9,26 @@ import {
   buttonsText,
   meta,
 } from "@/utils/constants";
+import { useEffect, useState } from "react";
+
+const headings = [
+  "Unified Defi experience with Chain Abstraction",
+  "Rebalance or Migrate portfolio with",
+  "Batch Multiple trades and execute with",
+  "Pay once for multiple trades with Stablecoin",
+];
 
 const Hero = () => {
+  const [currentHeading, setCurrentHeading] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeading((prev) => (prev + 1) % headings.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       className={clsx(
@@ -21,7 +39,7 @@ const Hero = () => {
     >
       <div className="bg-transparent max-w-[1380px] w-full md:w-[94%] h-full flex flex-col lg:flex-row justify-start lg:justify-center items-center text-center gap-8 lg:gap-16 2xl:gap-28 text-primary-1000 bg-primary-100">
         {/* Left Content */}
-        <div className="h-full flex flex-col justify-center items-start gap-5">
+        <div className="w-1/2 h-full flex flex-col justify-center items-start gap-5">
           {/* Heading and Description */}
           <motion.h1
             initial={{ opacity: 0, scale: 0.5 }}
@@ -31,10 +49,18 @@ const Hero = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="text-center lg:text-start text-4xl md:text-5xl lg:text-7xl font-bold font-satoshi"
+            className="text-center lg:text-start text-4xl md:text-5xl lg:text-5xl font-bold font-satoshi"
           >
-            <span className="mr-3">Unified Defi trading experience with</span>
-            <span className="inline-flex text-primary-700">One-click</span>
+            <div className="font-bold text-primary-800 mb-4 fade-in leading-[1.2]">
+              {/* <span>{headings[currentHeading]}</span>
+              {(currentHeading === 1 || currentHeading === 2) && (
+                <span className="inline-flex text-primary-700 ml-2">
+                  One-click
+                </span>
+              )} */}
+              <span>"Rebalance or Migrate portfolio with</span>
+              <span className="inline-flex text-primary-700 ml-2">One-click</span>
+            </div>
           </motion.h1>
           <motion.h6
             initial={{ opacity: 0, scale: 0.5 }}
@@ -94,7 +120,7 @@ const Hero = () => {
             delay: 0.7,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          className="w-full h-full"
+          className="w-1/2 h-full"
         >
           <Image
             src={hero}
@@ -125,3 +151,68 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// components/HeroSection.js
+// import { hero } from "@/assets/images";
+// import { useEffect, useState } from "react";
+
+// const headings = [
+//   "Unified Defi experience with Chain Abstraction",
+//   "Rebalance or Migrate portfolio with One-Click",
+//   "Batch Multiple trades and execute with One-Click",
+//   "Pay once for multiple trades with Stablecoin",
+// ];
+
+// const Hero = () => {
+//   const [currentHeading, setCurrentHeading] = useState(0);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentHeading((prev) => (prev + 1) % headings.length);
+//     }, 3000);
+
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <div className="flex items-center justify-between bg-primary-100 h-screen px-8">
+//       <div className="flex flex-col justify-center w-1/2">
+//         <h1 className="text-4xl font-bold text-primary-800 mb-4 fade-in">
+//           {headings[currentHeading]}
+//         </h1>
+//         <div className="flex items-center space-x-4 mb-8">
+//           <img src="/path/to/base-logo.png" alt="Base Logo" className="h-12" />
+//           <img
+//             src="/path/to/eth-india-logo.png"
+//             alt="ETH India Logo"
+//             className="h-12"
+//           />
+//         </div>
+//         <button className="bg-primary-600 text-white py-2 px-4 rounded hover:bg-primary-700">
+//           Launch App
+//         </button>
+//       </div>
+//       <div className="w-1/2 flex justify-center">
+//         {/* <img src="/path/to/your-image.png" alt="Hero Image" className="h-96" /> */}
+//         <motion.div
+//           initial={{ opacity: 0, scale: 0.5 }}
+//           animate={{ opacity: 1, scale: 1 }}
+//           transition={{
+//             duration: 0.8,
+//             delay: 0.7,
+//             ease: [0, 0.71, 0.2, 1.01],
+//           }}
+//           className="w-full h-full"
+//         >
+//           <Image
+//             src={hero}
+//             alt="hero-img"
+//             className="w-auto lg:w-[350px] xl:w-[450px] 2xl:w-[575px] 3xl:w-[750px]"
+//           />
+//         </motion.div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
