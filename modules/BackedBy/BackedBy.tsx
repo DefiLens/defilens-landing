@@ -16,7 +16,7 @@ const BackedBy = () => {
       </div>
       {/* Mapping Supporters */}
       <div className="relative w-full h-full flex justify-between items-start gap-8 mt-0 sm:mt-8">
-        <div className="w-full h-full flex flex-col md:flex-row gap-10 justify-center">
+        <div className="w-full h-full flex flex-col md:flex-row gap-10 items-center md:items-start justify-center">
           {SupportedByList?.length > 0 &&
             SupportedByList.map((item) => (
               <a
