@@ -128,17 +128,28 @@ const Hero = () => {
       </div>
 
       {/* Launch App Button */}
-      <div className="hidden lg:block transition-all text-xs md:text-base font-semibold bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
-        <button className="flex h-full w-full items-center justify-center rounded-full">
-          <Link
-            href={meta.app}
-            target="_blank"
-            className="flex justify-center items-center gap-1 rounded-full text-white py-2 px-4 sm:px-7"
-          >
-            {buttonsText.heroCta}
-          </Link>
-        </button>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="text-center lg:text-start text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-satoshi"
+      >
+        <div className="hidden lg:block transition-all text-xs md:text-base font-semibold bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
+          <button className="flex h-full w-full items-center justify-center rounded-full">
+            <Link
+              href={meta.app}
+              target="_blank"
+              className="flex justify-center items-center gap-1 rounded-full text-white py-2 px-4 sm:px-7"
+            >
+              {buttonsText.heroCta}
+            </Link>
+          </button>
+        </div>
+      </motion.div>
 
       {/* Supported Networks */}
       <div className="mt-5 w-full h-full grid grid-cols-3 sm:flex flex-wrap justify-center items-center gap-5 lg:gap-8 select-none">
