@@ -6,3 +6,13 @@
     background-position: center top;
     background-size: cover;
 }  
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out infinite;
+  }
+  
+  @keyframes fadeIn {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
