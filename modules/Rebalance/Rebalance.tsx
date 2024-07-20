@@ -9,101 +9,9 @@ import { AiOutlineApartment } from "react-icons/ai";
 import { TbArrowsCross } from "react-icons/tb";
 import { RiCoinsLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
-const Example_1 = [
-  {
-    step: "1",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Fplug.png&w=32&q=75",
-    parts: [
-      { text: "Batch 1: ", highlight: false },
-      { text: "$250", highlight: true },
-      { text: "USDC", highlight: true },
-      { text: "to Optimism lending.", highlight: false },
-    ],
-  },
-  {
-    step: "2",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
-    parts: [
-      { text: "Batch 2: ", highlight: false },
-      { text: "$250", highlight: true },
-      { text: "ETH", highlight: true },
-      { text: "to", highlight: false },
-      { text: "Ethereum", highlight: true },
-      { text: "restaking", highlight: false },
-    ],
-  },
-  {
-    step: "3",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
-    parts: [
-      { text: "Batch 3: ", highlight: false },
-      { text: "$250", highlight: true },
-      { text: "ETH", highlight: true },
-      { text: "to", highlight: false },
-      { text: "Ethereum", highlight: true },
-      { text: "restaking (", highlight: false },
-      { text: "different", highlight: true },
-      { text: "protocol)", highlight: false },
-    ],
-  },
-  {
-    step: "4",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
-    parts: [
-      { text: "Batch 4: ", highlight: false },
-      { text: "$250", highlight: true },
-      { text: "ETH", highlight: true },
-      { text: "to", highlight: false },
-      { text: "Ethereum", highlight: true },
-      { text: "restaking (", highlight: false },
-      { text: "another", highlight: true },
-      { text: "protocol)", highlight: false },
-    ],
-  },
-  {
-    step: "5",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
-    parts: [
-      { text: "Batch 5: Migrate", highlight: false },
-      { text: "$500", highlight: true },
-      { text: "from", highlight: false },
-      { text: "Polygon", highlight: true },
-      { text: "Aave", highlight: true },
-      { text: "to", highlight: false },
-      { text: "Arbitrum", highlight: true },
-      { text: "Compound", highlight: true },
-    ],
-  },
-  {
-    step: "6",
-    imgSrc:
-      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
-    parts: [
-      { text: "All", highlight: false },
-      { text: "executed", highlight: true },
-      { text: "in one click, with", highlight: false },
-      { text: "fees", highlight: true },
-      { text: "paid in stablecoin!", highlight: false },
-    ],
-  },
-];
 
-const Step = ({ imgSrc, parts }: any) => (
+const Step = ({ parts }: any) => (
   <div className="flex flex-row items-start gap-4 pb-3">
-    {/* <img
-      alt="Icon"
-      loading="lazy"
-      decoding="async"
-      data-nimg="1"
-      className="rounded-full h-6 w-6 mt-1.5"
-      style={{ color: "transparent" }}
-      src={imgSrc}
-    /> */}
     <p className="flex flex-wrap items-center gap-2 font-satoshi font-light">
       {parts.map((part: any, index: number) => (
         <React.Fragment key={index}>
@@ -120,28 +28,6 @@ const Step = ({ imgSrc, parts }: any) => (
   </div>
 );
 
-const StepColumn3 = ({ steps }: any) => (
-  <div className="flex flex-col">
-    {steps.map((step: any, index: number) => (
-      <div key={index} className="flex gap-4">
-        <div className="flex flex-col">
-          <div
-            className="flex min-h-6 min-w-6 items-center justify-center rounded-full bg-[#D9D9D9]/40"
-            style={{ background: "rgb(234, 234, 234)" }}
-          >
-            <p className="text-xs">{index + 1}</p>
-          </div>
-          {index < steps.length - 1 && (
-            <div className="h-full flex justify-center">
-              <div className="w-[2px] bg-[#D9D9D9] h-full"></div>
-            </div>
-          )}
-        </div>
-        <Step step={step.step} imgSrc={step.imgSrc} parts={step.parts} />
-      </div>
-    ))}
-  </div>
-);
 const StepColumn = ({ steps }: any) => (
   <div className="flex flex-col">
     {steps.map((step: any, index: number) => (
@@ -162,23 +48,6 @@ const StepColumn = ({ steps }: any) => (
     ))}
   </div>
 );
-
-const Exampl3e = () => {
-  return (
-    <div className="my-[45px] lg:my-[90px]">
-      <div className="flex flex-col gap-5">
-        <div className="p-4 py-8 lg:p-16 flex flex-col items-center border-t border-b border-black border-opacity-20">
-          <h1 className="text-3xl font-semibold font-satoshi mb-12">
-            Multi-Chain $1000 Portfolio Optimization
-          </h1>
-          <div className="flex flex-col">
-            <StepColumn steps={Example_1} />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Example = () => {
   return (
@@ -201,29 +70,6 @@ const Example = () => {
   );
 };
 
-const rebalanceSteps = [
-  {
-    number: "1",
-    Icon: HiOutlineAdjustmentsHorizontal,
-    title: "Decide Your Actions",
-    description:
-      "Choose from a variety of DeFi actions across multiple chains, including lending, staking, and position migrations.",
-  },
-  {
-    number: "2",
-    Icon: AiOutlineBars,
-    title: "Create Your Batch",
-    description:
-      "Add your chosen actions to a batch, combining multiple operations across different protocols and chains.",
-  },
-  {
-    number: "3",
-    Icon: HiOutlineDocumentText,
-    title: "One-Click Execution",
-    description:
-      "Execute your entire batch of actions across multiple chains with a single click, using our smart wallet technology.",
-  },
-];
 const Rebalance = () => {
   return (
     <>
@@ -311,3 +157,111 @@ const Rebalance = () => {
 };
 
 export default Rebalance;
+
+const Example_1 = [
+  {
+    step: "1",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Fplug.png&w=32&q=75",
+    parts: [
+      { text: "Batch 1: ", highlight: false },
+      { text: "$250", highlight: true },
+      { text: "USDC", highlight: true },
+      { text: "to Optimism lending.", highlight: false },
+    ],
+  },
+  {
+    step: "2",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
+    parts: [
+      { text: "Batch 2: ", highlight: false },
+      { text: "$250", highlight: true },
+      { text: "ETH", highlight: true },
+      { text: "to", highlight: false },
+      { text: "Ethereum", highlight: true },
+      { text: "restaking", highlight: false },
+    ],
+  },
+  {
+    step: "3",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
+    parts: [
+      { text: "Batch 3: ", highlight: false },
+      { text: "$250", highlight: true },
+      { text: "ETH", highlight: true },
+      { text: "to", highlight: false },
+      { text: "Ethereum", highlight: true },
+      { text: "restaking (", highlight: false },
+      { text: "different", highlight: true },
+      { text: "protocol)", highlight: false },
+    ],
+  },
+  {
+    step: "4",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
+    parts: [
+      { text: "Batch 4: ", highlight: false },
+      { text: "$250", highlight: true },
+      { text: "ETH", highlight: true },
+      { text: "to", highlight: false },
+      { text: "Ethereum", highlight: true },
+      { text: "restaking (", highlight: false },
+      { text: "another", highlight: true },
+      { text: "protocol)", highlight: false },
+    ],
+  },
+  {
+    step: "5",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
+    parts: [
+      { text: "Batch 5: Migrate", highlight: false },
+      { text: "$500", highlight: true },
+      { text: "from", highlight: false },
+      { text: "Polygon", highlight: true },
+      { text: "Aave", highlight: true },
+      { text: "to", highlight: false },
+      { text: "Arbitrum", highlight: true },
+      { text: "Compound", highlight: true },
+    ],
+  },
+  {
+    step: "6",
+    imgSrc:
+      "https://www.onplug.io/_next/image/?url=%2Fprotocols%2Funiswap.png&w=32&q=75",
+    parts: [
+      { text: "All", highlight: false },
+      { text: "executed", highlight: true },
+      { text: "in one click, with", highlight: false },
+      { text: "fees", highlight: true },
+      { text: "paid in stablecoin!", highlight: false },
+    ],
+  },
+];
+
+const rebalanceSteps = [
+  {
+    number: "1",
+    Icon: HiOutlineAdjustmentsHorizontal,
+    title: "Decide Your Actions",
+    description:
+      "Choose from a variety of DeFi actions across multiple chains, including lending, staking, and position migrations.",
+  },
+  {
+    number: "2",
+    Icon: AiOutlineBars,
+    title: "Create Your Batch",
+    description:
+      "Add your chosen actions to a batch, combining multiple operations across different protocols and chains.",
+  },
+  {
+    number: "3",
+    Icon: HiOutlineDocumentText,
+    title: "One-Click Execution",
+    description:
+      "Execute your entire batch of actions across multiple chains with a single click, using our smart wallet technology.",
+  },
+];

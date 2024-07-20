@@ -259,7 +259,7 @@ const exampleData = [
   },
   {
     title: "Symbiotic Restaking Optimization",
-    example: Example_3,
+    example: Example_2,
   },
   {
     title: "Aave/Compound Lending Arbitrage",
