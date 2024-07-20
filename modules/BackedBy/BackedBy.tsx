@@ -4,15 +4,12 @@ import { SupportedByList } from "@/utils/constants";
 
 const BackedBy = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-3 text-primary-1000 bg-primary-100 p-8 py-20 sm:p-20 sm:py-20 md:p-32 md:py-20 lg:p-38 lg:py-20 2xl:p-40 2xl:py-28">
+    <div className="flex flex-col justify-center items-center gap-10 text-primary-1000 bg-primary-100 p-8 py-20 sm:p-20 sm:py-20 md:p-32 md:py-20 lg:p-38 lg:py-20 2xl:p-40 2xl:py-28">
       {/* Heading */}
       <div className="flex flex-col justify-center items-center gap-5 font-satoshi">
-        <h1
-          className="text-center text-xl md:text-3xl lg:text-4xl font-extrabold !leading-tight"
-        >
-          Grants Received
-          <span className="px-3 text-primary-700">from</span>
-        </h1>
+        <h2 className="text-center text-[20px] font-bold lg:text-[44px] font-satoshi">
+          Grants Received From
+        </h2>
       </div>
       {/* Mapping Supporters */}
       <div className="relative w-full h-full flex justify-between items-start gap-8 mt-0 sm:mt-8">
@@ -23,7 +20,7 @@ const BackedBy = () => {
                 key={item.key}
                 href={item.url}
                 target="_blank"
-                className="relative max-w-fit px-20 py-10 flex flex-col justify-center items-center gap-3 border border-purple-100 hover:border-purple-200 bg-purple-50/40 rounded-3xl p-6 flex-grow cursor-pointer transition-all group"
+                className="relative max-w-fit px-20 py-10 flex flex-col justify-center items-center gap-3 border border-purple hover:border-gray-50 bg-purple-50 rounded-3xl p-6 flex-grow cursor-pointer transition-all group"
               >
                 <span className="absolute right-4 top-4 group-hover:bg-primary-750/20 transition-colors p-1.5 rounded-full">
                   <HiArrowUpRight className="text-purple-700 text-lg" />

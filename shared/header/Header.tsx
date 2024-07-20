@@ -18,7 +18,7 @@ const Header = () => {
               alt="DefiLens"
             />
           </Link>
-          <a
+          {/* <a
             href={meta.app}
             target="_blank"
             className="absolute hidden sm:block top-2 -right-[220px] px-4 pb-0.5 rounded-full font-satoshi border border-purple-300 bg-purple-400 bg-opacity-30"
@@ -26,11 +26,12 @@ const Header = () => {
             <span className="text-sm font-semibold text-purple-800">
               join waitlist for private beta
             </span>
-          </a>
+          </a> */}
         </div>
         {/* CTA */}
         <div className="relative text-xs md:text-base font-semibold">
-          <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
+          {/* <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5"> */}
+          <button className="flex h-full w-full items-center justify-center  transition-all bg-black hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
             <Link
               href={meta.app}
               target="_blank"
@@ -40,13 +41,13 @@ const Header = () => {
               {buttonsText.headerCta}
             </Link>
           </button>
-          <Image
+          {/* <Image
             src="/images/join_waitlist_text.png"
             alt="join waitlist"
             width={1240}
             height={124}
             className="absolute top-12 right-12 z-10 pointer-events-none"
-          />
+          /> */}
         </div>
       </div>
     </div>

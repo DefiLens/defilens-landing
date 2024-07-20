@@ -2,6 +2,7 @@ import logoLight from './logoLight.svg';
 import logoDark from './logoDark.svg';
 import logo from './logo.svg';
 import hero from './hero.svg';
+import hero_2 from './hero_img.svg';
 import bgHero from './bgHero.png';
 import howToUse01 from './howToUse01.svg';
 import howToUse02 from './howToUse02.svg';
@@ -51,6 +52,7 @@ import ethIndia from './ethIndia.svg';
 
 export {
     logoLight,
+    hero_2,
     logoDark,
     logo,
     hero,
