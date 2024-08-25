@@ -47,7 +47,7 @@ const Hero = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="w-3/4 lg:w-full text-center lg:text-start text-primary-850 text-base md:text-lg lg:text-2xl leading-8 font-medium"
+            className="w-3/4 lg:w-full text-center lg:text-start text-zinc-600 text-base md:text-lg lg:text-2xl leading-8 font-medium"
           >
             Set it, forget it, and let your crypto work for you 24/7
           </motion.h6>
@@ -85,7 +85,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
         className="hidden lg:block"
       >
-        <button className="flex h-full w-full items-center justify-center  transition-all bg-black hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
+        <button className="flex h-full w-full items-center justify-center  transition-all bg-purple-600 hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
           <Link
             href={meta.app}
             target="_blank"

@@ -74,8 +74,8 @@ const Rebalance = () => {
   return (
     <>
       <section>
-        <div className="mx-4 flex lg:mx-24 mt-[90px] flex-col items-center gap-4">
-          <h2 className="text-center text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[40%] font-satoshi">
+        <div className="mx-4 text- flex lg:mx-24 mt-[90px] flex-col items-center gap-4">
+          <h2 className="text-center text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[60%] font-satoshi">
             Rebalance or Migrate portfolio with One-click
           </h2>
           <p className="text-center text-[18px] font-light opacity-40 lg:w-[45%] lg:text-[24px] 2xl:w-[35%] font-satoshi">

@@ -11,7 +11,7 @@ const Protocols = () => {
           Seamlessly access lending, borrowing, and earning.
         </p>
       </div>
-      <div className="flex flex-wrap gap-10 justify-center">
+      <div className="flex flex-wrap gap-10 justify-center max-w-4xl">
         {data.map((item) => (
           <div className="h-32 w-32 flex flex-col gap-2 items-center justify-center">
             <img src={item.image} className="h-16 w-16 rounded-full" />

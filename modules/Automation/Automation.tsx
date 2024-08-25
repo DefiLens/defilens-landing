@@ -166,15 +166,6 @@ const Example_3 = [
 
 const Step = ({ imgSrc, parts }: any) => (
   <div className="flex flex-row items-start gap-4 pb-3">
-    {/* <img
-      alt="Icon"
-      loading="lazy"
-      decoding="async"
-      data-nimg="1"
-      className="rounded-full h-6 w-6 mt-1.5"
-      style={{ color: "transparent" }}
-      src={imgSrc}
-    /> */}
     <p className="flex flex-wrap items-center gap-2 font-satoshi font-light">
       {parts.map((part: any, index: number) => (
         <React.Fragment key={index}>
@@ -252,6 +243,78 @@ const Example = () => {
   );
 };
 
+const Automation = () => {
+  return (
+    <>
+      <section>
+        <div className="mx-4 flex lg:mx-24 flex-col items-center gap-4 pt-10">
+          <h2 className="text-center text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[40%] font-satoshi">
+            Automate Your On-Chain Activities
+          </h2>
+          <p className="text-center text-[18px] font-light opacity-40 lg:w-[45%] lg:text-[24px] 2xl:w-[35%] font-satoshi">
+            Set it, forget it, and let your crypto work for you 24/7
+          </p>
+        </div>
+      </section>
+      <section className="py-20 ">
+        <Flow steps={automationSteps} />
+      </section>
+      <Example />
+      <section className="px-4 md:px-20 py-20">
+        <div className="grid w-full gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          {automationFeatures.map((item, index) => (
+            <div
+              className={`relative flex flex-row gap-8 rounded-xl bg-[#FBFBFB] p-8 items-end w-full min-h-[360px] ${
+                index === 3 ? "md:col-start-2" : ""
+              }`}
+              key={index}
+            >
+              <div className="absolute bottom-0 left-0 right-0 top-0 overflow-hidden rounded-xl">
+                <div className="flex items-center justify-center py-10">
+                  <item.icon className="text-8xl opacity-40" />
+                </div>
+              </div>
+              <div className="z-[10] flex flex-col gap-2">
+                <h2 className="flex flex-wrap items-center gap-4 text-lg font-bold lg:text-2xl">
+                  <div className="flex flex-row gap-4 items-center">
+                    <span>{item.title}</span>
+                  </div>
+                </h2>
+                <p className="max-w-[640px] text-black/65">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Automation;
+
+const automationFeatures = [
+  {
+    icon: MdAutoAwesome,
+    title: "Automate Your Positions",
+    desc: "Set up complex strategies to manage your DeFi positions without constant monitoring. Our platform executes trades and adjusts your portfolio based on your predefined conditions.",
+  },
+  {
+    icon: BsCashCoin,
+    title: "Scheduled Transactions",
+    desc: "Plan your DeFi moves in advance. Set up transactions to occur at specific times or intervals, ensuring you never miss an opportunity.",
+  },
+  {
+    icon: RxCounterClockwiseClock,
+    title: "24/7 Running",
+    desc: "   Our automation platform runs continuously, monitoring market conditions and executing your strategies round the clock, so you don't have to.",
+  },
+  {
+    icon: MdOutlineMultipleStop,
+    title: "Multichain Automation",
+    desc: "Operate across multiple blockchains seamlessly. Our platform supports various networks, allowing you to maximize opportunities across the entire DeFi ecosystem.",
+  },
+];
+
 const exampleData = [
   {
     title: "Mellow Finance Restaking",
@@ -290,109 +353,3 @@ const automationSteps = [
       "Specify the exact steps to be taken when your conditions are met, such as moving funds or adjusting positions.",
   },
 ];
-
-const Automation = () => {
-  return (
-    <>
-      <section>
-        <div className="mx-4 flex lg:mx-24 flex-col items-center gap-4 pt-10">
-          <h2 className="text-center text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[40%] font-satoshi">
-            Automate Your On-Chain Activities
-          </h2>
-          <p className="text-center text-[18px] font-light opacity-40 lg:w-[45%] lg:text-[24px] 2xl:w-[35%] font-satoshi">
-            Set it, forget it, and let your crypto work for you 24/7
-          </p>
-        </div>
-      </section>
-      <section className="py-20 ">
-        <Flow steps={automationSteps} />
-      </section>
-      <Example />
-      <section className="px-4 md:px-20 py-20">
-        <div className="grid w-full gap-8 md:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
-          <div className="relative flex flex-row gap-8 rounded-xl bg-[#FBFBFB] p-8 items-end w-full min-h-[360px]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 overflow-hidden rounded-xl">
-              <div className="flex items-center justify-center py-10">
-                <MdAutoAwesome className="text-8xl opacity-40" />
-              </div>
-            </div>
-            <div className="z-[10] flex flex-col gap-2">
-              <h2 className="flex flex-wrap items-center gap-4 text-lg font-bold lg:text-2xl">
-                <div className="flex flex-row gap-4 items-center">
-                  <span>Automate Your Positions</span>
-                </div>
-              </h2>
-              <p className="max-w-[640px] text-black/65">
-                Set up complex strategies to manage your DeFi positions without
-                constant monitoring. Our platform executes trades and adjusts
-                your portfolio based on your predefined conditions.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative flex flex-row gap-8 rounded-xl bg-[#FBFBFB] p-8 items-end w-full min-h-[360px]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 overflow-hidden rounded-xl">
-              <div className="flex items-center justify-center py-10">
-                <BsCashCoin className="text-8xl opacity-40" />
-              </div>
-            </div>
-            <div className="z-[10] flex flex-col gap-2">
-              <h2 className="flex flex-wrap items-center gap-4 text-lg font-bold lg:text-2xl">
-                <div className="flex flex-row gap-4 items-center">
-                  <span>Scheduled Transactions</span>
-                </div>
-              </h2>
-              <p className="max-w-[640px] text-black/65">
-                Plan your DeFi moves in advance. Set up transactions to occur at
-                specific times or intervals, ensuring you never miss an
-                opportunity.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative flex flex-row gap-8 rounded-xl bg-[#FBFBFB] p-8 items-end w-full min-h-[360px] md:col-span-2 xl:col-span-1">
-            <div className="absolute bottom-0 left-0 right-0 top-0 overflow-hidden rounded-xl">
-              <div className="flex items-center justify-center py-10">
-                <RxCounterClockwiseClock className="text-8xl opacity-40" />
-              </div>
-            </div>
-            <div className="z-[10] flex flex-col gap-2">
-              <h2 className="flex flex-wrap items-center gap-4 text-lg font-bold lg:text-2xl">
-                <div className="flex flex-row gap-4 items-center">
-                  <span>24/7 Running</span>
-                </div>
-              </h2>
-              <p className="max-w-[640px] text-black/65">
-                Our automation platform runs continuously, monitoring market
-                conditions and executing your strategies round the clock, so you
-                don't have to.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative flex flex-row gap-8 rounded-xl bg-[#FBFBFB] p-8 items-end w-full min-h-[360px]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 overflow-hidden rounded-xl">
-              <div className="flex items-center justify-center py-10">
-                <MdOutlineMultipleStop className="text-8xl opacity-40" />
-              </div>
-            </div>
-            <div className="z-[10] flex flex-col gap-2">
-              <h2 className="flex flex-wrap items-center gap-4 text-lg font-bold lg:text-2xl">
-                <div className="flex flex-row gap-4 items-center">
-                  <span>Multichain Automation</span>
-                </div>
-              </h2>
-              <p className="max-w-[640px] text-black/65">
-                Operate across multiple blockchains seamlessly. Our platform
-                supports various networks, allowing you to maximize
-                opportunities across the entire DeFi ecosystem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default Automation;

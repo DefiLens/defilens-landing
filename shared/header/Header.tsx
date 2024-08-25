@@ -31,7 +31,7 @@ const Header = () => {
         {/* CTA */}
         <div className="relative text-xs md:text-base font-semibold">
           {/* <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5"> */}
-          <button className="flex h-full w-full items-center justify-center  transition-all bg-black hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
+          <button className="flex h-full w-full items-center justify-center  transition-all bg-purple-600 hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
             <Link
               href={meta.app}
               target="_blank"
