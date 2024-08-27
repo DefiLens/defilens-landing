@@ -4,21 +4,10 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section className="flex flex-col items-center py-20">
+    <section className="flex flex-col items-center py-20 bg-purple-50 bg-opacity-80">
       <h2 className="text-center text-6xl font-semibold mb-12">
         Loved by the community
       </h2>
-      <div>
-        <button className="flex h-full w-full items-center justify-center  transition-all bg-purple-600 hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5 mb-16">
-          <Link
-            href={meta.app}
-            target="_blank"
-            className="flex justify-center items-center gap-1 rounded-full text-white py-2 px-4 sm:px-7"
-          >
-            Get Started
-          </Link>
-        </button>
-      </div>
       <div className="max-w-[99vw]">
         <div className="slider">
           <div className="slide_track">

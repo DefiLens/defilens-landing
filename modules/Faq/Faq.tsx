@@ -7,7 +7,7 @@ const Faq = ({ isOpen, handleIsOpen }: tFaq) => {
   return (
     <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-10 lg:gap-5 text-primary-1000 bg-primary-100 p-8 py-24 sm:p-20 sm:py-28 md:p-32 md:py-28 lg:p-38 lg:py-28 2xl:p-40 2xl:py-36">
       <div className="w-full flex flex-col justify-center items-center gap-5">
-        <h2 className="text-center text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[40%] font-satoshi">
+        <h2 className="text-start text-[28px] font-bold lg:w-[60%] lg:text-[64px] 2xl:w-[40%] font-satoshi">
           Frequently Asked Questions
         </h2>
       </div>

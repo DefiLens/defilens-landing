@@ -3,6 +3,7 @@ import {
   avalanche,
   base,
   baseGrant,
+  blackLogo,
   devfolioGrant,
   discord,
   eth,
@@ -15,6 +16,7 @@ import {
   howToUse04,
   howToUse05,
   howToUse06,
+  logo,
   optimism,
   polygon,
   team1,
@@ -288,56 +290,56 @@ export const FeaturesList: {
   title: string;
   description: string;
 }[] = [
-  {
-    key: "Rebalance Portfolio",
-    icon: HiOutlineSun,
-    title: "Rebalance Portfolio",
-    description: "Optimize your asset allocation effortlessly across multiple chains.",
-    // "Diversify your investments across chains with DeFiLens strategies like Buy & Hold, Constant Proportion Portfolio Insurance (CPPI), and Constant Mix.",
-  },
-  {
-    key: "Batching Transaction",
-    icon: HiMiniSquare3Stack3D,
-    title: "Batching Transaction",
-    description: "Execute multiple transactions in a single batch to save time and reduce costs.",
+    {
+      key: "Rebalance Portfolio",
+      icon: HiOutlineSun,
+      title: "Rebalance Portfolio",
+      description: "Optimize your asset allocation effortlessly across multiple chains.",
+      // "Diversify your investments across chains with DeFiLens strategies like Buy & Hold, Constant Proportion Portfolio Insurance (CPPI), and Constant Mix.",
+    },
+    {
+      key: "Batching Transaction",
+      icon: HiMiniSquare3Stack3D,
+      title: "Batching Transaction",
+      description: "Execute multiple transactions in a single batch to save time and reduce costs.",
       // "Seamless Batching Transaction, Whether it is single chain or cross-chain. Defilens handles complexities like consolidating multiple actions into one.",
-  },
-  {
-    key: "Cross-Chain Lending",
-    icon: HiCubeTransparent,
-    title: "Chain Abstraction",
-    description:
-      "Access and manage lending positions seamlessly across different blockchains.",
-  },
-  {
-    key: "Migrate DeFi Positions",
-    icon: HiArrowsRightLeft,
-    title: "Migrate DeFi Positions",
-    description:
-      "Easily transfer and manage your DeFi positions across various protocols and chains.",
-  },
-  {
-    key: "Pay Once in Stablecoin",
-    icon: HiCheckBadge,
-    title: "Pay Once in Stablecoin",
-    description:
-      "Simplify payments by covering all transaction fees using stablecoins in one go.",
-  },
-  {
-    key: "Single Click Execution",
-    icon: HiCursorArrowRays,
-    title: "Single Click Execution",
-    description: "Execute batch of DeFi actions with just a single click with eliminating complexity.",
+    },
+    {
+      key: "Cross-Chain Lending",
+      icon: HiCubeTransparent,
+      title: "Chain Abstraction",
+      description:
+        "Access and manage lending positions seamlessly across different blockchains.",
+    },
+    {
+      key: "Migrate DeFi Positions",
+      icon: HiArrowsRightLeft,
+      title: "Migrate DeFi Positions",
+      description:
+        "Easily transfer and manage your DeFi positions across various protocols and chains.",
+    },
+    {
+      key: "Pay Once in Stablecoin",
+      icon: HiCheckBadge,
+      title: "Pay Once in Stablecoin",
+      description:
+        "Simplify payments by covering all transaction fees using stablecoins in one go.",
+    },
+    {
+      key: "Single Click Execution",
+      icon: HiCursorArrowRays,
+      title: "Single Click Execution",
+      description: "Execute batch of DeFi actions with just a single click with eliminating complexity.",
       // "DefiLens enables one-click execution of all batches and entities, removing manual processes for faster executions.",
-  },
-  // {
-  //     key: "Manage all Defi Positions",
-  //     title: "Manage all Defi Positions",
-  //     icon: feature3,
-  //     description:
-  //         "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
-  // },
-];
+    },
+    // {
+    //     key: "Manage all Defi Positions",
+    //     title: "Manage all Defi Positions",
+    //     icon: feature3,
+    //     description:
+    //         "Effortlessly track and manage all DeFi positions across Layer 2 solutions. Users can batch-create, migrate, or refinance various DeFi positions and cross-chain orders, consolidating these entities into one batch for streamlined execution and management.",
+    // },
+  ];
 
 export const PartnersWith = [
   // {
@@ -607,3 +609,18 @@ export const testimonials_top = [
       "Love this one click cross chain lending protocol. As seen here you can do alot of cool stuff with Account Abstraction outside of onboarding new users. Making the process of interacting with defi for current users and making it more friendly and accessible are just as important",
   },
 ];
+
+export const headerRedirectBtns = [
+  {
+    logo: logo,
+    link: "https://app.defilens.tech/",
+    text: "Rebalance portfolio with smart wallet",
+    bg: "bg-primary-700"
+  },
+  {
+    logo: blackLogo,
+    link: "https://automation.defilens.tech/",
+    text: "Automation with EOA",
+    bg: "bg-[#27272a]"
+  }
+]

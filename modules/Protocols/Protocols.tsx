@@ -11,9 +11,9 @@ const Protocols = () => {
           Seamlessly access lending, borrowing, and earning.
         </p>
       </div>
-      <div className="flex flex-wrap gap-10 justify-center max-w-4xl">
+      <div className="flex flex-wrap gap-10 justify-center max-w-5xl">
         {data.map((item) => (
-          <div className="h-32 w-32 flex flex-col gap-2 items-center justify-center">
+          <div className="h-32 w-32 flex flex-col gap-2 items-center justify-center bg-zinc-100 rounded-3xl shadow hover:shadow-purple-600 shadow-purple-400 transition-all duration-200">
             <img src={item.image} className="h-16 w-16 rounded-full" />
             <p className="font-satoshi text-sm capitalize">{item.name}</p>
           </div>

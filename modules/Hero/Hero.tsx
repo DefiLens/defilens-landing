@@ -2,12 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { hero } from "@/assets/images";
-import { buttonsText, meta } from "@/utils/constants";
+import { backendIcons, buttonsText, meta } from "@/utils/constants";
 import { useEffect, useState } from "react";
 
 const headings = [
   "Smart Automation for Your On-Chain Activities",
-  "Rebalance or Migrate portfolio with One-click",
+  "Rebalance or Migrate portfolio with One click",
+];
+const descriptions = [
+  "Set it, forget it, and let your crypto work for you 24/7",
+  "DefiLens abstract chains and execute multiple orders in batch across-chains with smart wallet designed platform.",
 ];
 
 const Hero = () => {
@@ -16,7 +20,16 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHeading((prev) => (prev + 1) % headings.length);
-    }, 3000);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+  const [currentDesc, setCurrentDesc] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDesc((prev) => (prev + 1) % descriptions.length);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -47,9 +60,10 @@ const Hero = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="w-3/4 lg:w-full text-center lg:text-start text-zinc-600 text-base md:text-lg lg:text-2xl leading-8 font-medium"
+            className="w-3/4 lg:w-full text-center lg:text-start text-zinc-600 text-base md:text-lg lg:text-2xl leading-8 font-medium fade-in"
           >
-            Set it, forget it, and let your crypto work for you 24/7
+            {/* Set it, forget it, and let your crypto work for you 24/7 */}
+            {descriptions[currentDesc]}
           </motion.h6>
           <div className="lg:hidden transition-all">
             <button className="flex h-full w-full items-center justify-center  transition-all bg-black hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
@@ -62,6 +76,30 @@ const Hero = () => {
               </Link>
             </button>
           </div>
+
+          {/* Supported by */}
+          {/* <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.4,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="mt-0 lg:mt-2 inline-flex items-center justify-center lg:justify-between w-full"
+          >
+            <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold font-satoshi">
+              <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
+                Grant Received
+                <span className="px-2 text-primary-700">from</span>
+              </h1>
+              {backendIcons.map((item: string, index) => (
+                <div key={index} className="w-6 h-6 md:w-8 md:h-8">
+                  <Image src={item} className="w-full h-full" alt="icon" />
+                </div>
+              ))}
+            </div>
+          </motion.div> */}
         </div>
         {/* hero image in right */}
         <motion.div
@@ -85,7 +123,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
         className="hidden lg:block"
       >
-        <button className="flex h-full w-full items-center justify-center  transition-all bg-purple-600 hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
+        <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
           <Link
             href={meta.app}
             target="_blank"
