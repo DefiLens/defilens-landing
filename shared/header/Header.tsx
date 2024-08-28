@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { blackLogo, logo, logoLight } from "@/assets/images";
-import { headerRedirectBtns, meta } from "@/utils/constants";
+import { meta } from "@/utils/constants";
 import clsx from "clsx";
 
 const Header = () => {
