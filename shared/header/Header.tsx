@@ -30,7 +30,7 @@ const Header = () => {
           </a>
         </div>
         {/* CTA */}
-        <div className="flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <button
             className={clsx(
               "flex items-center justify-center transition-all hover:scale-105 rounded-full shadow-md hover:shadow-2xl bg-primary-700"
@@ -39,7 +39,7 @@ const Header = () => {
             <Link
               href="https://app.defilens.tech"
               target="_blank"
-              className="flex items-center gap-2 text-white py-1 px-4 sm:px-5"
+              className="flex items-center gap-2 text-white py-2 px-4 sm:px-5"
             >
               <Image
                 src={logo}
@@ -48,7 +48,7 @@ const Header = () => {
                 alt="DefiLens"
                 className="h-8 w-8"
               />
-              <span className="text-start whitespace-nowrap text-xs md:text-sm">
+              <span className="text-center whitespace-nowrap text-xs">
                 Rebalance portfolio <br /> with smart wallet
               </span>
             </Link>
@@ -61,7 +61,7 @@ const Header = () => {
             <Link
               href="https://automation.defilens.tech/"
               target="_blank"
-              className="flex items-center gap-2 text-white py-1 px-4 sm:px-5"
+              className="flex items-center gap-2 text-white py-2 px-4 sm:px-5"
             >
               <Image
                 src={blackLogo}
@@ -70,7 +70,7 @@ const Header = () => {
                 alt="DefiLens"
                 className="h-8 w-8"
               />
-              <span className="text-start whitespace-nowrap text-xs md:text-sm">
+              <span className="text-center whitespace-nowrap text-xs">
                 Automation with<br />
                 EOA
               </span>

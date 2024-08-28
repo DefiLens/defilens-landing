@@ -1,10 +1,10 @@
 import Flow from "@/components/Flow";
 import React from "react";
 import {
+  automationExampleData,
   automationFeatures,
   automationFlowSteps,
-  exampleData,
-} from "@/utils/data";
+} from "@/utils/data/automationData";
 import FeatureCard from "@/components/FeatureCard";
 import ConditionExample from "@/components/ConditionExample";
 
@@ -13,7 +13,7 @@ const Automation = () => {
     <>
       <section>
         <div className="mx-4 flex lg:mx-24 flex-col items-center gap-4 pt-10">
-          <h2 className="text-center text-[28px] font-bold lg:text-[64px] font-sans whitespace-nowrap">
+          <h2 className="text-center text-[28px] font-bold lg:text-[64px] font-sans sm:whitespace-nowrap">
             Automate Your <br /> On-Chain Activities
           </h2>
           <p className="text-center text-[18px] font-light opacity-40 lg:text-[24px] font-satoshi">
@@ -25,7 +25,7 @@ const Automation = () => {
         <Flow steps={automationFlowSteps} />
       </section>
       <ConditionExample
-        exampleData={exampleData}
+        exampleData={automationExampleData}
         title="Automation Examples"
         type="automation"
       />

@@ -29,7 +29,7 @@ export const rebalanceFeatures = [
 ];
 
 
-export const Example_1 = [
+export const rebalanceExample_1 = [
     {
         step: "1",
         imgSrc:

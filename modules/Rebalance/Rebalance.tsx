@@ -2,7 +2,7 @@ import Flow from "@/components/Flow";
 import React from "react";
 import FeatureCard from "@/components/FeatureCard";
 import {
-  Example_1,
+  rebalanceExample_1,
   rebalanceFeatures,
   rebalanceSteps,
 } from "@/utils/data/rebalanceData";
@@ -26,7 +26,7 @@ const Rebalance = () => {
         <Flow steps={rebalanceSteps} />
       </section>
       <ConditionExample
-        exampleData={Example_1}
+        exampleData={rebalanceExample_1}
         title="Rebalance Example"
         type="rebalance"
       />

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { hero } from "@/assets/images";
+import { blackLogo, hero, logo } from "@/assets/images";
 import { backendIcons, buttonsText, meta } from "@/utils/constants";
 import { useEffect, useState } from "react";
+import clsx from "clsx";
 
 const headings = [
   "Smart Automation for Your On-Chain Activities",
@@ -65,8 +66,18 @@ const Hero = () => {
             {/* Set it, forget it, and let your crypto work for you 24/7 */}
             {descriptions[currentDesc]}
           </motion.h6>
-          <div className="lg:hidden transition-all">
-            <button className="flex h-full w-full items-center justify-center  transition-all bg-black hover:scale-105 rounded-md shadow-md hover:shadow-2xl p-0.5">
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="block lg:hidden"
+          >
+            <button className="flex h-full w-full items-center justify-center transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
               <Link
                 href={meta.app}
                 target="_blank"
@@ -75,31 +86,7 @@ const Hero = () => {
                 {buttonsText.headerCta}
               </Link>
             </button>
-          </div>
-
-          {/* Supported by */}
-          {/* <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.4,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-            className="mt-0 lg:mt-2 inline-flex items-center justify-center lg:justify-between w-full"
-          >
-            <div className="flex flex-row items-center gap-3 md:gap-3 text-sm md:text-base font-semibold font-satoshi">
-              <h1 className="text-center text-xl md:text-2xl font-bold !leading-tight">
-                Grant Received
-                <span className="px-2 text-primary-700">from</span>
-              </h1>
-              {backendIcons.map((item: string, index) => (
-                <div key={index} className="w-6 h-6 md:w-8 md:h-8">
-                  <Image src={item} className="w-full h-full" alt="icon" />
-                </div>
-              ))}
-            </div>
-          </motion.div> */}
+          </motion.div>
         </div>
         {/* hero image in right */}
         <motion.div
@@ -123,7 +110,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
         className="hidden lg:block"
       >
-        <button className="flex h-full w-full items-center justify-center  transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
+        <button className="flex h-full w-full items-center justify-center transition-all bg-primary-700 hover:scale-105 rounded-full shadow-md hover:shadow-2xl p-0.5">
           <Link
             href={meta.app}
             target="_blank"

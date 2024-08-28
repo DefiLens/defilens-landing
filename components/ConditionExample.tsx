@@ -29,10 +29,9 @@ const ConditionExample: React.FC<ConditionExampleProps> = ({
   return (
     <div className="flex gap-20 flex-col lg:justify-start lg:flex-row px-4 md:px-20">
       <div className="flex flex-col gap-10 lg:items-center justify-center">
-        <h2 className="text-center text-[38px] font-bold lg:text-[54px] font-satoshi whitespace-nowrap">
+        <h2 className="text-center text-[38px] font-bold lg:text-[54px] font-satoshi sm:whitespace-nowrap">
           {title}
         </h2>
-        {/* <FaArrowRightLong className="text-5xl hidden lg:block" /> */}
       </div>
       {type === "rebalance" && (
         <div className="p-4 lg:p-8 flex flex-col items-center border-black border border-opacity-20 max-w-fit rounded-3xl">

@@ -5,7 +5,7 @@ import React from "react";
 const Testimonial = () => {
   return (
     <section className="flex flex-col items-center py-20 bg-purple-50 bg-opacity-80">
-      <h2 className="text-center text-6xl font-semibold mb-12">
+      <h2 className="text-center text-[28px] font-bold lg:text-[64px] font-satoshi">
         Loved by the community
       </h2>
       <div className="max-w-[99vw]">

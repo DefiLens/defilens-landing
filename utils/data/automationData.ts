@@ -56,9 +56,7 @@ export const automationFeatures = [
     },
 ];
 
-
-
-const Example_1 = [
+const automationExample_1 = [
     {
         step: "1",
         imgSrc:
@@ -104,7 +102,7 @@ const Example_1 = [
         ],
     },
 ];
-const Example_2 = [
+const automationExample_2 = [
     {
         step: "1",
         imgSrc:
@@ -156,7 +154,7 @@ const Example_2 = [
         ],
     },
 ];
-const Example_3 = [
+const automationExample_3 = [
     {
         step: "1",
         imgSrc:
@@ -206,17 +204,17 @@ const Example_3 = [
         ],
     },
 ];
-export const exampleData = [
+export const automationExampleData = [
     {
         title: "Mellow Finance Restaking",
-        example: Example_1,
+        example: automationExample_1,
     },
     {
         title: "Symbiotic Restaking Optimization",
-        example: Example_2,
+        example: automationExample_2,
     },
     {
         title: "Aave/Compound Lending Arbitrage",
-        example: Example_3,
+        example: automationExample_3,
     },
 ];
