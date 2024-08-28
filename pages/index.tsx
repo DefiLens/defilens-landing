@@ -1,6 +1,6 @@
-import App from "@/modules/App";
 import { Toaster } from "react-hot-toast";
 import MetaTags from "@/shared/MetaTags";
+import App from "@/assets/App";
 
 export default function Home() {
   return (

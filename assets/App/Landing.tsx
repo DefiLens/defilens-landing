@@ -1,27 +1,28 @@
 import Layout from "@/shared/layout";
 import HeroContainer from "@/modules/Hero";
-// import TopContainer from "@/shared/Top/TopContainer";
 import HeaderContainer from "@/shared/header";
-// import HowToUseContainer from "@/modules/HowToUse";
 import FeaturesContainer from "@/modules/Features";
 import BackedByContainer from "@/modules/BackedBy";
-import OurUsersSayContainer from "@/modules/OurUsersSay";
-// import TeamsContainer from "@/modules/Teams";
-// import FaqContainer from "./Faq/FaqContainer";
 import FooterContainer from "@/shared/footer";
+import Automation from "@/modules/Automation";
+import Rebalance from "@/modules/Rebalance";
+import FaqContainer from "@/modules/Faq";
+import React from "react";
+import Testimonial from "@/modules/Testimonials";
+import Protocols from "@/modules/Protocols";
 
 const Landing = () => (
   <Layout>
     <>
-      {/* <TopContainer /> */}
       <HeaderContainer />
-      <div className="mx-auto">
+      <div className="mx-auto hide_scrollbar">
         <HeroContainer />
-        {/* <HowToUseContainer /> */}
+        <Automation />
+        <Rebalance />
+        <Protocols/>
         <FeaturesContainer />
         <BackedByContainer />
-        {/* <TeamsContainer /> */}
-        <OurUsersSayContainer />
+        <Testimonial/>
         {/* <FaqContainer /> */}
         <FooterContainer />
       </div>
@@ -30,3 +31,6 @@ const Landing = () => (
 );
 
 export default Landing;
+
+
+

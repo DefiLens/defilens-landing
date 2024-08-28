@@ -1,18 +1,50 @@
 .hero-container {
-    overflow: hidden;
-    position: relative;
-    -webkit-box-align: center;
-    background-image: url("../../../images/bgHero.png");
-    background-position: center top;
-    background-size: cover;
-}  
+  overflow: hidden;
+  position: relative;
+  -webkit-box-align: center;
+  background-image: url("../../../images/bgHero.png");
+  // background-image: url("https://img.freepik.com/free-photo/violet-watercolor-texture-background_1083-172.jpg?size=626&ext=jpg&ga=GA1.1.1347984081.1721134839&semt=ais_user");
+  // background-image: url("https://img.freepik.com/premium-vector/pastel-watercolor-painted-background_23-2148959631.jpg?size=626&ext=jpg&ga=GA1.1.1347984081.1721134839&semt=ais_user");
+  // background-image: url("https://img.freepik.com/premium-photo/bokeh-blurred-defocused-magenta-background_527140-177.jpg?size=626&ext=jpg&ga=GA1.1.1347984081.1721134839&semt=ais_user");
+  // background-image: url("https://img.freepik.com/premium-vector/hand-painted-watercolor-abstract-background_889452-24190.jpg?size=626&ext=jpg&ga=GA1.1.1347984081.1721134839&semt=ais_user");
+  background-position: center;
+  background-size: cover;
+}
 
 .fade-in {
-    animation: fadeIn 3s ease-in-out infinite;
+  animation: fadeIn 5s ease-in-out infinite;
+}
+
+// @keyframes fadeIn {
+
+//   0%,
+//   100% {
+//     opacity: 0;
+//   }
+
+//   50% {
+//     opacity: 1;
+//   }
+// }
+@keyframes fadeIn {
+
+  /* Start with opacity 0 */
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes fadeIn {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+
+  /* Fade to opacity 1 by 20% of the time (1 second in a 5-second animation) */
+  20% {
+    opacity: 1;
   }
-  
+
+  /* Maintain opacity 1 until 60% of the time (3 seconds total) */
+  60% {
+    opacity: 1;
+  }
+
+  /* Fade out to opacity 0 by 100% of the time (5 seconds total) */
+  100% {
+    opacity: 0;
+  }
+}

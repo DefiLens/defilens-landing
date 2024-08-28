@@ -1,0 +1,21 @@
+//faq css
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+    /* Adjust this value based on your content */
+}
+
+.carouselContainer {
+    overflow: hidden;
+    max-height: fit-content;
+    // max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    position: relative;
+}
