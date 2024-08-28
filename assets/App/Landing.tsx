@@ -23,7 +23,7 @@ const Landing = () => (
         <FeaturesContainer />
         <BackedByContainer />
         <Testimonial/>
-        <FaqContainer />
+        {/* <FaqContainer /> */}
         <FooterContainer />
       </div>
     </>
