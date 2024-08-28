@@ -25,8 +25,9 @@ const FlowCard = ({ number, title, description }: any) => (
 const Flow = ({ steps }: any) => {
   return (
     <div className="mx-4 flex-row lg:mx-24 grid gap-8 xl:grid-cols-3">
-      {steps.map((item: any) => (
+      {steps.map((item: any, index: number) => (
         <FlowCard
+          key={index}
           number={item.number}
           title={item.title}
           description={item.description}

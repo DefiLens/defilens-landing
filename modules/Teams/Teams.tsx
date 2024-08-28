@@ -21,7 +21,7 @@ const Teams = () => (
                 <div key={item.key} className="w-40 lg:w-52 xl:72 2xl:w-80 h-full flex flex-col justify-start items-start gap-5  shadow-primary-850">
                     <Image
                         src={item.icon}
-                        alt="icon"z
+                        alt="icon"
                         className="rounded-full object-cover aspect-square"
                     />
                     <div className="flex flex-col justify-center items-center w-full gap-1 px-1">
