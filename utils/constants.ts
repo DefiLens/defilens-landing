@@ -497,7 +497,8 @@ export const footerLinks = {
     {
       key: "documentation",
       title: "Documentation",
-      url: "https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8",
+      url: "https://docs.defilens.tech",
+      // url: "https://defilens.notion.site/DefiLens-Simplify-Defi-Trading-Process-e56a17a4c4d74e4aa44b4b744ade76a8",
     },
   ],
 };
